@@ -105,10 +105,15 @@ def _model(value=''):
         return 'codex-default'
 
 
+def _stored_reasoning_effort(value=''):
+    """Keep a saved cache key readable independently of this machine's settings."""
+    raw = str(value or '').strip().lower()
+    return '' if raw in ('', 'default', '当前配置', '本机配置') else raw
+
+
 def _reasoning_effort(value=''):
     from .codex_runner import available_reasoning_efforts
-    raw = str(value or '').strip().lower()
-    selected = '' if raw in ('', 'default', '当前配置', '本机配置') else raw
+    selected = _stored_reasoning_effort(value)
     if selected and selected not in available_reasoning_efforts():
         raise ValueError('推理强度不受当前 Codex 配置支持，请选择可用强度')
     return selected
@@ -197,7 +202,7 @@ def _settings(connection, app_id, country):
                                       auto_enabled=False, max_reviews=200, days=7, model='', reasoning_effort='')
     result['auto_enabled'] = bool(result['auto_enabled'])
     result['model'] = _model(result['model'])
-    result['reasoning_effort'] = _reasoning_effort(result.get('reasoning_effort',''))
+    result['reasoning_effort'] = _stored_reasoning_effort(result.get('reasoning_effort',''))
     return result
 
 
@@ -384,7 +389,7 @@ def apply_agent_results(data, db_path):
     _init(db_path)
     default_model = _model()
     with database(db_path) as connection:
-        models = {(str(r['app_id']),str(r['country'])): (_model(r['model']), _reasoning_effort(r['reasoning_effort']))
+        models = {(str(r['app_id']),str(r['country'])): (_model(r['model']), _stored_reasoning_effort(r['reasoning_effort']))
                   for r in connection.execute('SELECT app_id,country,model,reasoning_effort FROM agent_settings')}
         caches = {(m,e):_cached(connection,m,e) for m,e in set(models.values()) | {(default_model, _reasoning_effort(''))}}
     for idx, row in result.iterrows():

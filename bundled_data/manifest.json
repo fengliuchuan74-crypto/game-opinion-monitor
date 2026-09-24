@@ -1,0 +1,71 @@
+{
+  "format_version": 1,
+  "sha256": "fa32c9df9b1e3a1c4b11d1bd3f70d8113694b6a7eef27b0706968d2f975301af",
+  "snapshot_id": "appstore-public-fa32c9df9b1e3a1c",
+  "created_at": "2026-09-24T08:58:10.898882+00:00",
+  "review_count": 4076,
+  "game_count": 5,
+  "source_verification": {
+    "raw_identity_checked": 4076,
+    "normalized_only": 0
+  },
+  "agent_result_count": 495,
+  "analyzed_review_count": 495,
+  "preferred_app_id": "1618911882",
+  "preferred_country": "cn",
+  "earliest_review_at": "2026-05-21T23:55:40+00:00",
+  "latest_review_at": "2026-09-23T02:52:19+00:00",
+  "games": [
+    {
+      "app_id": "1321803705",
+      "country": "cn",
+      "name": "和平精英",
+      "count": 449,
+      "earliest_review_at": "2026-07-14T01:31:59+00:00",
+      "latest_review_at": "2026-07-21T05:51:16+00:00"
+    },
+    {
+      "app_id": "1455054000",
+      "country": "cn",
+      "name": "英雄联盟手游",
+      "count": 450,
+      "earliest_review_at": "2026-08-21T11:13:03+00:00",
+      "latest_review_at": "2026-09-16T08:21:48+00:00"
+    },
+    {
+      "app_id": "1618911882",
+      "country": "cn",
+      "name": "恋与深空",
+      "count": 2427,
+      "earliest_review_at": "2026-06-29T19:10:16+00:00",
+      "latest_review_at": "2026-09-23T02:52:19+00:00"
+    },
+    {
+      "app_id": "6740756173",
+      "country": "cn",
+      "name": "鹅鸭杀（Goose Goose Duck）",
+      "count": 250,
+      "earliest_review_at": "2026-05-28T16:18:00+00:00",
+      "latest_review_at": "2026-06-27T14:02:11+00:00"
+    },
+    {
+      "app_id": "6751270546",
+      "country": "us",
+      "name": "Sword x Staff",
+      "count": 500,
+      "earliest_review_at": "2026-05-21T23:55:40+00:00",
+      "latest_review_at": "2026-06-29T07:39:22+00:00"
+    }
+  ],
+  "report_summary": {
+    "app_id": "1618911882",
+    "country": "cn",
+    "start_at": "2026-09-17T16:00:00+00:00",
+    "end_at": "2026-09-24T07:19:45.200542+00:00",
+    "model": "gpt-5.6-sol",
+    "filename": "agent-report.md",
+    "sha256": "f4141998503e680796d95ddc18521eaed419ec1f2ac3ffc338f573421e18d503",
+    "total": 495,
+    "analyzed": 495
+  }
+}

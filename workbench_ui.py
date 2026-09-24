@@ -17,6 +17,7 @@ from modules.agent_analysis import analysis_revision, latest_report
 from modules.dashboard import region_comparison, categories_for, category_mask
 from modules.app_icons import game_hero_html, get_app_icon
 from modules.collection_coverage import coverage_calendar, run_details, run_request
+from modules.bundled_snapshot import ensure_bundled_snapshot, snapshot_info
 from collectors.app_store import AppStoreCollector
 from modules.alerts import publish_alerts
 from modules.deliverables import build_report, workbook
@@ -42,6 +43,62 @@ MARKETS={'中国大陆':'cn','美国':'us','中国香港':'hk','中国台湾':'t
 def local_time(value):
     if not value or pd.isna(value): return '暂无记录'
     return pd.Timestamp(value).tz_convert(LOCAL_TZ).strftime('%Y-%m-%d %H:%M') if pd.Timestamp(value).tzinfo else str(value)
+
+
+def apply_snapshot_defaults(info,labels):
+    """Choose an immediately readable snapshot once, without replacing user choices."""
+    if not info or st.session_state.get('bundled_snapshot_defaults_applied'):
+        return
+    preferred=next((label for label,row in labels.items()
+        if str(row.get('app_id'))==str(info.get('preferred_app_id'))
+        and str(row.get('country')).lower()==str(info.get('preferred_country')).lower()),None)
+    if preferred and 'current_game' not in st.session_state:
+        st.session_state.current_game=preferred
+    if 'statistics_window' not in st.session_state:
+        st.session_state.statistics_window='全部已采集历史'
+    for row in labels.values():
+        key=f"agent_{row['app_id']}_{row['country']}_preference"
+        if key not in st.session_state:
+            st.session_state[key]='规则初筛'
+    st.session_state.bundled_snapshot_defaults_applied=True
+
+
+def _bundled_report(info,profile):
+    """Show only the fixed, checksum-verified report for this game and market."""
+    report=info.get('report_summary')
+    if (not isinstance(report,dict) or report.get('filename')!='agent-report.md'
+            or str(report.get('app_id'))!=str(profile.get('app_id'))
+            or str(report.get('country')).lower()!=str(profile.get('country')).lower()):
+        return None
+    try:
+        total,analyzed=int(report['total']),int(report['analyzed'])
+        start,end=pd.Timestamp(report['start_at']),pd.Timestamp(report['end_at'])
+        if total<=0 or analyzed!=total or start.tzinfo is None or end.tzinfo is None or not start<end:
+            return None
+        body=(ROOT/'bundled_data'/'agent-report.md').read_bytes()
+        if hashlib.sha256(body).hexdigest()!=report.get('sha256'):
+            return None
+        return report,body.decode('utf-8')
+    except (OSError,UnicodeError,ValueError,TypeError,KeyError):
+        return None
+
+
+def snapshot_caption(info,profile):
+    if not info: return
+    count=int(info.get('review_count') or 0)
+    stamp=local_time(info.get('created_at'))
+    st.caption(f'随附真实 App Store 评论快照 · 初始全库 {count:,} 条 · 生成于 {stamp}（北京时间）。'
+        '快照不代表实时评论；新增数据以实际采集记录为准。')
+    saved=_bundled_report(info,profile)
+    if saved:
+        report,body=saved
+        with st.expander(f"查看随附 Agent 历史报告 · {int(report['analyzed']):,} 条",expanded=False):
+            st.caption('独立历史报告 · '+local_time(report['start_at'])+' — '+local_time(report['end_at'])+
+                f"（北京时间，结束时间不含）· 已分析 {int(report['analyzed']):,}/{int(report['total']):,} 条。"
+                '此固定区间不随当前看板筛选变化，阅读不会启动新的 Agent 分析。')
+            st.markdown(body)
+            st.download_button('下载随附 Agent 历史报告',body,file_name='agent-report.md',
+                mime='text/markdown',key='bundled_agent_report_download',on_click='ignore')
 
 
 @st.cache_resource
@@ -546,6 +603,8 @@ def main():
     st.set_page_config(page_title='App Store 舆情工作台',page_icon='📋',layout='wide')
     st.markdown('<style>'+(ROOT/'assets/dashboard.css').read_text(encoding='utf-8')+'</style>',unsafe_allow_html=True)
     init_db(DB)
+    ensure_bundled_snapshot(DB,ROOT/'bundled_data')
+    bundled=snapshot_info(DB)
     if os.environ.get('APPSTORE_DISABLE_WORKER')!='1':
         worker(str(DB))
         agent_worker(str(DB),str(OUTPUT/'agent_analysis'))
@@ -554,6 +613,7 @@ def main():
         st.title('App Store\n舆情工作台')
         st.caption('实时监控 → 深度分析 → 处理建议')
         labels={f"{row['app_name']} · {row['country']} ({row['app_id']})":row.to_dict() for _,row in profiles.iterrows()}
+        apply_snapshot_defaults(bundled,labels)
         pending=st.session_state.pop('next_game',None)
         if pending in labels: st.session_state.current_game=pending
         review_request=st.session_state.pop('review_browser_request',None)
@@ -568,7 +628,8 @@ def main():
             st.session_state.workspace_page='评论浏览'
         choice=st.selectbox('当前游戏与地区',list(labels)+['＋ 添加游戏'],key='current_game')
         page=st.radio('工作区',['舆情概览','监控总览','评论浏览','采集与设置','数据与导出'],key='workspace_page')
-        window=st.selectbox('统计时间',['今天','近 7 天','近 30 天','全部已采集历史','自定义历史区间'],index=1)
+        window=st.selectbox('统计时间',['今天','近 7 天','近 30 天','全部已采集历史','自定义历史区间'],
+            key='statistics_window',**({'index':1} if 'statistics_window' not in st.session_state else {}))
         historical=None
         if window=='自定义历史区间':
             selected=st.date_input('选择起止日期',value=(datetime.now(LOCAL_TZ).date()-timedelta(days=7),datetime.now(LOCAL_TZ).date()),max_value=datetime.now(LOCAL_TZ).date())
@@ -577,6 +638,7 @@ def main():
         st.caption('App Store 舆情分析 · 2.3\n真实采集 · Agent 深度分析 · 多游戏')
     if choice=='＋ 添加游戏': clear_dialog(); close_collection_log(); add_game(); return
     profile=labels[choice]
+    snapshot_caption(bundled,profile)
     if page=='监控总览':
         clear_dialog()
         close_collection_log()

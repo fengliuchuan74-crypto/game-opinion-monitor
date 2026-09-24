@@ -53,6 +53,7 @@ def main():
     try:
         import streamlit, pandas, openpyxl, requests, xlrd
         from modules.review_store import init_db
+        from modules.bundled_snapshot import ensure_bundled_snapshot
         from modules.monitoring import start_worker
         from modules.agent_analysis import start_analysis_worker, stop_analysis_worker
     except ImportError as exc:
@@ -86,6 +87,7 @@ def main():
         logging.basicConfig(filename=path,encoding='utf-8',level=logging.INFO)
         port=available_port(args.port)
         init_db(data/'reviews.sqlite3')
+        ensure_bundled_snapshot(data/'reviews.sqlite3',ROOT/'bundled_data')
         stop=start_worker(data/'reviews.sqlite3',ROOT/'outputs'/'collector_logs')
         agent_stop=start_analysis_worker(data/'reviews.sqlite3',ROOT/'outputs'/'agent_analysis')
         env=os.environ.copy(); env['APPSTORE_DISABLE_WORKER']='1'; env['PYTHONUTF8']='1'
