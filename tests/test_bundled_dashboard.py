@@ -12,12 +12,11 @@ import uuid
 from unittest.mock import patch
 
 import pandas as pd
-import streamlit as st
 from streamlit.testing.v1 import AppTest
 
 import workbench_ui
 from collectors.base import RawReview
-from modules.review_store import save_reviews, upsert_game_profile
+from modules.review_store import read_reviews, save_reviews, upsert_game_profile
 from modules.storage import database
 
 
@@ -51,32 +50,34 @@ class BundledDashboardTests(unittest.TestCase):
         # Bootstrap is separately tested against its real bundle. These tests use
         # a small, marked synthetic database to exercise only the page defaults.
         guards.enter_context(patch.object(workbench_ui,'ensure_bundled_snapshot'))
+        guards.enter_context(patch.object(workbench_ui,'published_bundle_metadata',return_value=self.info if marked else {}))
         guards.enter_context(patch('requests.sessions.Session.request',side_effect=AssertionError('Snapshot browsing must stay offline')))
         self.runtime=guards.enter_context(patch('agent_ui.check_runtime',side_effect=AssertionError('Rule browsing must not check Codex')))
         if bundled_report:
             guards.enter_context(patch.object(workbench_ui,'_bundled_report',side_effect=lambda info,profile:
                 (bundled_report,'合成历史报告预览') if profile['app_id']=='222' and profile['country']=='cn' else None))
-            self.report={'run_id':42,'summary':'已完成的完整结构化结论',
+            self.report={'run_id':42,'summary':'已完成的完整结构化结论','model':bundled_report['model'],
+                'reasoning_effort':'medium','from_bundle':True,
                 'coverage':{**bundled_report,'pending':0},
                 'positive':['保留已验证的剧情体验优势'],
                 'findings':[{'title':'核实更新后闪退','category':'闪退/卡顿','owner':'客户端团队',
                     'observation':'有玩家报告更新后闪退','hypothesis':'需验证设备与版本条件',
                     'validation':'复现并回访反馈用户','actions':['核对设备与运行日志'],'evidence_ids':[]}]}
-            self.report_views=[]
-            def panel(db,profile,view):
-                prefix=f"agent_{profile['app_id']}_{profile['country']}"
-                mode_key=prefix+'_mode'
-                if mode_key not in st.session_state:
-                    st.session_state[mode_key]=st.session_state.get(prefix+'_preference','规则初筛')
-                mode=st.radio('看板分析方式',['Agent分析','规则初筛'],key=mode_key)
-                st.session_state[prefix+'_preference']=mode
-                self.report_views.append((profile['app_id'],view['start'],view['end']))
-                matching=(profile['app_id']=='222' and mode=='Agent分析'
-                    and view['start']==pd.Timestamp(bundled_report['start_at'])
-                    and view['end']==pd.Timestamp(bundled_report['end_at']))
-                return mode,self.report if matching else None,{}
-            guards.enter_context(patch.object(workbench_ui,'analysis_panel',side_effect=panel))
-            self.latest_report=guards.enter_context(patch.object(workbench_ui,'latest_report',return_value=self.report))
+            profile={'app_id':'222','country':'cn','app_name':'快照首选游戏'}
+            raw=read_reviews(self.db,app_id='222',country='cn')
+            data=workbench_ui.analyze_reviews(raw,None).assign(agent_analyzed=True,analysis_source='Agent')
+            data=workbench_ui.attribute_versions(data,{})
+            start=pd.Timestamp(bundled_report['start_at']).tz_convert(workbench_ui.LOCAL_TZ)
+            end=pd.Timestamp(bundled_report['end_at']).tz_convert(workbench_ui.LOCAL_TZ)
+            view=workbench_ui.snapshot(data,start=start,end=end,now=end)
+            view.update(analysis_mode='Agent分析',agent_report=self.report,from_bundle=True,undated=0,future=0)
+            regions=workbench_ui.region_comparison(data,'222',['cn'],start,end)
+            self.bundle={'profile':profile,'view':view,'regions':regions}
+            self.bundle_loader=guards.enter_context(patch.object(workbench_ui,'bundled_dashboard',return_value=self.bundle))
+            self.analysis_panel=guards.enter_context(patch.object(workbench_ui,'analysis_panel',wraps=workbench_ui.analysis_panel))
+            self.latest_report=guards.enter_context(patch.object(workbench_ui,'latest_report',
+                side_effect=AssertionError('Historical dashboard must not select reports from the local database')))
+            self.export_tools=guards.enter_context(patch.object(workbench_ui,'data_tools',wraps=workbench_ui.data_tools))
         if stored_agent:
             analyze=workbench_ui.analyzed
             def with_stored_results(raw,revision,path):
@@ -95,7 +96,7 @@ class BundledDashboardTests(unittest.TestCase):
         self.assertEqual(app.radio(key='agent_222_cn_mode').value,'规则初筛')
         self.assertEqual(next(item.value for item in app.metric if item.label=='评论总数'),'2')
         self.assertEqual(len(app.get('plotly_chart')),10)
-        self.assertTrue(any('随附真实 App Store 评论快照' in item.value and '初始全库 5 条' in item.value
+        self.assertTrue(any('随附真实 App Store 评论快照' in item.value and '随附全库 5 条' in item.value
             and '不代表实时评论' in item.value for item in app.caption))
         self.runtime.assert_not_called()
 
@@ -172,28 +173,46 @@ with patch.object(ui,'ROOT',Path({str(self.folder)!r})):
             'end_at':'2024-01-02T03:47:23.123456Z','total':2,'analyzed':2,'model':'synthetic-model'}
         app=self.app(stored_agent=True,bundled_report=summary,state={
             'workspace_page':'数据与导出','agent_222_cn_model':'user-chosen-model','agent_222_cn_reasoning':'high'})
+        # The bundle was fixed before this local record arrived. Its dashboard
+        # and exported view must continue to contain exactly the published rows.
+        save_reviews(self.db,[RawReview(platform='App Store',external_id='local-new-222',app_id='222',
+            country='cn',date='2024-01-01T02:00:00Z',author='本地玩家',title='新增体验',content='本地新采集的评论',rating=3)])
+        self.analysis_panel.reset_mock()
+        self.export_tools.reset_mock()
         app.button(key='bundled_agent_report_open').click().run()
         self.assertFalse(app.exception,[item.message for item in app.exception])
         self.assertEqual(app.radio(key='workspace_page').value,'舆情概览')
-        self.assertEqual(app.radio(key='agent_222_cn_mode').value,'Agent分析')
+        self.assertFalse(any(item.key=='agent_222_cn_mode' for item in app.radio))
         self.assertEqual(app.session_state['agent_222_cn_preference'],'Agent分析')
         self.assertEqual(app.session_state['agent_222_cn_model'],'user-chosen-model')
         self.assertEqual(app.session_state['agent_222_cn_reasoning'],'high')
         self.assertEqual(app.selectbox(key='statistics_window').value,workbench_ui.BUNDLED_REPORT_WINDOW)
-        self.assertEqual(self.report_views[-1],('222',pd.Timestamp(summary['start_at']),pd.Timestamp(summary['end_at'])))
-        self.assertTrue(any('当前区间 2024-01-01 09:00 — 2024-01-02 11:47' in item.value for item in app.caption))
+        self.bundle_loader.assert_called()
+        self.analysis_panel.assert_not_called()
+        self.latest_report.assert_not_called()
+        self.assertTrue(any('历史快照范围（北京时间）：2024-01-01 09:00 — 2024-01-02 11:47' in item.value for item in app.caption))
+        self.assertTrue(any('报告模型：synthetic-model · medium' in item.value for item in app.caption))
         self.assertEqual(pd.Timestamp(app.session_state['cutoff']),pd.Timestamp(summary['end_at']))
         self.assertEqual(next(item.value for item in app.metric if item.label=='评论总数'),'2')
         self.assertEqual(len(app.get('plotly_chart')),10)
         self.assertTrue(any('已完成的完整结构化结论' in item.value for item in app.markdown))
         self.assertTrue(any('核实更新后闪退' in item.value for item in app.markdown))
+        self.assertTrue(any('已载入随附完整 Agent 分析 · 2/2 条' in item.value for item in app.success))
         self.assertFalse(any('当前区间尚无完成' in item.value for item in app.info))
         self.assertTrue(next(item for item in app.button if item.label=='更新统计至当前时间').disabled)
         app.radio(key='workspace_page').set_value('数据与导出').run()
         self.assertFalse(app.exception,[item.message for item in app.exception])
-        arguments=self.latest_report.call_args.args
-        self.assertEqual(arguments[1:3],('222','cn'))
-        self.assertEqual(arguments[3:5],(pd.Timestamp(summary['start_at']),pd.Timestamp(summary['end_at'])))
+        arguments=self.export_tools.call_args.args
+        self.assertEqual(arguments[0],self.bundle['profile'])
+        self.assertIs(arguments[1],self.bundle['view'])
+        self.assertEqual(arguments[1]['start'],pd.Timestamp(summary['start_at']))
+        self.assertEqual(arguments[1]['end'],pd.Timestamp(summary['end_at']))
+        self.assertEqual(len(arguments[1]['current']),2)
+        self.assertEqual(len(read_reviews(self.db,app_id='222',country='cn')),3)
+        self.latest_report.assert_not_called()
+        self.analysis_panel.assert_not_called()
+        self.assertEqual(app.session_state['agent_222_cn_model'],'user-chosen-model')
+        self.assertEqual(app.session_state['agent_222_cn_reasoning'],'high')
         self.runtime.assert_not_called()
 
     def test_changing_game_safely_leaves_completed_report_window(self):

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import html
 import hashlib
+import json
 import os
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -18,6 +19,8 @@ from modules.dashboard import region_comparison, categories_for, category_mask
 from modules.app_icons import game_hero_html, get_app_icon
 from modules.collection_coverage import coverage_calendar, run_details, run_request
 from modules.bundled_snapshot import ensure_bundled_snapshot, snapshot_info
+from modules.bundled_analysis import load_bundled_analysis
+from modules.app_version import APP_VERSION, BUILD_LABEL
 from collectors.app_store import AppStoreCollector
 from modules.alerts import publish_alerts
 from modules.deliverables import build_report, workbook
@@ -64,6 +67,54 @@ def apply_snapshot_defaults(info,labels):
     st.session_state.bundled_snapshot_defaults_applied=True
 
 
+def published_bundle_metadata():
+    """Discover the supplied report even when this installation has its own DB."""
+    path=ROOT/'bundled_data'/'manifest.json'
+    if not path.exists(): return {}
+    try:
+        value=json.loads(path.read_text(encoding='utf-8'))
+        if not isinstance(value,dict) or value.get('format_version')!=1:
+            raise ValueError('随附数据清单格式不正确')
+        return value
+    except (OSError,ValueError) as exc:
+        st.error('无法读取随附分析资料：'+str(exc)+'。请检查是否完整解压项目。')
+        return {}
+
+
+@st.cache_data(max_entries=2,show_spinner=False)
+def bundled_dashboard(folder,signature):
+    return load_bundled_analysis(Path(folder))
+
+
+def render_bundled_dashboard(page, *, include_export=False):
+    """Read the completed report and its exact source data, independently of local jobs."""
+    folder=ROOT/'bundled_data'
+    try:
+        signature=tuple((folder/name).stat().st_mtime_ns for name in
+            ('manifest.json','snapshot.json.gz','agent-report.json'))
+        saved=bundled_dashboard(str(folder),signature)
+    except (OSError,ValueError,KeyError,TypeError) as exc:
+        st.error('随附完整 Agent 分析加载失败：'+str(exc)+'。请完整解压新版，保留 bundled_data 文件夹。')
+        return
+    profile,view,regions=saved['profile'],saved['view'],saved['regions']
+    coverage=view['agent_report']['coverage']
+    st.markdown(game_hero_html(profile,(saved.get('icon') or {}).get('data_uri','')),unsafe_allow_html=True)
+    st.success(f"已载入随附完整 Agent 分析 · {int(coverage['analyzed']):,}/{int(coverage['total']):,} 条 · "
+        f"{len(view['agent_report'].get('findings',[]))} 项问题发现与处理方案")
+    st.caption(f"历史快照范围（北京时间）：{view['start']:%Y-%m-%d %H:%M} — {view['end']:%Y-%m-%d %H:%M}。"
+        f"报告模型：{view['agent_report']['model']} · {view['agent_report'].get('reasoning_effort') or '默认强度'}。"
+        '本页直接读取随附评论和已完成结果；本地新增评论及之后的复核不属于这份历史快照。')
+    st.caption('阅读不会调用模型。'+('切换左侧工作区可返回本地评论分析。' if include_export
+        else '切换左侧统计时间可回到本地评论的实时分析范围。'))
+    if page=='数据与导出':
+        data_tools(profile,view,[],[])
+    else:
+        overview(profile,view,[],regions)
+        if include_export:
+            with st.expander('导出这份历史分析'):
+                data_tools(profile,view,[],[])
+
+
 def _bundled_report(info,profile):
     """Show only the fixed, checksum-verified report for this game and market."""
     report=info.get('report_summary')
@@ -97,7 +148,7 @@ def snapshot_caption(info,profile):
     if not info: return
     count=int(info.get('review_count') or 0)
     stamp=local_time(info.get('created_at'))
-    st.caption(f'随附真实 App Store 评论快照 · 初始全库 {count:,} 条 · 生成于 {stamp}（北京时间）。'
+    st.caption(f'随附真实 App Store 评论快照 · 随附全库 {count:,} 条 · 生成于 {stamp}（北京时间）。'
         '快照不代表实时评论；新增数据以实际采集记录为准。')
     saved=_bundled_report(info,profile)
     if saved:
@@ -479,7 +530,7 @@ def overview(profile,view,plans,regions):
     render_dashboard(profile,view,plans,regions)
     render_analysis_reviews(view)
     if view.get('analysis_mode')=='Agent分析':
-        report_plans(view,lambda item:evidence_card(item,profile))
+        report_plans(view,lambda item:evidence_card(item,None if view.get('bundled_history') else profile))
         with st.expander('统计口径与数据质量'):
             st.write(f"无日期：{view['undated']} 条；未来日期：{view['future']} 条；不计入当前窗口。")
             st.write('情绪与问题类别采用 Agent 分析及有效人工复核；未分析评论保留为待判定与未归类，不借用规则结果。原始星级与关键词统计覆盖本期所有评论。')
@@ -582,6 +633,9 @@ def data_tools(profile,view,plans,runs):
         st.download_button('下载 Excel 分析数据与建议',delivery['xlsx'],stem+'.xlsx',mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',on_click='ignore')
         st.download_button('下载 HTML 处理简报',delivery['html'],stem+'.html',mime='text/html',on_click='ignore')
         st.download_button('下载 Markdown 简报',delivery['md'],stem+'.md',mime='text/markdown',on_click='ignore')
+    if view.get('bundled_history'):
+        st.caption('交付包仅包含这份历史快照。需要导入、备份或导出本地评论库时，请返回本地评论分析范围后操作。')
+        return
     st.divider()
     st.subheader('导入 App Store 评论')
     st.write(f"目标：{profile['app_name']} · {profile['country']} · {profile['app_id']}。导入文件不会自动启用巡检。")
@@ -620,7 +674,8 @@ def main():
     st.markdown('<style>'+(ROOT/'assets/dashboard.css').read_text(encoding='utf-8')+'</style>',unsafe_allow_html=True)
     init_db(DB)
     ensure_bundled_snapshot(DB,ROOT/'bundled_data')
-    bundled=snapshot_info(DB)
+    imported=snapshot_info(DB)
+    bundled=published_bundle_metadata() or imported
     if os.environ.get('APPSTORE_DISABLE_WORKER')!='1':
         worker(str(DB))
         agent_worker(str(DB),str(OUTPUT/'agent_analysis'))
@@ -629,7 +684,7 @@ def main():
         st.title('App Store\n舆情工作台')
         st.caption('实时监控 → 深度分析 → 处理建议')
         labels={f"{row['app_name']} · {row['country']} ({row['app_id']})":row.to_dict() for _,row in profiles.iterrows()}
-        apply_snapshot_defaults(bundled,labels)
+        apply_snapshot_defaults(imported,labels)
         pending=st.session_state.pop('next_game',None)
         if pending in labels: st.session_state.current_game=pending
         review_request=st.session_state.pop('review_browser_request',None)
@@ -643,21 +698,37 @@ def main():
         if st.session_state.get('workspace_page')=='监控总览 / 评论浏览':
             st.session_state.workspace_page='评论浏览'
         choice=st.selectbox('当前游戏与地区',list(labels)+['＋ 添加游戏'],key='current_game')
-        page=st.radio('工作区',['舆情概览','监控总览','评论浏览','采集与设置','数据与导出'],key='workspace_page')
+        pages=['舆情概览','监控总览','评论浏览','采集与设置','数据与导出']
+        supplied_report=bundled.get('report_summary')
+        if isinstance(supplied_report,dict) and supplied_report.get('json_filename')=='agent-report.json':
+            pages.append('随附历史分析')
+        elif st.session_state.get('workspace_page')=='随附历史分析':
+            st.session_state.workspace_page='舆情概览'
+        page=st.radio('工作区',pages,key='workspace_page')
         saved_report=_bundled_report(bundled,labels[choice]) if choice in labels else None
         windows=['今天','近 7 天','近 30 天','全部已采集历史','自定义历史区间']
         if saved_report:
             windows.append(BUNDLED_REPORT_WINDOW)
         elif st.session_state.get('statistics_window')==BUNDLED_REPORT_WINDOW:
             st.session_state.statistics_window='全部已采集历史'
-        window=st.selectbox('统计时间',windows,
+        window=st.selectbox('统计时间',windows,disabled=page=='随附历史分析',
             key='statistics_window',**({'index':1} if 'statistics_window' not in st.session_state else {}))
         historical=None
-        if window=='自定义历史区间':
+        if window=='自定义历史区间' and page!='随附历史分析':
             selected=st.date_input('选择起止日期',value=(datetime.now(LOCAL_TZ).date()-timedelta(days=7),datetime.now(LOCAL_TZ).date()),max_value=datetime.now(LOCAL_TZ).date())
             if len(selected)==2: historical=selected
         if st.button('刷新数据与游戏列表'): st.rerun()
-        st.caption('App Store 舆情分析 · 2.3\n真实采集 · Agent 深度分析 · 多游戏')
+        st.caption(f'App Store 舆情分析 · {APP_VERSION} · {BUILD_LABEL}\n真实采集 · Agent 深度分析 · 多游戏')
+    if page=='随附历史分析':
+        history_scope=f"bundled_history:{bundled.get('snapshot_id')}:{supplied_report.get('json_sha256')}"
+        if st.session_state.get('scope')!=history_scope:
+            clear_dialog()
+            close_collection_log()
+            st.session_state.scope=history_scope
+            st.session_state.cutoff=supplied_report.get('end_at')
+        render_active_dialog()
+        render_bundled_dashboard('舆情概览',include_export=True)
+        return
     if choice=='＋ 添加游戏': clear_dialog(); close_collection_log(); add_game(); return
     profile=labels[choice]
     snapshot_caption(bundled,profile)
@@ -692,6 +763,10 @@ def main():
             help='历史报告使用其已完成的固定时段；切换其他统计时间后可以更新。' if fixed_report else None):
         st.session_state.cutoff=datetime.now(LOCAL_TZ).isoformat()
         st.rerun()
+    if fixed_report and page in ('舆情概览','数据与导出'):
+        render_active_dialog()
+        render_bundled_dashboard(page)
+        return
     def render():
         state=target_state(DB,profile['app_id'],profile['country'])
         runs=recent_runs(DB,profile['app_id'],profile['country'])

@@ -15,6 +15,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent
 sys.path.insert(0,str(ROOT))
+from modules.app_version import APP_VERSION, BUILD_LABEL
 
 
 def acquire_lock(path):
@@ -74,6 +75,11 @@ def main():
                 state=json.loads(marker.read_text(encoding='utf-8'))
                 port=int(state['port'])
                 if 1024<=port<=65535:
+                    if state.get('version')!=APP_VERSION:
+                        print(f"检测到旧版进程（{state.get('version') or '版本未知'}），当前代码为 {APP_VERSION} · {BUILD_LABEL}。\n"
+                            f'旧版仍在运行：http://127.0.0.1:{port}\n'
+                            '请先运行停止脚本「停止舆情工作台.bat」再重新启动，并打开新启动窗口给出的地址。')
+                        return 1
                     print(f'工具已经运行：http://127.0.0.1:{port}')
                     if not args.no_browser: webbrowser.open(f'http://127.0.0.1:{port}')
             except (ValueError,KeyError,OSError): print('工具正在启动，请稍候。')
@@ -96,7 +102,7 @@ def main():
                 '--server.address','127.0.0.1','--server.port',str(port),'--server.headless','true',
                 '--server.fileWatcherType','none','--browser.gatherUsageStats','false'],cwd=ROOT,env=env,
                 stdout=log,stderr=subprocess.STDOUT,creationflags=getattr(subprocess,'CREATE_NO_WINDOW',0))
-            marker.write_text(json.dumps({'port':port,'pid':process.pid,'version':'2.3','root':str(ROOT)},ensure_ascii=False),encoding='utf-8')
+            marker.write_text(json.dumps({'port':port,'pid':process.pid,'version':APP_VERSION,'root':str(ROOT)},ensure_ascii=False),encoding='utf-8')
             ready=False
             for _ in range(120):
                 if stop_request.exists(): return 0
@@ -110,7 +116,7 @@ def main():
             if not ready:
                 print('启动未成功，请查看日志：',path)
                 return 1
-            print(f'App Store 舆情工作台：http://127.0.0.1:{port}\n关闭浏览器不影响巡检；在本窗口按 Ctrl+C 停止。\n日志：{path}')
+            print(f'App Store 舆情工作台 {APP_VERSION} · {BUILD_LABEL}：http://127.0.0.1:{port}\n关闭浏览器不影响巡检；在本窗口按 Ctrl+C 停止。\n日志：{path}')
             if not args.no_browser: webbrowser.open(f'http://127.0.0.1:{port}')
             while process.poll() is None:
                 if stop_request.exists():
