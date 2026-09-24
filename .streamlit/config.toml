@@ -1,0 +1,16 @@
+[theme]
+base = "dark"
+primaryColor = "#8273ff"
+backgroundColor = "#0c0d14"
+secondaryBackgroundColor = "#171a24"
+textColor = "#e7eafa"
+font = "sans serif"
+dataframeHeaderBackgroundColor = "#25283b"
+dataframeBorderColor = "#343647"
+
+[server]
+headless = true
+showEmailPrompt = false
+
+[browser]
+gatherUsageStats = false

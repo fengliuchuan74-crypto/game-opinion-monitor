@@ -1,0 +1,370 @@
+:root {
+  --bg: #0c0d14;
+  --panel: #171a24;
+  --panel-soft: #1d2030;
+  --border: #292d3d;
+  --text: #e7eafa;
+  --muted: #929ab0;
+  --violet: #8273ff;
+  --violet-soft: #292547;
+  --positive: #63d5b2;
+  --negative: #f28368;
+  --neutral: #9da6b5;
+}
+
+.stApp {
+  background: radial-gradient(circle at 14% 0%, #17172b 0%, var(--bg) 42%);
+  color: var(--text);
+}
+
+[data-testid="stSidebar"] {
+  background: #10121c;
+  border-right: 1px solid var(--border);
+}
+
+[data-testid="stSidebar"] * {
+  color: #d7dceb;
+}
+
+.block-container {
+  max-width: 1420px;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.hero {
+  background: linear-gradient(112deg, rgba(129, 115, 255, .18), rgba(29, 32, 48, .15));
+  border: 1px solid #2d3043;
+  border-radius: 18px;
+  padding: 26px 30px 24px;
+  margin-bottom: 20px;
+}
+
+.hero-kicker {
+  color: var(--violet);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  color: #f1f3fd;
+  font-size: 34px;
+  margin: 7px 0 6px;
+  line-height: 1.28;
+}
+
+.hero-game-name {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 42px;
+  font-weight: 850;
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, #ffffff 0%, #9f93ff 52%, #63d5b2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 22px rgba(130, 115, 255, .25);
+}
+
+.hero-system-name {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 26px;
+  color: #d9def5;
+  font-weight: 700;
+}
+
+.hero-date {
+  display: inline-block;
+  font-size: 21px;
+  color: #a8aec0;
+  font-weight: 500;
+}
+
+.hero p {
+  color: var(--muted);
+  margin: 0;
+  font-size: 15px;
+}
+
+.section-title {
+  border-left: 3px solid var(--violet);
+  color: #f0f2fc;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 26px 0 14px;
+  padding-left: 12px;
+}
+
+.section-note {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: -8px;
+  margin-bottom: 13px;
+}
+
+.metric-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  min-height: 102px;
+  padding: 14px 15px;
+}
+
+.current-game-card {
+  margin: 10px 0 12px;
+  padding: 14px 15px;
+  border: 1px solid rgba(130, 115, 255, .55);
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(130, 115, 255, .18), rgba(99, 213, 178, .08));
+  box-shadow: 0 0 24px rgba(130, 115, 255, .12);
+}
+
+.current-game-label {
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.current-game-name {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.current-game-meta {
+  color: #9ca6c0;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.metric-label {
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.metric-value {
+  color: #f2f4ff;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.metric-value.negative { color: var(--negative); }
+.metric-value.positive { color: var(--positive); }
+
+.op-panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin: 6px 0 10px;
+}
+
+.emotion-row {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+  margin: 17px 0;
+}
+
+.emotion-label {
+  color: #aeb4c8;
+  font-size: 14px;
+  width: 48px;
+}
+
+.emotion-track {
+  background: #282c38;
+  border-radius: 10px;
+  flex: 1;
+  height: 10px;
+  overflow: hidden;
+}
+
+.emotion-fill {
+  border-radius: 10px;
+  height: 100%;
+}
+
+.emotion-value {
+  color: #9ca4bb;
+  font-size: 13px;
+  text-align: right;
+  width: 112px;
+}
+
+.review-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  min-height: 235px;
+  margin: 4px 0 13px;
+  padding: 16px 18px;
+}
+
+.review-card.bad {
+  border-color: #5c3833;
+  box-shadow: inset 0 0 0 1px rgba(242, 131, 104, .05);
+}
+
+.review-top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.review-author {
+  color: #e9ebf5;
+  font-weight: 700;
+}
+
+.review-date {
+  color: #858da2;
+  font-size: 12px;
+}
+
+.platform-pill {
+  background: var(--violet-soft);
+  border-radius: 4px;
+  color: #a397ff;
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding: 4px 10px;
+}
+
+.review-title {
+  color: #f0f2fa;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.review-body {
+  color: #d2d5e1;
+  font-size: 13px;
+  line-height: 1.65;
+  margin-bottom: 13px;
+  min-height: 42px;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 11px;
+}
+
+.tag {
+  background: #222633;
+  border-radius: 5px;
+  color: #aeb6c9;
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+.tag.good { background: #173b34; color: var(--positive); }
+.tag.mid { background: #292d38; color: #b7becd; }
+.tag.bad { background: #422924; color: var(--negative); }
+
+.review-stats {
+  color: #9ba4b9;
+  font-size: 12px;
+}
+
+.suggestion-box {
+  background: #11141f;
+  border-radius: 7px;
+  color: #c1c7da;
+  font-size: 12px;
+  line-height: 1.55;
+  margin-top: 11px;
+  padding: 8px 10px;
+}
+
+.summary-panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  color: #d7dbea;
+  line-height: 1.82;
+  padding: 20px 24px;
+}
+
+.insight-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin-bottom: 14px;
+  padding: 18px 20px;
+}
+
+.insight-title {
+  color: #f0f2fb;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+.insight-copy {
+  color: #cbd1e2;
+  font-size: 14px;
+  line-height: 1.72;
+}
+
+.action-panel {
+  background: linear-gradient(135deg, rgba(130, 115, 255, 0.12), rgba(23, 26, 36, 0.92));
+  border: 1px solid #393459;
+  border-radius: 14px;
+  margin-top: 4px;
+  padding: 20px 22px;
+}
+
+.action-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.action-list li {
+  align-items: flex-start;
+  border-top: 1px solid rgba(149, 154, 180, 0.16);
+  color: #d7dbea;
+  display: flex;
+  gap: 12px;
+  line-height: 1.65;
+  padding: 11px 0;
+}
+
+.action-list li:first-child {
+  border-top: 0;
+  padding-top: 2px;
+}
+
+.action-index {
+  align-items: center;
+  background: #8273ff;
+  border-radius: 50%;
+  color: #ffffff;
+  display: inline-flex;
+  flex: 0 0 24px;
+  font-size: 12px;
+  font-weight: 700;
+  height: 24px;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.small-source {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+a {
+  color: #9c90ff !important;
+}

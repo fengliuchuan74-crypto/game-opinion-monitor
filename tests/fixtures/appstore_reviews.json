@@ -1,0 +1,28 @@
+{
+  "feed": {
+    "entry": [
+      {
+        "author": {"name": {"label": "TestUserA"}},
+        "updated": {"label": "2026-06-01T10:00:00-07:00"},
+        "im:rating": {"label": "5"},
+        "im:version": {"label": "1.2.3"},
+        "id": {"label": "review-001"},
+        "title": {"label": "Great party game"},
+        "content": {"label": "和朋友开黑很好玩，节目效果很强。"},
+        "link": {"attributes": {"href": "https://apps.apple.com/review/001"}},
+        "im:voteSum": {"label": "12"}
+      },
+      {
+        "author": {"name": {"label": "TestUserB"}},
+        "updated": {"label": "2026-06-02T10:00:00-07:00"},
+        "im:rating": {"label": "1"},
+        "im:version": {"label": "1.2.4"},
+        "id": {"label": "review-002"},
+        "title": {"label": "Crash after update"},
+        "content": {"label": "更新后一直闪退，服务器也经常进不去。"},
+        "link": {"attributes": {"href": "https://apps.apple.com/review/002"}},
+        "im:voteSum": {"label": "5"}
+      }
+    ]
+  }
+}

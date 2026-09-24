@@ -1,0 +1,41 @@
+# Local runtimes and generated files
+.runtime/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.test-tmp/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Every runtime data file stays local; only the synthetic example is tracked.
+/data/*
+!/data/sample_reviews.csv
+/outputs/
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+*.log
+*.zip
+*.bak
+
+# Credentials and machine settings
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.codex/
+auth.json
+credentials.json
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
