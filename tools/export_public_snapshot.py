@@ -27,6 +27,18 @@ ICON_COLUMNS = ('app_id', 'country', 'data_uri', 'source_url', 'next_check')
 VERSION_COLUMNS = ('app_id', 'country', 'checked_at', 'releases', 'current_version',
                    'error', 'source_url', 'history_complete')
 RELEASE_COLUMNS = ('version', 'released_at', 'precision', 'source_url')
+REPORT_COLUMNS = ('summary', 'findings', 'positive', 'limitations', 'coverage', 'evidence', 'stats',
+                  'investigations', 'run_id', 'model', 'reasoning_effort', 'prompt_version', 'generated_at')
+COVERAGE_COLUMNS = ('all_reviews', 'analysis_hash', 'analyzed', 'end_at', 'manual_reviewed', 'max_reviews',
+                    'pending', 'sampling', 'scope_hash', 'selected', 'snapshot_total', 'start_at', 'total')
+FINDING_COLUMNS = ('actions', 'category', 'evidence_ids', 'hypothesis', 'observation', 'owner', 'title', 'validation')
+EVIDENCE_COLUMNS = ('analysis', 'app_id', 'content', 'content_hash', 'country', 'date', 'platform',
+                    'rating', 'review_id', 'title', 'topic', 'url')
+ANALYSIS_COLUMNS = ('content_hash', 'demand', 'evidence_quote', 'issue_categories', 'issue_category',
+                    'needs_review', 'reason', 'review_id', 'sentiment_label', 'target', 'analysis_source')
+STATS_COLUMNS = ('analyzed_average_rating', 'average_rating', 'categories', 'daily', 'low_ratings',
+                 'manual_reviewed', 'rated_total', 'rating_population', 'sentiments', 'uncertain')
+INVESTIGATION_COLUMNS = ('query', 'current', 'previous', 'previous_start', 'previous_end', 'limitation')
 SENSITIVE = re.compile(r'(?:sk-[A-Za-z0-9_-]{24,}|gh[pousr]_[A-Za-z0-9]{20,}|'
                        r'github_pat_[A-Za-z0-9_]{30,}|-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----|'
                        r'[A-Za-z]:[\\/]Users[\\/])')
@@ -96,6 +108,36 @@ def report_markdown(run, report, profile):
     lines += ['## 分析边界', '', prose(report.get('limitations')), '',
               '公开评论是已采集样本，不能代表全部玩家或完整商店历史。模型判断和原因假设仍需结合业务记录人工核实。', '']
     return '\n'.join(lines).encode('utf-8')
+
+
+def public_report(report):
+    """Copy display data through a nested allowlist, never task/runtime records."""
+    def pick(value, keys):
+        return {key: value[key] for key in keys if key in value}
+    def evidence(value):
+        row = pick(value, EVIDENCE_COLUMNS)
+        row['analysis'] = pick(value['analysis'], ANALYSIS_COLUMNS)
+        return row
+    def investigation_summary(value):
+        summary = pick(value, ('total', 'classified', 'pending', 'matching', 'daily'))
+        summary['evidence'] = [evidence(row) for row in value.get('evidence', [])]
+        return summary
+    clean = pick(report, REPORT_COLUMNS)
+    clean['coverage'] = pick(report['coverage'], COVERAGE_COLUMNS)
+    clean['findings'] = [pick(row, FINDING_COLUMNS) for row in report['findings']]
+    clean['evidence'] = [evidence(row) for row in report['evidence']]
+    clean['stats'] = pick(report.get('stats', {}), STATS_COLUMNS)
+    clean['stats']['daily'] = {day: pick(value, ('total', 'sentiments', 'categories'))
+                               for day, value in report.get('stats', {}).get('daily', {}).items()}
+    clean['investigations'] = []
+    for item in report.get('investigations', []):
+        investigation = pick(item, INVESTIGATION_COLUMNS)
+        investigation['query'] = pick(item.get('query', {}), ('question', 'category', 'review_ids'))
+        for scope in ('current', 'previous'):
+            if scope in item:
+                investigation[scope] = investigation_summary(item[scope])
+        clean['investigations'].append(investigation)
+    return clean
 
 
 def public_tables(connection):
@@ -198,14 +240,16 @@ def completed_report(connection, tables):
                 or coverage['total'] != len(scope) or coverage['analyzed'] != len(scope)):
             continue
         text = report_markdown(run, report, profiles[key])
+        structured = json.dumps(public_report(report), ensure_ascii=False, sort_keys=True, indent=2).encode('utf-8') + b'\n'
         summary = {name: run[name] for name in ('app_id', 'country', 'start_at', 'end_at', 'model')}
         summary.update(filename='agent-report.md', sha256=hashlib.sha256(text).hexdigest(),
+                       json_filename='agent-report.json', json_sha256=hashlib.sha256(structured).hexdigest(),
                        total=coverage['total'], analyzed=coverage['analyzed'])
-        return text, summary
-    return None, None
+        return text, summary, structured
+    return None, None, None
 
 
-def export_snapshot(database, output):
+def export_snapshot(database, output, *, preserve_snapshot=False):
     database, output = database.resolve(), output.resolve()
     require(database.is_file(), '必须提供已存在的评论数据库')
     with closing(sqlite3.connect(database.as_uri() + '?mode=ro', uri=True, timeout=15)) as connection:
@@ -213,7 +257,7 @@ def export_snapshot(database, output):
         connection.execute('PRAGMA query_only=ON')
         connection.execute('BEGIN')
         tables, verification = public_tables(connection)
-        report, report_summary = completed_report(connection, tables)
+        report, report_summary, structured_report = completed_report(connection, tables)
         connection.rollback()
     caches = public_caches(database.parent, tables['game_profiles'])
     payload = {'format_version': 1, 'tables': tables, 'caches': caches}
@@ -222,7 +266,12 @@ def export_snapshot(database, output):
     require(not SENSITIVE.search(unpacked.decode('utf-8')), '快照出现明显凭据或机器路径，拒绝导出')
     if report:
         require(not SENSITIVE.search(report.decode('utf-8')), '报告出现明显凭据或机器路径，拒绝导出')
+        require(not SENSITIVE.search(structured_report.decode('utf-8')), '结构化报告出现明显凭据或机器路径，拒绝导出')
     packed = gzip.compress(unpacked, mtime=0)
+    if preserve_snapshot:
+        require((output / 'snapshot.json.gz').read_bytes() == packed, '现有快照与源库不同，拒绝修改已发布快照')
+        if report:
+            require((output / 'agent-report.md').read_bytes() == report, '历史 Markdown 内容发生变化，拒绝改写')
     digest = hashlib.sha256(packed).hexdigest()
     created = datetime.now(timezone.utc).isoformat()
     reviews = tables['review_records']
@@ -262,7 +311,10 @@ def export_snapshot(database, output):
     if report_summary:
         lines += ['## 已完成历史报告', '',
                   '[阅读 Agent 历史分析报告](agent-report.md)。该报告在导出时通过评论范围和分析结果哈希校验，',
-                  f"覆盖 {report_summary['analyzed']} / {report_summary['total']} 条。报告只作为已完成历史成果，不会发起模型请求。", '']
+                  f"覆盖 {report_summary['analyzed']} / {report_summary['total']} 条。报告只作为已完成历史成果，不会发起模型请求。", '',
+                  '`agent-report.json` 保存同一份报告的结构化内容；完整 Agent 历史看板直接读取这份文件，',
+                  '展示深度结论、处理步骤与代表评论，无需在新电脑重新调用模型。它沿用报告原始时间范围和模型标记，',
+                  '与本机当前模型选择、实时统计日期分开，避免把历史分析当成新的实时报告。', '']
     lines += ['## 重复导出', '', '在仓库根目录使用已安装依赖的 Python，明确指定源数据库与输出目录：', '',
               '```powershell', 'python -X utf8 -B tools/export_public_snapshot.py --database "path/to/reviews.sqlite3" --output bundled_data',
               '```', '', '导出对数据库使用只读事务；不访问网络，不改变原始数据。来源不符合公开 App Store 要求时会报错，',
@@ -272,8 +324,10 @@ def export_snapshot(database, output):
     (output / 'README.md').write_text('\n'.join(lines), encoding='utf-8')
     if report:
         (output / 'agent-report.md').write_bytes(report)
+        (output / 'agent-report.json').write_bytes(structured_report)
     else:
         (output / 'agent-report.md').unlink(missing_ok=True)
+        (output / 'agent-report.json').unlink(missing_ok=True)
     (output / 'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     return {'review_count': manifest['review_count'], 'game_count': manifest['game_count'],
             'source_verification': verification,
@@ -287,5 +341,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--database', required=True, type=Path, help='源评论数据库，只读打开')
     parser.add_argument('--output', required=True, type=Path, help='待发布的 bundled_data 输出目录')
+    parser.add_argument('--preserve-snapshot', action='store_true', help='仅允许保持既有快照和 Markdown 字节不变的导出')
     args = parser.parse_args()
-    print(json.dumps(export_snapshot(args.database, args.output), ensure_ascii=False, indent=2))
+    print(json.dumps(export_snapshot(args.database, args.output, preserve_snapshot=args.preserve_snapshot), ensure_ascii=False, indent=2))

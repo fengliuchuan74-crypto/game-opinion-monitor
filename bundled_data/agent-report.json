@@ -1,0 +1,3842 @@
+{
+  "coverage": {
+    "all_reviews": true,
+    "analysis_hash": "bcc06af6dd65d22d115f8e2ed7cf5d5c6afc78a8a215d307813414c1d52cfc7d",
+    "analyzed": 495,
+    "end_at": "2026-09-24T07:19:45.200542+00:00",
+    "manual_reviewed": 0,
+    "max_reviews": 0,
+    "pending": 0,
+    "sampling": "分析请求时全部待分析评论，任务期间新入库评论留待下轮；已有有效分析复用，人工复核优先",
+    "scope_hash": "12ac1a9307607addf62b3ab86ed9f9d264ef3c87b912c2b83ca0ce9ac43fcefa",
+    "selected": 495,
+    "snapshot_total": 495,
+    "start_at": "2026-09-17T16:00:00+00:00",
+    "total": 495
+  },
+  "evidence": [
+    {
+      "analysis": {
+        "content_hash": "32d73e74de22aa06b479dc6bae40614f94f7f44995b259cf3c50ad5605bfaa33",
+        "demand": "撤回删除男主的决定，并正面承认和纠正相关决策",
+        "evidence_quote": "惊天一跪删除男主都能做得出来，还想美美收割新韭菜",
+        "issue_categories": [
+          "角色/剧情争议",
+          "厂商信任/经营争议",
+          "官方回应/公关信任",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "角色/剧情争议",
+        "needs_review": false,
+        "reason": "玩家强烈反对删除男主，认为决策草率且官方拒不认错，并劝新人不要入坑。",
+        "review_id": 4037,
+        "sentiment_label": "差评",
+        "target": "男主删除决策及游戏运营方"
+      },
+      "app_id": "1618911882",
+      "content": "上下几辈子造的孽在玩这个游戏的时候都清了，惊天一跪删除男主都能做得出来，还想美美收割新韭菜，想入坑的新人赶紧跑！完全一拍脑袋做的决定，然后死不认错，我这辈子做过最后悔的事就是帮你游说话",
+      "content_hash": "32d73e74de22aa06b479dc6bae40614f94f7f44995b259cf3c50ad5605bfaa33",
+      "country": "cn",
+      "date": "2026-09-23T02:52:19Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4037,
+      "title": "玩恋与深空倒大霉！！",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "d39359c33800053a26fd52c0bf750b3a39d509c34502a14ae289e414ed62bde3",
+        "demand": "退款",
+        "evidence_quote": "退钱…",
+        "issue_categories": [
+          "退款/下架诉求",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "退款/下架诉求",
+        "needs_review": false,
+        "reason": "玩家直接提出退款，并以负面标题表达对游戏的不满。",
+        "review_id": 4038,
+        "sentiment_label": "差评",
+        "target": "游戏及相关消费"
+      },
+      "app_id": "1618911882",
+      "content": "退钱…",
+      "content_hash": "d39359c33800053a26fd52c0bf750b3a39d509c34502a14ae289e414ed62bde3",
+      "country": "cn",
+      "date": "2026-09-23T02:47:32Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4038,
+      "title": "神经游戏",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "a3ea1e70645cebd2c66f6156f23e59de62ad959802c0499334c40731af95954d",
+        "demand": "后续混池不要加入其不喜欢的第六名男主",
+        "evidence_quote": "没有第六丑男出现狗感觉混池也是高级了起来",
+        "issue_categories": [
+          "角色/剧情争议",
+          "活动/奖励问题"
+        ],
+        "issue_category": "角色/剧情争议",
+        "needs_review": true,
+        "reason": "玩家肯定本次混池未出现第六名男主，同时贬低该角色；“紫钻档清空”等用语含义存在语境依赖。",
+        "review_id": 4039,
+        "sentiment_label": "中评",
+        "target": "新混池及第六名男主"
+      },
+      "app_id": "1618911882",
+      "content": "没有第六丑男出现狗感觉混池也是高级了起来！赏你个紫钻档清空！下次不许上丑男吓人了嗷",
+      "content_hash": "a3ea1e70645cebd2c66f6156f23e59de62ad959802c0499334c40731af95954d",
+      "country": "cn",
+      "date": "2026-09-23T02:38:24Z",
+      "platform": "App Store",
+      "rating": 5.0,
+      "review_id": 4039,
+      "title": "美美的很安心",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "2e69e1f3d4cf6697a6db53eb8e5e66dd7d5b5c05e847ed47c5a9b05d9bafb455",
+        "demand": "停止区别宣传和诱导绕过iOS支付，补充主线内容并退款关服",
+        "evidence_quote": "无视消费者正当反馈与要求，从不正面回应，从不尊重玩家",
+        "issue_categories": [
+          "厂商信任/经营争议",
+          "付费/商业化问题",
+          "退款/下架诉求",
+          "内容/玩法反馈"
+        ],
+        "issue_category": "厂商信任/经营争议",
+        "needs_review": false,
+        "reason": "玩家集中指责内容更新不足、持续卖卡、宣传与体验不符、支付引导及运营回应问题，并提出退款关服诉求。",
+        "review_id": 4040,
+        "sentiment_label": "差评",
+        "target": "游戏内容、商业化及厂商运营"
+      },
+      "app_id": "1618911882",
+      "content": "套着乙女恋爱游戏的皮，长时间不更新游戏主要内容主世界观，一直不间断地卖卡池，用卡面代替剧情，骗氪逼氪。一个游戏，两个口径，海内外区别宣传，在外服模糊本国文化传统。游戏体验不符合宣传的第一视角沉浸式乙女恋爱，第三视角占比太大，游戏风格变化太多。无铺垫直接空降新男主，运营养蛊引导风向，夹带私货，采取各种手段蓄意分化玩家群体，无视消费者正当反馈与要求，从不正面回应，从不尊重玩家，做不出明确并行之有效，并且可视化可监管的承诺，把一个游戏糟蹋得乌烟瘴气。蓄意引导消费者绕过ios系统支付使用叠宝袋，一直在侵犯消费者权益，这个游戏已经完全被毁了，最恶心的厂商，立刻倒闭。",
+      "content_hash": "2e69e1f3d4cf6697a6db53eb8e5e66dd7d5b5c05e847ed47c5a9b05d9bafb455",
+      "country": "cn",
+      "date": "2026-09-23T02:37:49Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4040,
+      "title": "别玩，关服退钱，公司倒闭",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "86a1cf4f70eef15113ab184505bf37937dd43f97b199b80c9f8f6dfeab968bf6",
+        "demand": "重视玩家反馈、停止删评，并改善产能、资源分配和第一视角内容",
+        "evidence_quote": "从来不在乎玩家的发声，产能严重不足，资源分配不均，逼氪严重",
+        "issue_categories": [
+          "官方回应/公关信任",
+          "付费/商业化问题",
+          "内容/玩法反馈",
+          "移动端体验问题"
+        ],
+        "issue_category": "官方回应/公关信任",
+        "needs_review": false,
+        "reason": "玩家认为官方忽视意见并删除评论，同时批评产能、资源分配、逼氪、设备要求和第一视角内容减少。",
+        "review_id": 4041,
+        "sentiment_label": "差评",
+        "target": "官方运营及游戏内容体验"
+      },
+      "app_id": "1618911882",
+      "content": "无数次的试探玩家底线，从来不在乎玩家的发声，产能严重不足，资源分配不均，逼氪严重。对设备要求也越来越高。宣传的沉浸式、第一视角越来越少。还喜欢删评论",
+      "content_hash": "86a1cf4f70eef15113ab184505bf37937dd43f97b199b80c9f8f6dfeab968bf6",
+      "country": "cn",
+      "date": "2026-09-23T02:20:07Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4041,
+      "title": "大爆雷后又删评论",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "75551c923820ba73028d00e140e40d74db4455582b1a508d8ab8f2f11541043a",
+        "demand": "停止向退游玩家拨打劝归电话，并以明确内容调整回应争议",
+        "evidence_quote": "退游居然能收到预约电话劝归",
+        "issue_categories": [
+          "账号/隐私安全",
+          "官方回应/公关信任",
+          "政治/历史争议"
+        ],
+        "issue_category": "账号/隐私安全",
+        "needs_review": false,
+        "reason": "玩家反感退游后仍收到劝归电话，并以反讽方式质疑官方承诺和涉及历史题材的内容安排。",
+        "review_id": 4042,
+        "sentiment_label": "差评",
+        "target": "退游召回电话及官方运营"
+      },
+      "app_id": "1618911882",
+      "content": "退游居然能收到预约电话劝归，lysk你能在表演一次无论什么情况都不会改变吗？什么时候出抗日池什么时候再说吧脸都不要了",
+      "content_hash": "75551c923820ba73028d00e140e40d74db4455582b1a508d8ab8f2f11541043a",
+      "country": "cn",
+      "date": "2026-09-23T02:08:36Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4042,
+      "title": "退游居然能收到预约电话",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "6128b9795b214e2fb096bdcee5c4091fd111e8bb63b476b0d18268d6b0dabd2f",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "好",
+        "issue_categories": [
+          "正向口碑/泛好评"
+        ],
+        "issue_category": "正向口碑/泛好评",
+        "needs_review": false,
+        "reason": "标题和正文均直接表达肯定，但未提供具体评价细节。",
+        "review_id": 4043,
+        "sentiment_label": "好评",
+        "target": "游戏整体"
+      },
+      "app_id": "1618911882",
+      "content": "好",
+      "content_hash": "6128b9795b214e2fb096bdcee5c4091fd111e8bb63b476b0d18268d6b0dabd2f",
+      "country": "cn",
+      "date": "2026-09-23T01:50:03Z",
+      "platform": "App Store",
+      "rating": 5.0,
+      "review_id": 4043,
+      "title": "好",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "17f981d970e9194f371b59e6772e7bcc3f7ca48b6ad3e03badfac93c9c79dfda",
+        "demand": "对相关内容启用年龄或人脸验证，并限制未成年人接触和消费",
+        "evidence_quote": "想搞擦边黄油就抬人脸识别啊",
+        "issue_categories": [
+          "价值观/性别争议",
+          "付费/商业化问题"
+        ],
+        "issue_category": "价值观/性别争议",
+        "needs_review": false,
+        "reason": "玩家认为游戏存在面向未成年人的擦边内容和营利风险，要求加强年龄限制。",
+        "review_id": 4044,
+        "sentiment_label": "差评",
+        "target": "擦边内容、未成年人准入及消费机制"
+      },
+      "app_id": "1618911882",
+      "content": "想搞擦边黄油就抬人脸识别啊！这么赚未成年的钱不怕遭雷劈吗！",
+      "content_hash": "17f981d970e9194f371b59e6772e7bcc3f7ca48b6ad3e03badfac93c9c79dfda",
+      "country": "cn",
+      "date": "2026-09-23T01:48:38Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4044,
+      "title": "想擦边就禁未成年啊！",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "0b8e4846d305745a419155f4422167c52f0685bc45a322c3d342e7105fa9c503",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "检获公司👋",
+        "issue_categories": [
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "强负面口碑/情绪宣泄",
+        "needs_review": true,
+        "reason": "结合一星评分可见对公司持负面态度，但正文疑似错字或圈内表达，具体含义与诉求不清。",
+        "review_id": 4045,
+        "sentiment_label": "差评",
+        "target": "游戏公司"
+      },
+      "app_id": "1618911882",
+      "content": "检获公司👋",
+      "content_hash": "0b8e4846d305745a419155f4422167c52f0685bc45a322c3d342e7105fa9c503",
+      "country": "cn",
+      "date": "2026-09-23T01:39:23Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4045,
+      "title": "日活",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "934aa8dcb5977e245a8e94aee4232453d3b2011ae7d879c7c0be4d4ea2f1a34c",
+        "demand": "希望允许给出零星评价",
+        "evidence_quote": "为什么不能不给星",
+        "issue_categories": [
+          "评分抗议/集中差评",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "评分抗议/集中差评",
+        "needs_review": false,
+        "reason": "玩家认为一星仍然过高，以质问最低评分限制的方式表达强烈不满。",
+        "review_id": 4046,
+        "sentiment_label": "差评",
+        "target": "游戏及商店评分机制"
+      },
+      "app_id": "1618911882",
+      "content": "？",
+      "content_hash": "934aa8dcb5977e245a8e94aee4232453d3b2011ae7d879c7c0be4d4ea2f1a34c",
+      "country": "cn",
+      "date": "2026-09-23T01:21:14Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4046,
+      "title": "为什么不能不给星",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "e36ed4d5468fc0f903d9b7345af01d70108501c33f966d79278c61d64eb0792d",
+        "demand": "调整男主造型和混池审美，停止以相关造型进行召回宣传",
+        "evidence_quote": "还拿背头当宣传呢，新混池这不🦆店风吗",
+        "issue_categories": [
+          "角色/剧情争议",
+          "价值观/性别争议",
+          "广告/宣传问题",
+          "社区环境/玩家冲突"
+        ],
+        "issue_category": "角色/剧情争议",
+        "needs_review": false,
+        "reason": "玩家强烈不满男主背头造型和新混池审美，也质疑宣传策略，并使用侮辱性措辞攻击仍在游玩的玩家。",
+        "review_id": 4047,
+        "sentiment_label": "差评",
+        "target": "男主造型、新混池宣传及玩家群体"
+      },
+      "app_id": "1618911882",
+      "content": "还拿背头当宣传呢，新混池这不🦆店风吗，早说你是皇游啊。这公司还有女性吗？有审美吗？还是就是想拿男主当皮套恶心人呢？拿背头想哄人回游，又闹笑话了吧？跑的人更多了🥳至于还在玩的真是苍蝇吧，真是对上你们胃口了，就好这口是吧",
+      "content_hash": "e36ed4d5468fc0f903d9b7345af01d70108501c33f966d79278c61d64eb0792d",
+      "country": "cn",
+      "date": "2026-09-23T01:20:44Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4047,
+      "title": "全男班做乙游",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "84b2ed7b6719e2a28c262049ffebe5ecb492d72f491ba484cf7030af71fc89ba",
+        "demand": "停止联系和打扰退游玩家",
+        "evidence_quote": "骚扰退游玩家何意味，挑衅？",
+        "issue_categories": [
+          "账号/隐私安全",
+          "厂商信任/经营争议"
+        ],
+        "issue_category": "账号/隐私安全",
+        "needs_review": false,
+        "reason": "玩家认为运营方对退游玩家的联系构成骚扰，并质疑其动机。",
+        "review_id": 4048,
+        "sentiment_label": "差评",
+        "target": "针对退游玩家的召回联系"
+      },
+      "app_id": "1618911882",
+      "content": "骚扰退游玩家何意味，挑衅？",
+      "content_hash": "84b2ed7b6719e2a28c262049ffebe5ecb492d72f491ba484cf7030af71fc89ba",
+      "country": "cn",
+      "date": "2026-09-23T01:09:26Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4048,
+      "title": "别来沾边",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "66f95889acdc3f89be34280c300a3d55022fd579433391b6d5525c5bd2e36364",
+        "demand": "增加第一视角内容，减少素材复用，并按男主特征制作不偏离人设的女性向卡面",
+        "evidence_quote": "实际卡面为降本增笑大部分为第三视角以及不断重复利用",
+        "issue_categories": [
+          "广告/宣传问题",
+          "内容/玩法反馈",
+          "角色/剧情争议",
+          "价值观/性别争议"
+        ],
+        "issue_category": "广告/宣传问题",
+        "needs_review": false,
+        "reason": "玩家认为实机卡面与第一视角恋爱宣传不符，并批评动作素材复用、角色辨识度不足、人物失真及内容取向偏离女性向定位。",
+        "review_id": 4049,
+        "sentiment_label": "差评",
+        "target": "卡面制作、男主人设及第一视角宣传"
+      },
+      "app_id": "1618911882",
+      "content": "打着第一视角恋爱的幌子，实际卡面为降本增笑大部分为第三视角以及不断重复利用、几个男主同一套动捕/同一套动作素材的动作和神态。未考虑男主本身特征采用通用模版导致男主没有辨识度，并且ooc情况严重，前期白月光，后期给你打成商k失足少男，非常割裂，完全为了流水卖🥩而卖，照着一般片的流程做女性向卡面，这不是给女生看的。挂狗头卖羊肉游戏",
+      "content_hash": "66f95889acdc3f89be34280c300a3d55022fd579433391b6d5525c5bd2e36364",
+      "country": "cn",
+      "date": "2026-09-23T01:03:27Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4049,
+      "title": "现阶段为粗糙滥制的制作水平，并且偏离女性向乙女初衷，实机与宣传不符",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "c25012e7d6afa2d2a74ed4ff786ca5fdc9a77cd82cccb87de78089a2deb3b4d0",
+        "demand": "公布自查自纠结果，并正面回应历史文化、非法行为美化和急救科普等问题",
+        "evidence_quote": "自查自纠结果呢？贵司对于触碰民族历史伤痛、摸糊本土文化符号",
+        "issue_categories": [
+          "政治/历史争议",
+          "官方回应/公关信任",
+          "社区环境/玩家冲突",
+          "厂商信任/经营争议"
+        ],
+        "issue_category": "政治/历史争议",
+        "needs_review": false,
+        "reason": "玩家追问自查结果，指责内容对民族历史和本土文化不够敏感，并认为官方回避主要问题、干预社区舆论。",
+        "review_id": 4050,
+        "sentiment_label": "差评",
+        "target": "游戏中的历史文化表达及官方危机处理"
+      },
+      "app_id": "1618911882",
+      "content": "自查自纠结果呢？贵司对于触碰民族历史伤痛、摸糊本土文化符号、美化非法行为、急救科普存在专业操作漏洞等方面缺乏足够的敏感度和敬畏之心，且在面临关键问题引发大范围公共舆情时，断尾求生回避主要矛盾，却密切关注社区局势，频繁运用某些手段激化群体矛盾，干预社区舆论走向，试图淹没、混淆真实玩家的呼声，将消费者的愤怒视作养料，多次变相否定公众行使监督、合理表达意见与提出质疑的正当权利，苍生无言问题依然存在，讳疾忌医总有积重难返的那一天。自查自纠结果呢？贵司对于触碰民族历史伤痛、摸糊本土文化符号、美化非法行为、急救科普存在专业操作漏洞等方面缺乏足够的敏感度和敬畏之心，且在面临关键问题引发大范围公共舆情时，断尾求生回避主要矛盾，却密切关注社区局势，频繁运用某些手段激化群体矛盾，干预社区舆论走向，试图淹没、混淆真实玩家的呼声，将消费者的愤怒视作养料，多次变相否定公众行使监督、合理表达意见与提出质疑的正当权利，苍生无言问题依然存在，讳疾忌医总有积重难返的那一天",
+      "content_hash": "c25012e7d6afa2d2a74ed4ff786ca5fdc9a77cd82cccb87de78089a2deb3b4d0",
+      "country": "cn",
+      "date": "2026-09-23T00:57:58Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4050,
+      "title": "别玩，不尊重玩家，不尊重男主",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "a55870a7d8194c4bef3094838049165dc132a1b0e388c7afe90b4185ca343b4a",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "😙",
+        "issue_categories": [
+          "正向口碑/泛好评"
+        ],
+        "issue_category": "正向口碑/泛好评",
+        "needs_review": true,
+        "reason": "亲吻表情通常表达喜爱，且标题与正文一致，但缺少文字语境，具体评价对象不明确。",
+        "review_id": 4051,
+        "sentiment_label": "好评",
+        "target": "游戏整体"
+      },
+      "app_id": "1618911882",
+      "content": "😙",
+      "content_hash": "a55870a7d8194c4bef3094838049165dc132a1b0e388c7afe90b4185ca343b4a",
+      "country": "cn",
+      "date": "2026-09-23T00:27:29Z",
+      "platform": "App Store",
+      "rating": 5.0,
+      "review_id": 4051,
+      "title": "😙",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "c09c232278da1a759c5bb2098c7f0a85b1850f8b927b7fde080be93c2c6f292c",
+        "demand": "要求宣传与实机一致、降低逼氪诱氪，并正面回应相关争议、改善卡面设计及停止电话营销。",
+        "evidence_quote": "宣传与实机不符 逼氪诱氪 排期不合理 未正面回应立场问题",
+        "issue_categories": [
+          "厂商信任/经营争议",
+          "广告/宣传问题",
+          "付费/商业化问题",
+          "官方回应/公关信任"
+        ],
+        "issue_category": "厂商信任/经营争议",
+        "needs_review": false,
+        "reason": "评论集中指控宣传不符、诱导付费、争议回应缺失及卡面粗制滥造，整体为强烈负面评价。",
+        "review_id": 4052,
+        "sentiment_label": "差评",
+        "target": "游戏厂商的运营、公关、商业化及卡面设计"
+      },
+      "app_id": "1618911882",
+      "content": "宣传与实机不符 逼氪诱氪 排期不合理 未正面回应立场问题 未回应娱乐化刑事案件问题 未回应引狼入室相关问题 一个乙女游戏反耳为了太子自己偷偷买乙女腐热搜 饭圈化管理社区 买水军 罄竹难书\n最新卡池完全黄油来的，做的完全就是屎啊丑的要死，感觉策划换全男了，真以为抬个粗制滥造的背头黄卡就能吸引玩家，做啥白日梦了老天奶，还给退游玩家打电话，咋恁不要脸    以为你们男的乐意看擦边的就觉得女的喜欢这种商k风卡，小头控制大头 呸",
+      "content_hash": "c09c232278da1a759c5bb2098c7f0a85b1850f8b927b7fde080be93c2c6f292c",
+      "country": "cn",
+      "date": "2026-09-23T00:26:57Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4052,
+      "title": "欺骗消费者",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "42f7c8168b7dc9c39ce72129295b4a05e06cd1aec8245973c6fd91f819b50a16",
+        "demand": "要求改善背头卡面设计、正面处理现有问题，并审慎联系已流失玩家。",
+        "evidence_quote": "你们的背头真的很丑，这次是真的从2.0玩到现在第一次完全没有抽卡欲望了",
+        "issue_categories": [
+          "内容/玩法反馈",
+          "官方回应/公关信任",
+          "账号/隐私安全"
+        ],
+        "issue_category": "内容/玩法反馈",
+        "needs_review": false,
+        "reason": "玩家明确批评新卡面审美，并认为官方用卡面掩盖问题，同时不满退游玩家收到电话。",
+        "review_id": 4053,
+        "sentiment_label": "差评",
+        "target": "新卡池卡面设计及官方运营处理方式"
+      },
+      "app_id": "1618911882",
+      "content": "无语到了真的，你们的背头真的很丑，这次是真的从2.0玩到现在第一次完全没有抽卡欲望了。而且遇到问题只会出这种黄色卡面来掩盖问题的手段真的很令人发笑，也很想知道你们到底觉得自己“亏（少赚）”了多少钱，我在3.0只玩过两天的同事都接到她当时有好感男主的“道歉”电话了hhh",
+      "content_hash": "42f7c8168b7dc9c39ce72129295b4a05e06cd1aec8245973c6fd91f819b50a16",
+      "country": "cn",
+      "date": "2026-09-23T00:14:44Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4053,
+      "title": "跑",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "b90b7bd5f69c43195c676ff4001e87cd9f550cbd684048f42a752104f3e3f242",
+        "demand": "立即停止向其拨打电话。",
+        "evidence_quote": "我已经退游了，不要再给我打电话了，一口气打了3个电话",
+        "issue_categories": [
+          "账号/隐私安全",
+          "广告/宣传问题",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "账号/隐私安全",
+        "needs_review": false,
+        "reason": "已退游玩家称连续收到三次电话，明确要求停止联系，情绪强烈愤怒。",
+        "review_id": 4054,
+        "sentiment_label": "差评",
+        "target": "游戏方对退游玩家的电话联系行为"
+      },
+      "app_id": "1618911882",
+      "content": "我已经退游了，不要再给我打电话了，一口气打了3个电话，你给我滚啊",
+      "content_hash": "b90b7bd5f69c43195c676ff4001e87cd9f550cbd684048f42a752104f3e3f242",
+      "country": "cn",
+      "date": "2026-09-22T23:18:10Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4054,
+      "title": "不要再骚扰我了",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "117cf44c1af6db5dfbae54744075673caa43ce273d0e6cf24770c9562db62ae1",
+        "demand": "停止向已退游玩家拨打电话。",
+        "evidence_quote": "退游几个月了还来打电话，喜不喜欢我的大一星",
+        "issue_categories": [
+          "账号/隐私安全",
+          "广告/宣传问题"
+        ],
+        "issue_category": "账号/隐私安全",
+        "needs_review": false,
+        "reason": "标题“五佳好评”与正文“大一星”构成反讽，负面情绪指向退游数月后仍被电话联系。",
+        "review_id": 4055,
+        "sentiment_label": "差评",
+        "target": "游戏方对退游玩家的电话联系行为"
+      },
+      "app_id": "1618911882",
+      "content": "退游几个月了还来打电话，喜不喜欢我的大一星",
+      "content_hash": "117cf44c1af6db5dfbae54744075673caa43ce273d0e6cf24770c9562db62ae1",
+      "country": "cn",
+      "date": "2026-09-22T22:40:06Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4055,
+      "title": "5星好评",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "38ef59ccaf6607086aa65027d1dc2e794b3132e3e7c846a1ecb16f7174c85681",
+        "demand": "停止推出其认为带有软色情倾向的内容。",
+        "evidence_quote": "你再卖软涩情你就玩完了GD",
+        "issue_categories": [
+          "价值观/性别争议",
+          "内容/玩法反馈",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "价值观/性别争议",
+        "needs_review": false,
+        "reason": "评论以激烈措辞反对游戏继续销售其认定的软色情内容。",
+        "review_id": 4056,
+        "sentiment_label": "差评",
+        "target": "游戏内容的软色情倾向"
+      },
+      "app_id": "1618911882",
+      "content": "作见谁呢，你再卖软涩情你就玩完了GD",
+      "content_hash": "38ef59ccaf6607086aa65027d1dc2e794b3132e3e7c846a1ecb16f7174c85681",
+      "country": "cn",
+      "date": "2026-09-22T22:34:46Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4056,
+      "title": "游戏可玩性有哪些",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "ad0df0b5a740d8c6a01b922e3cf96104a61fe239cbf4d61956a227b0b1618de6",
+        "demand": "说明未预约仍接到电话的原因，并停止未经预约的电话联系。",
+        "evidence_quote": "不是说要预约才有电话吗，没预约你怎么也给我打了",
+        "issue_categories": [
+          "账号/隐私安全",
+          "广告/宣传问题"
+        ],
+        "issue_category": "账号/隐私安全",
+        "needs_review": false,
+        "reason": "玩家质疑自己未预约却收到电话，对联系方式的使用和触达规则表示不满。",
+        "review_id": 4057,
+        "sentiment_label": "差评",
+        "target": "游戏方的预约电话触达机制"
+      },
+      "app_id": "1618911882",
+      "content": "不是说要预约才有电话吗，没预约你怎么也给我打了",
+      "content_hash": "ad0df0b5a740d8c6a01b922e3cf96104a61fe239cbf4d61956a227b0b1618de6",
+      "country": "cn",
+      "date": "2026-09-22T22:26:03Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4057,
+      "title": "要脸吗我请问呢",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "ea53c7107f5d1fd2ccfe50efc257f04254c316655b96c444591123f82d5e2df0",
+        "demand": "重新审视角色相关内容与售卖方式，不要损害角色呈现。",
+        "evidence_quote": "越做越离谱了，把好好的角色拿来卖吗",
+        "issue_categories": [
+          "角色/剧情争议",
+          "付费/商业化问题",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "角色/剧情争议",
+        "needs_review": true,
+        "reason": "玩家强烈不满角色被用于售卖，但未说明具体角色、卡面或事件，细节需复核。",
+        "review_id": 4058,
+        "sentiment_label": "差评",
+        "target": "角色内容及其商业化呈现"
+      },
+      "app_id": "1618911882",
+      "content": "好好的游戏做成这个样子？越做越离谱了，把好好的角色拿来卖吗？你有眼睛吗好好看看行吗？",
+      "content_hash": "ea53c7107f5d1fd2ccfe50efc257f04254c316655b96c444591123f82d5e2df0",
+      "country": "cn",
+      "date": "2026-09-22T21:33:33Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4058,
+      "title": "有病吧？",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "899fab39ae79af81f50c7653d947ef9c9d12aa3db9f5005e0c0b923d58325359",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "滚吧滚吧滚吧滚吧",
+        "issue_categories": [
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "强负面口碑/情绪宣泄",
+        "needs_review": true,
+        "reason": "正文仅重复负面驱赶用语，能够判断强烈不满，但无法确定具体争议对象和原因。",
+        "review_id": 4059,
+        "sentiment_label": "差评",
+        "target": "游戏或游戏运营方"
+      },
+      "app_id": "1618911882",
+      "content": "滚吧滚吧滚吧滚吧",
+      "content_hash": "899fab39ae79af81f50c7653d947ef9c9d12aa3db9f5005e0c0b923d58325359",
+      "country": "cn",
+      "date": "2026-09-22T20:52:56Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4059,
+      "title": "滚吧滚吧滚吧",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "89914f7c0f19a63ae7f0af5df2c9ee1fa388719425d03ca2f8002e419a139d7f",
+        "demand": "推出“小狼”相关内容，并减少充值玩家频繁触发大保底的情况。",
+        "evidence_quote": "上小狼，还有能不能不要让充值玩家老吃大保底",
+        "issue_categories": [
+          "付费/商业化问题",
+          "角色/剧情争议"
+        ],
+        "issue_category": "付费/商业化问题",
+        "needs_review": true,
+        "reason": "玩家提出角色内容和抽卡保底体验诉求，语气偏克制；“小狼”的具体所指需结合游戏语境复核。",
+        "review_id": 3935,
+        "sentiment_label": "中评",
+        "target": "角色内容安排及充值抽卡保底机制"
+      },
+      "app_id": "1618911882",
+      "content": "上小狼，还有能不能不要让充值玩家老吃大保底",
+      "content_hash": "89914f7c0f19a63ae7f0af5df2c9ee1fa388719425d03ca2f8002e419a139d7f",
+      "country": "cn",
+      "date": "2026-09-22T20:32:39Z",
+      "platform": "App Store",
+      "rating": 5.0,
+      "review_id": 3935,
+      "title": "……",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "4bf78ec414d5ebf5a1e94be81cdfbd051a07c7a444aefe7d3878b937532e4da2",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "现在还在给这个游戏打五星的",
+        "issue_categories": [
+          "社区环境/玩家冲突",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "社区环境/玩家冲突",
+        "needs_review": false,
+        "reason": "标题和正文共同指向仍给游戏五星的玩家，并以侮辱性反问表达敌意。",
+        "review_id": 3936,
+        "sentiment_label": "差评",
+        "target": "仍给该游戏五星评价的玩家"
+      },
+      "app_id": "1618911882",
+      "content": "你们是不是脑子被驴踢了？跪久了站不起来了？",
+      "content_hash": "4bf78ec414d5ebf5a1e94be81cdfbd051a07c7a444aefe7d3878b937532e4da2",
+      "country": "cn",
+      "date": "2026-09-22T20:22:20Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3936,
+      "title": "现在还在给这个游戏打五星的",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "238da996ff2df494783763dfe4e9eef8914f59d9d3fde76e8fa09003a20cc719",
+        "demand": "改善社区治理、制止霸凌造谣，并正视删减男主及吸引新玩家方式的争议。",
+        "evidence_quote": "社区一堆太妹未成年扎堆霸凌造谣岁月史书",
+        "issue_categories": [
+          "社区环境/玩家冲突",
+          "角色/剧情争议",
+          "厂商信任/经营争议",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "社区环境/玩家冲突",
+        "needs_review": false,
+        "reason": "评论主要控诉社区存在霸凌和造谣，同时指责游戏欺骗新人及删减男主，负面态度强烈。",
+        "review_id": 3937,
+        "sentiment_label": "差评",
+        "target": "游戏社区环境及厂商的角色运营"
+      },
+      "app_id": "1618911882",
+      "content": "把新人骗进来杀的养蛊神游，社区一堆太妹未成年扎堆霸凌造谣岁月史书。此垃圾场名扬海外，单机游戏都无法避开。",
+      "content_hash": "238da996ff2df494783763dfe4e9eef8914f59d9d3fde76e8fa09003a20cc719",
+      "country": "cn",
+      "date": "2026-09-22T19:50:08Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3937,
+      "title": "删男主的诈骗游戏",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "e22f2a85f3df674babcbb0dbe5eab9cc586f6769ff317abcfe62d085d75736d8",
+        "demand": "停止以男主卖肉引流，并取消或调整限时累计充值活动。",
+        "evidence_quote": "为了圈钱连限时累充都上了",
+        "issue_categories": [
+          "付费/商业化问题",
+          "价值观/性别争议",
+          "角色/剧情争议"
+        ],
+        "issue_category": "付费/商业化问题",
+        "needs_review": false,
+        "reason": "玩家批评限时累计充值活动及男主性化营销，认为相关安排以引流和圈钱为目的。",
+        "review_id": 3938,
+        "sentiment_label": "差评",
+        "target": "限时累充活动及男主角色营销方式"
+      },
+      "app_id": "1618911882",
+      "content": "拉男主卖肉博取流量😠😠😠流水不够就拉男主来当挡箭牌……😡为了圈钱连限时累充都上了",
+      "content_hash": "e22f2a85f3df674babcbb0dbe5eab9cc586f6769ff317abcfe62d085d75736d8",
+      "country": "cn",
+      "date": "2026-09-22T17:27:52Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3938,
+      "title": "烂游戏",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "0c9d0243fd880f332d582d5fee6db29d5d4a0b0c0d25f5223f08a64814b5e667",
+        "demand": "要求退款。",
+        "evidence_quote": "退钱 垃圾游戏",
+        "issue_categories": [
+          "退款/下架诉求",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "退款/下架诉求",
+        "needs_review": false,
+        "reason": "标题明确提出退款并辱骂游戏，正文以“一星”进一步表达负面评价。",
+        "review_id": 3940,
+        "sentiment_label": "差评",
+        "target": "游戏及相关消费"
+      },
+      "app_id": "1618911882",
+      "content": "一星",
+      "content_hash": "0c9d0243fd880f332d582d5fee6db29d5d4a0b0c0d25f5223f08a64814b5e667",
+      "country": "cn",
+      "date": "2026-09-22T16:43:01Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3940,
+      "title": "退钱 垃圾游戏",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "5b6218aec727b3ad0f004056434d36cf7eda526547838d81b3a360aeedf48a86",
+        "demand": "要求游戏下架。",
+        "evidence_quote": "下架！",
+        "issue_categories": [
+          "退款/下架诉求"
+        ],
+        "issue_category": "退款/下架诉求",
+        "needs_review": false,
+        "reason": "标题和正文均直接要求下架，诉求明确且态度负面。",
+        "review_id": 3941,
+        "sentiment_label": "差评",
+        "target": "游戏产品"
+      },
+      "app_id": "1618911882",
+      "content": "下架！",
+      "content_hash": "5b6218aec727b3ad0f004056434d36cf7eda526547838d81b3a360aeedf48a86",
+      "country": "cn",
+      "date": "2026-09-22T16:32:07Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3941,
+      "title": "下架！",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "d58a4595e8284e7add254374b7401db3e02dfb5956ad7bfb0b700539519b27a9",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "什么雷霆裤子🤮🤮🤮🤮🤮",
+        "issue_categories": [
+          "强负面口碑/情绪宣泄",
+          "未归类/待复核"
+        ],
+        "issue_category": "强负面口碑/情绪宣泄",
+        "needs_review": true,
+        "reason": "以呕吐表情表达强烈厌恶，但“雷霆裤子”的具体所指不明确，需结合上下文复核。",
+        "review_id": 3942,
+        "sentiment_label": "差评",
+        "target": "“雷霆裤子”所指的游戏内容或运营方"
+      },
+      "app_id": "1618911882",
+      "content": "什么雷霆裤子🤮🤮🤮🤮🤮",
+      "content_hash": "d58a4595e8284e7add254374b7401db3e02dfb5956ad7bfb0b700539519b27a9",
+      "country": "cn",
+      "date": "2026-09-22T16:24:50Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3942,
+      "title": "真是要吐了",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "0862b8849e82b95b1e2c42ffb8c6d8df56a4b7de92c70eeff400182bb9ef010c",
+        "demand": "改善剧情质量，停止擦边、物化及违背角色设定的内容创作",
+        "evidence_quote": "剧情越来越烂，一开始还有各种伏笔和温馨剧情，后来只剩擦边",
+        "issue_categories": [
+          "角色/剧情争议",
+          "价值观/性别争议",
+          "厂商信任/经营争议"
+        ],
+        "issue_category": "角色/剧情争议",
+        "needs_review": false,
+        "reason": "玩家认为2.0后剧情质量下降、内容趋向擦边和物化，并批评下药、私闯民宅及角色OOC，已明确退游且拒绝厂商其他游戏。",
+        "review_id": 3943,
+        "sentiment_label": "差评",
+        "target": "2.0版本后的剧情、男主塑造及叠纸"
+      },
+      "app_id": "1618911882",
+      "content": "剧情党来了，从2.0的剧情开始就一直在侮辱挑衅我的底线，剧情越来越烂，一开始还有各种伏笔和温馨剧情，后来只剩擦边，每个男主都如同鸭子一般谄媚，不是所有人都喜欢物化那一套的好吗……甚至有男主给女主下药，私闯民宅的剧情，ooc卡面层出不穷。本来作为一个低氪党，卡池排期紧也不甚在意的人，逼到连游戏都不玩了，叠纸也是NB， 再见，再也不会玩叠纸的任何游戏",
+      "content_hash": "0862b8849e82b95b1e2c42ffb8c6d8df56a4b7de92c70eeff400182bb9ef010c",
+      "country": "cn",
+      "date": "2026-09-22T16:13:18Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3943,
+      "title": "几乎没有给哪个软件打过一分",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "e71a0191f0c3406f2e894bdb2a3ab947c940078518883a3e1101748cfe216468",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "嘻嘻",
+        "issue_categories": [
+          "未归类/待复核"
+        ],
+        "issue_category": "未归类/待复核",
+        "needs_review": true,
+        "reason": "标题和正文仅为语气词，无法判断真实评价对象、态度或诉求；一星不足以替代文本证据。",
+        "review_id": 3944,
+        "sentiment_label": "待复核",
+        "target": "无法确定"
+      },
+      "app_id": "1618911882",
+      "content": "嘻嘻",
+      "content_hash": "e71a0191f0c3406f2e894bdb2a3ab947c940078518883a3e1101748cfe216468",
+      "country": "cn",
+      "date": "2026-09-22T16:10:34Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3944,
+      "title": "嘿嘿",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "113d06d7006b239895fa843aed68dfce53ceb4f7f507d97d9ab8fba482bc67ca",
+        "demand": "停止其所指的历史争议、女性不尊重、催氪及饭圈化内容或运营做法",
+        "evidence_quote": "继续你写你的731！！继续你的不尊重女性！！",
+        "issue_categories": [
+          "政治/历史争议",
+          "价值观/性别争议",
+          "付费/商业化问题",
+          "社区环境/玩家冲突"
+        ],
+        "issue_category": "政治/历史争议",
+        "needs_review": false,
+        "reason": "连续反讽“继续”实为强烈谴责，核心指控涉及731及投降日等历史议题，同时批评不尊重女性、催氪和饭圈文化。",
+        "review_id": 3945,
+        "sentiment_label": "差评",
+        "target": "游戏剧情内容及运营方"
+      },
+      "app_id": "1618911882",
+      "content": "继续你写你的731！！继续你的不尊重女性！！继续你的锅里洗澡！！继续你的引狼入室！！！继续你的崇洋媚外！！继续你的催氪！继续你的饭圈文化！！！",
+      "content_hash": "113d06d7006b239895fa843aed68dfce53ceb4f7f507d97d9ab8fba482bc67ca",
+      "country": "cn",
+      "date": "2026-09-22T16:02:06Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3945,
+      "title": "恭祝姚桑8.15老家投降快乐！！-29",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "a0017cc55a0fa02ba386c408a94e93dd7eeada12594e490d66c71eff8621ad50",
+        "demand": "停止通过短信推送新卡并召回已离开的玩家",
+        "evidence_quote": "给我发短信提醒我新出的卡，我好激动，激动的给你一个一星吧",
+        "issue_categories": [
+          "广告/宣传问题",
+          "账号/隐私安全",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "广告/宣传问题",
+        "needs_review": false,
+        "reason": "“好激动”是反讽，玩家不满收到新卡短信营销，并明确表示不会回游。",
+        "review_id": 3946,
+        "sentiment_label": "差评",
+        "target": "新卡短信营销和回流召回"
+      },
+      "app_id": "1618911882",
+      "content": "给我发短信提醒我新出的卡，我好激动，激动的给你一个一星吧",
+      "content_hash": "a0017cc55a0fa02ba386c408a94e93dd7eeada12594e490d66c71eff8621ad50",
+      "country": "cn",
+      "date": "2026-09-22T15:50:58Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3946,
+      "title": "不会因为任何原因回游",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "ca0e4b3d52449cf0b90c4ff3adfd2413da1c32a877cbb143f21291c74ee781a9",
+        "demand": "停止在未预约的情况下电话联系退游用户进行召回",
+        "evidence_quote": "退游了都删了没有预约也是给我打上电话叫回游了",
+        "issue_categories": [
+          "广告/宣传问题",
+          "账号/隐私安全",
+          "厂商信任/经营争议"
+        ],
+        "issue_category": "广告/宣传问题",
+        "needs_review": false,
+        "reason": "玩家称退游删游且未预约仍收到回游电话，明确不满未经期待的电话营销。",
+        "review_id": 3947,
+        "sentiment_label": "差评",
+        "target": "面向退游玩家的电话召回营销"
+      },
+      "app_id": "1618911882",
+      "content": "退游了都删了没有预约也是给我打上电话叫回游了，没人给你充钱了是吧",
+      "content_hash": "ca0e4b3d52449cf0b90c4ff3adfd2413da1c32a877cbb143f21291c74ee781a9",
+      "country": "cn",
+      "date": "2026-09-22T15:50:44Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3947,
+      "title": "接lysk完蛋！",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "9bb23cac8af116980dd6821f6d43676007161e126b97214e62970247b2288475",
+        "demand": "停止以过度色情化、物化的方式塑造和售卖五位男主",
+        "evidence_quote": "把哥五个当牛郎卖呢  妥妥黄油来着",
+        "issue_categories": [
+          "价值观/性别争议",
+          "角色/剧情争议"
+        ],
+        "issue_category": "价值观/性别争议",
+        "needs_review": false,
+        "reason": "玩家以“牛郎”“黄油”批评五位男主被过度色情化和商品化，表达明显反感。",
+        "review_id": 3948,
+        "sentiment_label": "差评",
+        "target": "五位男主的色情化包装与售卖方式"
+      },
+      "app_id": "1618911882",
+      "content": "把哥五个当牛郎卖呢  妥妥黄油来着",
+      "content_hash": "9bb23cac8af116980dd6821f6d43676007161e126b97214e62970247b2288475",
+      "country": "cn",
+      "date": "2026-09-22T15:50:43Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3948,
+      "title": "日活做一下",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "b21d26c05f80fc06fda6e8eabddb34bfb9c767765269cd25071b8d064f9faf50",
+        "demand": "希望游戏继续运营",
+        "evidence_quote": "新混池很喜欢！",
+        "issue_categories": [
+          "付费/商业化问题",
+          "正向口碑/泛好评"
+        ],
+        "issue_category": "付费/商业化问题",
+        "needs_review": false,
+        "reason": "玩家明确喜欢新混合卡池，标题同时表达希望游戏持续运营，整体态度正面。",
+        "review_id": 3949,
+        "sentiment_label": "好评",
+        "target": "新混合卡池及游戏运营"
+      },
+      "app_id": "1618911882",
+      "content": "新混池很喜欢！",
+      "content_hash": "b21d26c05f80fc06fda6e8eabddb34bfb9c767765269cd25071b8d064f9faf50",
+      "country": "cn",
+      "date": "2026-09-22T15:39:11Z",
+      "platform": "App Store",
+      "rating": 5.0,
+      "review_id": 3949,
+      "title": "深空活下去",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "47df44c20fac018d672540c5b8c4a2fc092120a1a8280c0edb95b9cc2fcf176d",
+        "demand": "停止其认为无底线、令玩家反感的做法",
+        "evidence_quote": "让你无下限恶心玩家....滚呐~~~~~",
+        "issue_categories": [
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "强负面口碑/情绪宣泄",
+        "needs_review": true,
+        "reason": "对运营方进行强烈驱逐式辱骂，但未说明具体事件或问题，需要上下文才能细分。",
+        "review_id": 3950,
+        "sentiment_label": "差评",
+        "target": "游戏运营方"
+      },
+      "app_id": "1618911882",
+      "content": "让你无下限恶心玩家....滚呐~~~~~",
+      "content_hash": "47df44c20fac018d672540c5b8c4a2fc092120a1a8280c0edb95b9cc2fcf176d",
+      "country": "cn",
+      "date": "2026-09-22T15:33:57Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3950,
+      "title": "空子快飞",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "b4680f8fa5eecff153234f1a78f0762b5af95fa4683887499e6dd2a2682ebd86",
+        "demand": "要求游戏关服、公司倒闭并退出市场",
+        "evidence_quote": "赶快关服 倒闭 破产 滚出 滚 滚 滚",
+        "issue_categories": [
+          "退款/下架诉求",
+          "厂商信任/经营争议",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "退款/下架诉求",
+        "needs_review": false,
+        "reason": "已退游玩家对公司持极端负面态度，并直接提出关服、倒闭和退出诉求，但未说明具体诱因。",
+        "review_id": 3951,
+        "sentiment_label": "差评",
+        "target": "游戏及叠纸公司"
+      },
+      "app_id": "1618911882",
+      "content": "首先本人已退游 狗叠公司 坏事做尽 赶快关服 倒闭 破产 滚出 滚 滚 滚",
+      "content_hash": "b4680f8fa5eecff153234f1a78f0762b5af95fa4683887499e6dd2a2682ebd86",
+      "country": "cn",
+      "date": "2026-09-22T15:26:44Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3951,
+      "title": "请关服 倒闭 破产",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "3cb04d6a55aab9f72040e3f95c626937457a59192de80a39d8429825d26ea648",
+        "demand": "持续打磨剧情并创新游戏体验",
+        "evidence_quote": "希望重心持续放在剧情打磨和体验创新上",
+        "issue_categories": [
+          "内容/玩法反馈",
+          "角色/剧情争议",
+          "正向口碑/泛好评"
+        ],
+        "issue_category": "内容/玩法反馈",
+        "needs_review": false,
+        "reason": "玩家对游戏仍有期待，并以建设性语气希望官方继续改善剧情和体验创新。",
+        "review_id": 3952,
+        "sentiment_label": "好评",
+        "target": "游戏剧情质量与体验创新"
+      },
+      "app_id": "1618911882",
+      "content": "希望重心持续放在剧情打磨和体验创新上",
+      "content_hash": "3cb04d6a55aab9f72040e3f95c626937457a59192de80a39d8429825d26ea648",
+      "country": "cn",
+      "date": "2026-09-22T15:19:29Z",
+      "platform": "App Store",
+      "rating": 5.0,
+      "review_id": 3952,
+      "title": "我还是对这个游戏抱有期待",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "9426293b43d7483549d52986fff8a8bbd0ec2e14a6012183bb88adde987bafd3",
+        "demand": "停止下架男主及针对正常玩家的打压或报复行为",
+        "evidence_quote": "一意孤行下架男主；作为商业公司，霸凌和报复正常玩家",
+        "issue_categories": [
+          "角色/剧情争议",
+          "厂商信任/经营争议",
+          "社区环境/玩家冲突",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "厂商信任/经营争议",
+        "needs_review": false,
+        "reason": "玩家指责公司下架男主、践踏制作成果并打压玩家，对厂商经营和处置方式表达极强不信任。",
+        "review_id": 3954,
+        "sentiment_label": "差评",
+        "target": "男主下架决策及运营方对玩家的处理方式"
+      },
+      "app_id": "1618911882",
+      "content": "作为内容创作者，践踏制作组的心血和付出，一意孤行下架男主；作为商业公司，霸凌和报复正常玩家，恶毒至极。摇润耗一定会有报应，倾家荡产，不得好亖！",
+      "content_hash": "9426293b43d7483549d52986fff8a8bbd0ec2e14a6012183bb88adde987bafd3",
+      "country": "cn",
+      "date": "2026-09-22T14:46:31Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3954,
+      "title": "赛博杀人犯",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "70a2411008f62b2aaac6ce879b3728b8255644c3ccf78559ca88be25d90eb367",
+        "demand": "希望降低卡池获取难度或改善抽取体验",
+        "evidence_quote": "太毒了太毒了太毒了！",
+        "issue_categories": [
+          "付费/商业化问题",
+          "养成/进度反馈"
+        ],
+        "issue_category": "付费/商业化问题",
+        "needs_review": false,
+        "reason": "结合标题“卡池太毒了”，玩家反复强调卡池体验恶劣，指向抽取机制或获取成本的不满。",
+        "review_id": 3956,
+        "sentiment_label": "差评",
+        "target": "卡池抽取机制"
+      },
+      "app_id": "1618911882",
+      "content": "太毒了太毒了太毒了！",
+      "content_hash": "70a2411008f62b2aaac6ce879b3728b8255644c3ccf78559ca88be25d90eb367",
+      "country": "cn",
+      "date": "2026-09-22T14:37:41Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3956,
+      "title": "卡池太毒了",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "ba1c5929e2b61d6eb251aa484ade5dfa5c0b961a8ddea157a7a71be7d36179f2",
+        "demand": "停止选择性听取意见和随意处置角色，正视正常玩家反馈",
+        "evidence_quote": "听建议只听得进造谣霸凌者的话，正常人跑就对了",
+        "issue_categories": [
+          "厂商信任/经营争议",
+          "角色/剧情争议",
+          "社区环境/玩家冲突",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "厂商信任/经营争议",
+        "needs_review": true,
+        "reason": "指责厂商按舆论压力处置角色、偏听特定群体意见，并劝退其他玩家；具体事件背景不足，需复核。",
+        "review_id": 3957,
+        "sentiment_label": "差评",
+        "target": "游戏公司及其角色处理和意见采纳方式"
+      },
+      "app_id": "1618911882",
+      "content": "按闹分配令人作呕，制作的角色都是随时可删的，听建议只听得进造谣霸凌者的话，正常人跑就对了。",
+      "content_hash": "ba1c5929e2b61d6eb251aa484ade5dfa5c0b961a8ddea157a7a71be7d36179f2",
+      "country": "cn",
+      "date": "2026-09-22T14:34:05Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3957,
+      "title": "烂游戏：公司软骨头没担当没未来",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "33f53b055852a45e2ecc7b5d99571d9bc839a61749924b410c3ca92cbebd7504",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "恋与深空最爱赚钱的游戏，最不要脸的游戏",
+        "issue_categories": [
+          "付费/商业化问题",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "付费/商业化问题",
+        "needs_review": false,
+        "reason": "以强烈贬损措辞批评游戏过度逐利，但未说明具体付费机制。",
+        "review_id": 3958,
+        "sentiment_label": "差评",
+        "target": "《恋与深空》的商业化倾向"
+      },
+      "app_id": "1618911882",
+      "content": "恋与深空史上最恶心的游戏，恋与深空最爱赚钱的游戏，最不要脸的游戏",
+      "content_hash": "33f53b055852a45e2ecc7b5d99571d9bc839a61749924b410c3ca92cbebd7504",
+      "country": "cn",
+      "date": "2026-09-22T14:31:37Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3958,
+      "title": "恋与深空不要脸",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "9dd3e1c3be8c8394adfff3b8111196ac69330234dcd345dafac41e94614ec816",
+        "demand": "停止删除玩家评论并对相关问题负责",
+        "evidence_quote": "我去还删评",
+        "issue_categories": [
+          "官方回应/公关信任",
+          "评分抗议/集中差评"
+        ],
+        "issue_category": "官方回应/公关信任",
+        "needs_review": true,
+        "reason": "标题指控删评，正文批评官方不敢承担责任；缺少删评对象和经过，需复核。",
+        "review_id": 3960,
+        "sentiment_label": "差评",
+        "target": "官方评论管理及责任担当"
+      },
+      "app_id": "1618911882",
+      "content": "敢做不敢当",
+      "content_hash": "9dd3e1c3be8c8394adfff3b8111196ac69330234dcd345dafac41e94614ec816",
+      "country": "cn",
+      "date": "2026-09-22T14:18:19Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3960,
+      "title": "我去还删评",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "5b868225e3bc1d87834bc6372b119aaf60f6a0599677cac63b6d3832f09db104",
+        "demand": "要求游戏关服，并劝其他玩家远离",
+        "evidence_quote": "破游戏什么时候关服！！！",
+        "issue_categories": [
+          "退款/下架诉求",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "退款/下架诉求",
+        "needs_review": false,
+        "reason": "直接要求游戏关服，标题同时表达对其他玩家的劝退。",
+        "review_id": 3961,
+        "sentiment_label": "差评",
+        "target": "游戏整体及其继续运营"
+      },
+      "app_id": "1618911882",
+      "content": "破游戏什么时候关服！！！",
+      "content_hash": "5b868225e3bc1d87834bc6372b119aaf60f6a0599677cac63b6d3832f09db104",
+      "country": "cn",
+      "date": "2026-09-22T14:10:03Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3961,
+      "title": "快跑！！",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "7d81c24f3c406cce573e7262d6d37122d37d8286b551c09974a434e221bc1447",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "好一个从头开始",
+        "issue_categories": [
+          "强负面口碑/情绪宣泄",
+          "未归类/待复核"
+        ],
+        "issue_category": "强负面口碑/情绪宣泄",
+        "needs_review": true,
+        "reason": "结合一星和侮辱性标题可判断为反讽差评，但“从头开始”所指事件不明。",
+        "review_id": 3962,
+        "sentiment_label": "差评",
+        "target": "疑似官方提出的“从头开始”说法或处理方案"
+      },
+      "app_id": "1618911882",
+      "content": "好一个从头开始",
+      "content_hash": "7d81c24f3c406cce573e7262d6d37122d37d8286b551c09974a434e221bc1447",
+      "country": "cn",
+      "date": "2026-09-22T14:06:33Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3962,
+      "title": "🐶东西",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "4eea674eaca66e0a3141cd0745cc6cffc9dd41f68b79fd31bbbe42dab01666aa",
+        "demand": "要求商家正面回应问题",
+        "evidence_quote": "正面回应问题",
+        "issue_categories": [
+          "官方回应/公关信任",
+          "厂商信任/经营争议"
+        ],
+        "issue_category": "官方回应/公关信任",
+        "needs_review": false,
+        "reason": "正文是明确的回应诉求，标题表明对商家持负面评价。",
+        "review_id": 3963,
+        "sentiment_label": "差评",
+        "target": "游戏商家的问题回应态度"
+      },
+      "app_id": "1618911882",
+      "content": "正面回应问题",
+      "content_hash": "4eea674eaca66e0a3141cd0745cc6cffc9dd41f68b79fd31bbbe42dab01666aa",
+      "country": "cn",
+      "date": "2026-09-22T14:02:19Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3963,
+      "title": "无良商家",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "98f6946f6f5bebf50fd519e8b4edc045f46bfbd71181962c40b91314c17981a6",
+        "demand": "停止虚假宣传、群体对立和逼氪运营，并整改被指不当的价值表达与内容",
+        "evidence_quote": "虚假宣传，宣传内容与实际不符，欺瞒消费者",
+        "issue_categories": [
+          "广告/宣传问题",
+          "价值观/性别争议",
+          "社区环境/玩家冲突",
+          "政治/历史争议"
+        ],
+        "issue_category": "广告/宣传问题",
+        "needs_review": true,
+        "reason": "列举宣传不符、针对女性、分化玩家、文化责任和公序良俗等多项严重指控；分类明确，但事实真伪需复核。",
+        "review_id": 3964,
+        "sentiment_label": "差评",
+        "target": "游戏宣传、运营方式及内容价值表达"
+      },
+      "app_id": "1618911882",
+      "content": "1、虚假宣传，宣传内容与实际不符，欺瞒消费者，违反《消费者权益保护法》；\n2、阴阳女性消费者，运营恶意败坏社区生态，刻意饭圈化运营、分化玩家群体、恶意逼氪催氪；\n3、作为文化出口重点项目，并未做到文化传承与社会责任的担当，一味迎合国外审美，卑躬屈膝，有损国家文化IP出口形象，与文化强国发展国策背道而驰；\n4、宣扬色情暴力、违背社会公序良俗、挑战公众道德底线。",
+      "content_hash": "98f6946f6f5bebf50fd519e8b4edc045f46bfbd71181962c40b91314c17981a6",
+      "country": "cn",
+      "date": "2026-09-22T13:55:37Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3964,
+      "title": "恋与深空欺诈消费者",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "83fd9fd19c41d209a2ff981105026c124c1747e4d00692f3059db41e6a5e9d54",
+        "demand": "要求停止侮辱女性和把玩家当作付费工具，并要求游戏退出市场或停运",
+        "evidence_quote": "一边说自己是女性向游戏一边侮辱女性是吗？",
+        "issue_categories": [
+          "价值观/性别争议",
+          "政治/历史争议",
+          "付费/商业化问题",
+          "退款/下架诉求"
+        ],
+        "issue_category": "价值观/性别争议",
+        "needs_review": true,
+        "reason": "核心批评是女性向游戏被指侮辱女性，同时包含政治化指控、付费不满和停运诉求；严重指控缺少具体事件。",
+        "review_id": 3965,
+        "sentiment_label": "差评",
+        "target": "游戏的女性表达、商业化及运营资格"
+      },
+      "app_id": "1618911882",
+      "content": "间谍滚出中国，一边说自己是女性向游戏一边侮辱女性是吗？那你真的该死了，有些你能不能不要再洗了，玩个谈恋爱的游戏不是让你当ATM奴啊，这都啥时候了？居然还没死吗？",
+      "content_hash": "83fd9fd19c41d209a2ff981105026c124c1747e4d00692f3059db41e6a5e9d54",
+      "country": "cn",
+      "date": "2026-09-22T13:31:09Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3965,
+      "title": "垃圾辱华辱女游戏赶紧倒闭",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "b0fae1f6f2df078a6a9fa6bfa4186da40b2dea016d8d6acf2ba79c989da06a0d",
+        "demand": "控制或减少游戏更新后的存储空间占用",
+        "evidence_quote": "之前更新内存还勉强够用 现在G越来越大了",
+        "issue_categories": [
+          "移动端体验问题"
+        ],
+        "issue_category": "移动端体验问题",
+        "needs_review": false,
+        "reason": "玩家明确反映平板存储空间原本勉强够用，而游戏更新后的容量持续增大。",
+        "review_id": 3966,
+        "sentiment_label": "差评",
+        "target": "游戏在平板端的存储空间占用"
+      },
+      "app_id": "1618911882",
+      "content": "我的平板是256G的 之前更新内存还勉强够用 现在G越来越大了",
+      "content_hash": "b0fae1f6f2df078a6a9fa6bfa4186da40b2dea016d8d6acf2ba79c989da06a0d",
+      "country": "cn",
+      "date": "2026-09-22T13:24:44Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3966,
+      "title": "不好！",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "55d6c962dbd14b8090428b4d2c3051be9f5dbbf2f0e568397e9d3984efbdb4ca",
+        "demand": "停止操纵好评，并允许玩家正常批评角色造型而不被拉黑",
+        "evidence_quote": "我就说了一句新造型不好看，没过几分钟被深空官方号拉黑了",
+        "issue_categories": [
+          "评分抗议/集中差评",
+          "官方回应/公关信任",
+          "社区环境/玩家冲突"
+        ],
+        "issue_category": "评分抗议/集中差评",
+        "needs_review": true,
+        "reason": "指控各平台好评造假，并称因批评造型被官方账号拉黑；属于具体但未经佐证的玩家陈述。",
+        "review_id": 3970,
+        "sentiment_label": "差评",
+        "target": "官方的口碑管理和社交平台账号运营"
+      },
+      "app_id": "1618911882",
+      "content": "各平台好评都是刷的，我就说了一句新造型不好看，没过几分钟被深空官方号拉黑了",
+      "content_hash": "55d6c962dbd14b8090428b4d2c3051be9f5dbbf2f0e568397e9d3984efbdb4ca",
+      "country": "cn",
+      "date": "2026-09-22T12:53:33Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3970,
+      "title": "都是假的",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "dfcb14ab2ebcad2763d2ecee8057379f9581c2d70ecd2378cad4189b5bcb7b08",
+        "demand": "尊重女性玩家和男主角色，并要求公司停止运营",
+        "evidence_quote": "全世界最不尊重女性的女性向游戏公司",
+        "issue_categories": [
+          "价值观/性别争议",
+          "角色/剧情争议",
+          "退款/下架诉求",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "价值观/性别争议",
+        "needs_review": false,
+        "reason": "明确指责公司不尊重女性和男主角色，并以“倒闭”表达强烈停运诉求。",
+        "review_id": 3971,
+        "sentiment_label": "差评",
+        "target": "游戏公司对女性玩家及男主角色的态度"
+      },
+      "app_id": "1618911882",
+      "content": "全世界最不尊重男主的游戏公司，全世界最不尊重女性的女性向游戏公司。把男主嚯嚯成啥样了，赶紧倒闭吧！",
+      "content_hash": "dfcb14ab2ebcad2763d2ecee8057379f9581c2d70ecd2378cad4189b5bcb7b08",
+      "country": "cn",
+      "date": "2026-09-22T12:44:02Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3971,
+      "title": "接陪伴服，接叠纸倒闭",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "6c789b3f1c32c5cd2ab4656ac42acba8ad4fb505ad7f96c542f93bcc32e0e4b3",
+        "demand": "更新恋爱向主线内容，减少无聊战斗和站桩表现，并改善社区环境与内容投入",
+        "evidence_quote": "我玩游戏是为了谈恋爱的不是为了战斗的，一堆东西无聊得要命，主线一直不更新",
+        "issue_categories": [
+          "可玩性/内容单薄",
+          "内容/玩法反馈",
+          "社区环境/玩家冲突",
+          "厂商信任/经营争议"
+        ],
+        "issue_category": "可玩性/内容单薄",
+        "needs_review": false,
+        "reason": "玩家认为游戏偏离恋爱体验，主线更新慢且表现敷衍，并在标题中批评社区混乱和厂商资源投入。",
+        "review_id": 3972,
+        "sentiment_label": "差评",
+        "target": "恋爱玩法、主线内容、社区环境及制作运营"
+      },
+      "app_id": "1618911882",
+      "content": "我玩游戏是为了谈恋爱的不是为了战斗的，一堆东西无聊得要命，主线一直不更新，一更新就是站桩是在恶心谁？赚的钱这么多都去哪了一直在降本增笑",
+      "content_hash": "6c789b3f1c32c5cd2ab4656ac42acba8ad4fb505ad7f96c542f93bcc32e0e4b3",
+      "country": "cn",
+      "date": "2026-09-22T12:41:38Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3972,
+      "title": "体验感最差社区最混乱叠纸推最多游戏",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "6a40c2bfb4fc679dac590e30cfbb65d04afc0f1fc0a53cfce201c308e9a7b343",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "新PV🧈你怎么敢的啊？？？？",
+        "issue_categories": [
+          "广告/宣传问题"
+        ],
+        "issue_category": "广告/宣传问题",
+        "needs_review": true,
+        "reason": "玩家以质问语气强烈不满新PV，但“🧈”具体所指和争议细节不明确，需要结合PV内容复核。",
+        "review_id": 3973,
+        "sentiment_label": "差评",
+        "target": "新发布的PV"
+      },
+      "app_id": "1618911882",
+      "content": "新PV🧈你怎么敢的啊？？？？",
+      "content_hash": "6a40c2bfb4fc679dac590e30cfbb65d04afc0f1fc0a53cfce201c308e9a7b343",
+      "country": "cn",
+      "date": "2026-09-22T12:32:07Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3973,
+      "title": "新PV重新定义此款游戏",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "3329642f71f16450e8dad2b663d527114a5819a6736e8ce35cba81763a4cf29c",
+        "demand": "优化游戏存储空间占用，降低安装或运行所需内存",
+        "evidence_quote": "优化一下内存，\n太占用我们手机空间了",
+        "issue_categories": [
+          "移动端体验问题"
+        ],
+        "issue_category": "移动端体验问题",
+        "needs_review": false,
+        "reason": "玩家明确反馈游戏占用手机空间过大，并要求优化。",
+        "review_id": 3975,
+        "sentiment_label": "差评",
+        "target": "移动端存储空间占用"
+      },
+      "app_id": "1618911882",
+      "content": "内存占用也太大了吧！ ！ ！ ！优化一下内存，\n太占用我们手机空间了",
+      "content_hash": "3329642f71f16450e8dad2b663d527114a5819a6736e8ce35cba81763a4cf29c",
+      "country": "cn",
+      "date": "2026-09-22T12:22:43Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3975,
+      "title": "这个游戏占用空间太大了！ ！ ！请优化一下空间问题",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "ec16136c783c4f0cf35068ba6437e796e8789c0e06f7058762a40b051773ad51",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "劣迹斑斑的游戏公司，继续舞吧。",
+        "issue_categories": [
+          "厂商信任/经营争议",
+          "价值观/性别争议",
+          "政治/历史争议",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "厂商信任/经营争议",
+        "needs_review": true,
+        "reason": "玩家罗列多项针对公司的严重负面指控并讽刺其经营与宣传，但评论未提供证据，具体事实需复核。",
+        "review_id": 3976,
+        "sentiment_label": "差评",
+        "target": "游戏公司及其经营、宣传行为"
+      },
+      "app_id": "1618911882",
+      "content": "731，乙女腐，LGBT，家园私处建模，水军，买热搜，文化间谍，请gay宣传，员工辱骂玩家，未成年……劣迹斑斑的游戏公司，继续舞吧。你的护叠宝会给你氪金买周边的加油加油，联名你旗下的KTV把美女玩家叫过去拉客啊",
+      "content_hash": "ec16136c783c4f0cf35068ba6437e796e8789c0e06f7058762a40b051773ad51",
+      "country": "cn",
+      "date": "2026-09-22T12:17:46Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3976,
+      "title": "空空旗下的夜店KTV欠宣发了",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "ba58a4efe7b081ba11fba369d3af1ec5b7ff310ad64263adcb91eabac3e9abc7",
+        "demand": "恢复慢、静、稳且注重细节和乙女沉浸感的演出，改善镜头、动作、服饰与审美设计",
+        "evidence_quote": "快速晃动的镜头搭配窜来窜去的人物肢体动作，让人产生强烈的“观看”感而非沉浸式代入感。",
+        "issue_categories": [
+          "内容/玩法反馈",
+          "角色/剧情争议",
+          "广告/宣传问题"
+        ],
+        "issue_category": "内容/玩法反馈",
+        "needs_review": false,
+        "reason": "玩家详细批评PV及近期内容的快速镜头、肢体动作和服饰风格，认为乙女沉浸感与审美质量下降。",
+        "review_id": 3979,
+        "sentiment_label": "差评",
+        "target": "PV演出、角色动作、服饰及整体美术风格"
+      },
+      "app_id": "1618911882",
+      "content": "回忆夏以昼的出场pv，那个时候画面还慢、静、稳，每一帧都是充满细节的。皮鞋一步一步的啪嗒声、缓缓扣上帽子等等。\n\t\n去年黎深秦彻的新主线“动作戏”明显增加，但并不至于油腻，还处在炫技范围内。\n\t\n此后祁煜跑车卡的下车动作、秦彻生日卡下还是上摩托的动作，和今天pv里的“打戏”属于一个风格。快速晃动的镜头搭配窜来窜去的人物肢体动作，让人产生强烈的“观看”感而非沉浸式代入感。\n\t\n动画服饰的整体风格，是夏以昼新日卡的极端去乙女化版。\n\t\n无论是创新的能力、还是对审美风格的把控，都已经到了尽头。\n\t\n就结束在这里吧。",
+      "content_hash": "ba58a4efe7b081ba11fba369d3af1ec5b7ff310ad64263adcb91eabac3e9abc7",
+      "country": "cn",
+      "date": "2026-09-22T11:44:13Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3979,
+      "title": "审美越来越low，商k池都能出了哈哈哈哈，丑到爆炸",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "e9f54fbadd369e146557ec8676e362b87696da0802337f0e6789cbe59a312d73",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "爱上秦彻好幸福",
+        "issue_categories": [
+          "正向口碑/泛好评",
+          "角色/剧情争议"
+        ],
+        "issue_category": "正向口碑/泛好评",
+        "needs_review": false,
+        "reason": "玩家表达对秦彻角色和游戏的喜爱，并表示愿意长期游玩。",
+        "review_id": 3980,
+        "sentiment_label": "好评",
+        "target": "秦彻角色及《恋与深空》"
+      },
+      "app_id": "1618911882",
+      "content": "爱上秦彻好幸福",
+      "content_hash": "e9f54fbadd369e146557ec8676e362b87696da0802337f0e6789cbe59a312d73",
+      "country": "cn",
+      "date": "2026-09-22T11:38:56Z",
+      "platform": "App Store",
+      "rating": 5.0,
+      "review_id": 3980,
+      "title": "我要玩一辈子恋与深空",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "5bd557604ae952b6eb696e95f38ff5c30041f9c9d3272f972cb1f001e43f7bf1",
+        "demand": "停止将刑事案件和731等民族伤痛娱乐化，并纠正不严谨或错误的科普内容",
+        "evidence_quote": "用731等民族伤痛娱乐化。还有科普内容有些是错误的，不严谨只想捞钱",
+        "issue_categories": [
+          "政治/历史争议",
+          "价值观/性别争议",
+          "厂商信任/经营争议"
+        ],
+        "issue_category": "政治/历史争议",
+        "needs_review": false,
+        "reason": "玩家明确指责游戏娱乐化历史民族伤痛和刑事案件，同时质疑科普准确性及企业价值取向。",
+        "review_id": 3981,
+        "sentiment_label": "差评",
+        "target": "游戏涉及历史、刑事案件及科普内容的表达"
+      },
+      "app_id": "1618911882",
+      "content": "这个游戏不尊重国家，不尊重玩家，刑事案件娱乐化，引狼入室浪漫化，用731等民族伤痛娱乐化。还有科普内容有些是错误的，不严谨只想捞钱！！这样的企业，有何脸在我们国内赚钱？？！！",
+      "content_hash": "5bd557604ae952b6eb696e95f38ff5c30041f9c9d3272f972cb1f001e43f7bf1",
+      "country": "cn",
+      "date": "2026-09-22T11:22:54Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3981,
+      "title": "25  遗忘历史，不尊重国家，不尊重玩家，不配在中国捞钱！！！",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "d5d28fb2e41aa4f940985ca17f4bca443679f4e44fbd8ad5d3d2bfa1c5d10502",
+        "demand": "持续治理社区、安抚受影响玩家，并调整以高随机混池和收益为先的运营安排",
+        "evidence_quote": "他们只交出一纸公告，后续没有持续的治理，没有对老玩家情绪的安抚。",
+        "issue_categories": [
+          "官方回应/公关信任",
+          "社区环境/玩家冲突",
+          "付费/商业化问题",
+          "广告/宣传问题"
+        ],
+        "issue_category": "官方回应/公关信任",
+        "needs_review": false,
+        "reason": "玩家认可角色和原有美术，但批评运营方在风波后仅发布公告，缺少持续社区治理和玩家安抚，并迅速回归混池商业节奏。",
+        "review_id": 3983,
+        "sentiment_label": "差评",
+        "target": "官方危机处理、社区治理及商业化运营"
+      },
+      "app_id": "1618911882",
+      "content": "需要付费抽卡的时候：这是你的恋人；轮到版本宣发、做PV的时候，又变成战斗向游戏，像上新英雄一样，砸一个新角色出来。 情感陪伴类游戏，官方其实背负着一份特殊的责任：大家把柔软、无处安放的情绪交付进来，把心动、期待、两年的时间投入进去，就是“揽起这份情感”。这份托付不是单纯的买卖，不只是玩家花钱换一段虚拟剧情。承接了玩家的真心，就理应守护好承载这份情感的环境。 可整件事看下来，他们只接住了情感带来的收益，却没有承担对应的责任。 玩家交付真心，让角色、故事拥有意义；但风波爆发之后，面对被污染的社区、被贴上负面标签的普通玩家、大量同好失望离开，他们只交出一纸公告，后续没有持续的治理，没有对老玩家情绪的安抚。 风波热度一过，立刻回归原本的商业节奏：重心准备高随机性的混池卡池。把玩家投入的情感，当成了可以持续变现的基础，却不愿意用心守护这份情感赖以生存的空间。 这就是一种情感上的浪费。 大家捧出来的温柔和热爱，原本可以长久滋养这个故事，最后却在混乱的舆论、缺位的处理、商业化优先的排期里慢慢消耗掉。 所以，他们不配揽下大家这么厚重的情感寄托。 不是否定角色本身，角色依旧是当年打动你的样子。是运营方，辜负了这群愿意交付真心的人。",
+      "content_hash": "d5d28fb2e41aa4f940985ca17f4bca443679f4e44fbd8ad5d3d2bfa1c5d10502",
+      "country": "cn",
+      "date": "2026-09-22T11:14:32Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3983,
+      "title": "你依旧是3D首部很精美很喜欢可是我不想获取了",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "e34d28a8b6976ea68446eb814078a06946db770c06cd7277224307b8e5a9b633",
+        "demand": "改进自动战斗的AI和战斗表现",
+        "evidence_quote": "自动战斗是弱智",
+        "issue_categories": [
+          "内容/玩法反馈"
+        ],
+        "issue_category": "内容/玩法反馈",
+        "needs_review": false,
+        "reason": "玩家直接否定自动战斗功能，认为其表现不智能。",
+        "review_id": 3985,
+        "sentiment_label": "差评",
+        "target": "自动战斗功能"
+      },
+      "app_id": "1618911882",
+      "content": "自动战斗是弱智",
+      "content_hash": "e34d28a8b6976ea68446eb814078a06946db770c06cd7277224307b8e5a9b633",
+      "country": "cn",
+      "date": "2026-09-22T10:46:50Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3985,
+      "title": "自动战斗是弱智",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "fcb57342ef23ed2aff90c9a3982226379b0314bbfc4e1afc9348402c9052171f",
+        "demand": "要求官方停止带头或纵容针对角色玩家群体的集体霸凌，并改善社区治理",
+        "evidence_quote": "官方带头霸凌，社区一团乱，把老六霸凌取消之后又开始集体霸凌老五",
+        "issue_categories": [
+          "社区环境/玩家冲突",
+          "官方回应/公关信任",
+          "厂商信任/经营争议"
+        ],
+        "issue_category": "社区环境/玩家冲突",
+        "needs_review": false,
+        "reason": "玩家指责官方引导或纵容社区对不同角色相关群体的集体攻击，并认为官方处理反复、缺乏立场。",
+        "review_id": 3992,
+        "sentiment_label": "差评",
+        "target": "官方社区治理及角色玩家群体冲突处理"
+      },
+      "app_id": "1618911882",
+      "content": "官方带头霸凌，社区一团乱，把老六霸凌取消之后又开始集体霸凌老五，官方最喜欢滑跪，没根儿的东西。",
+      "content_hash": "fcb57342ef23ed2aff90c9a3982226379b0314bbfc4e1afc9348402c9052171f",
+      "country": "cn",
+      "date": "2026-09-22T09:12:49Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3992,
+      "title": "不想玩乙太妹定制游戏",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "3b93ee18d11fcdc27cebe5079c40983e8c3479318f379f4c9817fa34ffe2a5d3",
+        "demand": "要求官方公布自查自纠结果，并改善男主背头造型",
+        "evidence_quote": "自查自纠什么时候出来？",
+        "issue_categories": [
+          "官方回应/公关信任",
+          "角色/剧情争议"
+        ],
+        "issue_category": "官方回应/公关信任",
+        "needs_review": false,
+        "reason": "正文追问自查自纠结果的公布时间，标题同时表达对角色背头造型的不满。",
+        "review_id": 3997,
+        "sentiment_label": "差评",
+        "target": "官方自查信息披露及角色造型"
+      },
+      "app_id": "1618911882",
+      "content": "自查自纠什么时候出来？",
+      "content_hash": "3b93ee18d11fcdc27cebe5079c40983e8c3479318f379f4c9817fa34ffe2a5d3",
+      "country": "cn",
+      "date": "2026-09-22T08:18:57Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3997,
+      "title": "背头都做不明白",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "b7f9875e43038df697a38357c167e75f9d78a18512863601d7b4ec7fc23272d7",
+        "demand": "希望游戏保持创作勇气并持续发展",
+        "evidence_quote": "希望深空永远都拥有创作的勇气",
+        "issue_categories": [
+          "正向口碑/泛好评"
+        ],
+        "issue_category": "正向口碑/泛好评",
+        "needs_review": false,
+        "reason": "玩家以五星评价祝愿游戏越来越好，并肯定、鼓励其继续创作。",
+        "review_id": 3999,
+        "sentiment_label": "好评",
+        "target": "游戏整体及创作团队"
+      },
+      "app_id": "1618911882",
+      "content": "希望深空永远都拥有创作的勇气",
+      "content_hash": "b7f9875e43038df697a38357c167e75f9d78a18512863601d7b4ec7fc23272d7",
+      "country": "cn",
+      "date": "2026-09-22T08:15:25Z",
+      "platform": "App Store",
+      "rating": 5.0,
+      "review_id": 3999,
+      "title": "祝深空越来越好",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "86ecc016ffaa4cbed3442b449e7cd55b4016013c02c9f3e1e7f90a98e7838031",
+        "demand": "要求减少第三视角内容并使实际内容符合玩家对游戏的预期",
+        "evidence_quote": "全是第三视角，诈骗游戏",
+        "issue_categories": [
+          "内容/玩法反馈",
+          "广告/宣传问题",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "内容/玩法反馈",
+        "needs_review": false,
+        "reason": "玩家不满游戏大量采用第三视角，并以“诈骗游戏”指责实际体验与预期不符。",
+        "review_id": 4000,
+        "sentiment_label": "差评",
+        "target": "游戏叙事视角及内容呈现"
+      },
+      "app_id": "1618911882",
+      "content": "全是第三视角，诈骗游戏",
+      "content_hash": "86ecc016ffaa4cbed3442b449e7cd55b4016013c02c9f3e1e7f90a98e7838031",
+      "country": "cn",
+      "date": "2026-09-22T08:10:35Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4000,
+      "title": "差评",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "431f5951bc22ff8c2e3fae8832b91e4a81dc28176870f26d77b418b8ae91ae32",
+        "demand": "要求改善游戏玩法和剧情体验，减少饭圈式运营及社区争斗，并公平听取普通玩家诉求",
+        "evidence_quote": "这个游戏只会听会闹事的人的声音如果你只想安安静静体验游戏剧情",
+        "issue_categories": [
+          "社区环境/玩家冲突",
+          "内容/玩法反馈",
+          "可玩性/内容单薄",
+          "角色/剧情争议"
+        ],
+        "issue_category": "社区环境/玩家冲突",
+        "needs_review": false,
+        "reason": "玩家认为游戏玩法无聊且运营围绕追星、打榜和社区争斗，并指责官方偏向激进角色支持者，导致剧情与人设被特定群体影响。",
+        "review_id": 4001,
+        "sentiment_label": "差评",
+        "target": "游戏玩法、剧情创作、玩家意见采纳及社区运营"
+      },
+      "app_id": "1618911882",
+      "content": "这个游戏的玩法从来不在游戏里面，游戏很无聊。男主角不是一个可攻略的角色，而是这个公司打造的idol。如果你没有追过星不混饭圈不会给哥哥做数据不会打榜冲流水不会在社区挑事掐架不会撒泼打滚那么这个游戏不适合你。这个游戏只会听会闹事的人的声音如果你只想安安静静体验游戏剧情那么不好意思你所体验到的游戏剧情都是激推定制版的，男主的人设剧情都不是官方原计划写的，都是激推喜欢的，激推要求这个游戏写什么这个游戏就给什么，安安静静当游戏来玩的人只能吃到别人的剩饭。",
+      "content_hash": "431f5951bc22ff8c2e3fae8832b91e4a81dc28176870f26d77b418b8ae91ae32",
+      "country": "cn",
+      "date": "2026-09-22T08:06:30Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4001,
+      "title": "垃圾游戏",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "9afd1976a9bebfce2d789e15ff4f09dafcdd7133a503b97f50e6556ecbad7c05",
+        "demand": "希望已不再游玩的玩家停止持续发布差评",
+        "evidence_quote": "这游戏也不是非得花钱才能玩，不花钱也不影响玩啊",
+        "issue_categories": [
+          "社区环境/玩家冲突",
+          "正向口碑/泛好评",
+          "付费/商业化问题"
+        ],
+        "issue_category": "社区环境/玩家冲突",
+        "needs_review": false,
+        "reason": "评论者认可游戏及其付费自由度，主要不满集中于退坑玩家持续差评，并以贬损措辞攻击该群体。",
+        "review_id": 4003,
+        "sentiment_label": "好评",
+        "target": "游戏及持续发布差评的退坑玩家"
+      },
+      "app_id": "1618911882",
+      "content": "短短三个月从五星变成一星，我看以后谁还敢做女性向。有些人不玩就退坑退干净点，追着天天写差评，就跟分手了还一直到处抹黑前任一样，真让我见识到了什么叫恨比爱持久。好可怕。玩过的别的游戏退坑的都少见这么多尤物，这游戏最糟心的就是这群不玩游戏不花钱事儿还贼多的年轻小仙女，买不起就去赚钱，管不住钱包就学着省钱。而且说心里话，这游戏也不是非得花钱才能玩，不花钱也不影响玩啊。没必要因为自己的贪心，什么都想要，又什么都消费不起，心里不平衡就转而来坚持不懈地诋毁。",
+      "content_hash": "9afd1976a9bebfce2d789e15ff4f09dafcdd7133a503b97f50e6556ecbad7c05",
+      "country": "cn",
+      "date": "2026-09-22T07:56:00Z",
+      "platform": "App Store",
+      "rating": 5.0,
+      "review_id": 4003,
+      "title": "好玩爱玩爱氪",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "28f354b1ca3aa705b2fa898fea5fd4b2b1eb3ed8c52854e6ca4a0d1da2fa3972",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "1星yahu ～",
+        "issue_categories": [
+          "评分抗议/集中差评"
+        ],
+        "issue_category": "评分抗议/集中差评",
+        "needs_review": true,
+        "reason": "评论者明确给出一星并以“登顶”表述参与评分行动，但“yahu”的含义及具体争议对象不清楚。",
+        "review_id": 4010,
+        "sentiment_label": "差评",
+        "target": "游戏商店评分"
+      },
+      "app_id": "1618911882",
+      "content": "1星yahu ～",
+      "content_hash": "28f354b1ca3aa705b2fa898fea5fd4b2b1eb3ed8c52854e6ca4a0d1da2fa3972",
+      "country": "cn",
+      "date": "2026-09-22T07:04:42Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4010,
+      "title": "来登顶了",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "581a750f01880a9007fed57258ceebd664623c0be810e039d39be2ae1db75223",
+        "demand": "要求国产游戏不要做出其所称的“背刺祖国”行为",
+        "evidence_quote": "国产游戏不能背刺祖国",
+        "issue_categories": [
+          "政治/历史争议",
+          "价值观/性别争议"
+        ],
+        "issue_category": "政治/历史争议",
+        "needs_review": true,
+        "reason": "评论者提出国家立场及女性立场方面的指责，但没有说明对应的具体内容或事件。",
+        "review_id": 4012,
+        "sentiment_label": "差评",
+        "target": "游戏表达的国家及女性立场"
+      },
+      "app_id": "1618911882",
+      "content": "国产游戏不能背刺祖国",
+      "content_hash": "581a750f01880a9007fed57258ceebd664623c0be810e039d39be2ae1db75223",
+      "country": "cn",
+      "date": "2026-09-22T06:51:13Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4012,
+      "title": "乙女女性不能背刺女性",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "19c8b85e7979deb9a1886ae78c1c9c14d7e7103f62126c33c5ec9200780f8986",
+        "demand": "希望提升玩法丰富度以及文案、美术质量",
+        "evidence_quote": "现在连文案和美术也不行了，还做什么游戏呢，有什么可玩性呢",
+        "issue_categories": [
+          "可玩性/内容单薄",
+          "内容/玩法反馈"
+        ],
+        "issue_category": "可玩性/内容单薄",
+        "needs_review": false,
+        "reason": "评论者认为游戏原本玩法有限，如今核心的文案和美术质量也下降，因而质疑整体可玩性。",
+        "review_id": 4014,
+        "sentiment_label": "差评",
+        "target": "游戏玩法、文案及美术内容"
+      },
+      "app_id": "1618911882",
+      "content": "本来就没啥游戏上的玩法，纯粹只是当电子伴侣养着，把你的文案和美术搞好就行了嘛，结果嘛现在连文案和美术也不行了，还做什么游戏呢，有什么可玩性呢，比你做的好的游戏跟海里的沙子一样多",
+      "content_hash": "19c8b85e7979deb9a1886ae78c1c9c14d7e7103f62126c33c5ec9200780f8986",
+      "country": "cn",
+      "date": "2026-09-22T06:31:09Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4014,
+      "title": "啥游戏嘛",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "98d37a1727db28bc547886294a0848098b7f7fc93bc465a1ab1c346a76b23abf",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "媚鬼子的游戏，毫不尊重女性的游戏",
+        "issue_categories": [
+          "政治/历史争议",
+          "价值观/性别争议",
+          "付费/商业化问题",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "政治/历史争议",
+        "needs_review": true,
+        "reason": "评论者指责游戏存在国家立场、女性尊重和收割用户等问题，但没有提供具体事件或内容背景。",
+        "review_id": 4015,
+        "sentiment_label": "差评",
+        "target": "游戏的立场表达、女性价值观及商业化运营"
+      },
+      "app_id": "1618911882",
+      "content": "忘记来时路的游戏，rh的游戏，媚鬼子的游戏，毫不尊重女性的游戏，只知道收割用户钱包最后用来内涵用户的垃圾游戏",
+      "content_hash": "98d37a1727db28bc547886294a0848098b7f7fc93bc465a1ab1c346a76b23abf",
+      "country": "cn",
+      "date": "2026-09-22T06:23:44Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4015,
+      "title": "苦难不是噱头",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "6da6e73fc0bc9016c7a0507044fe37a2fcad74f61d9a8b23f03efcb427ca0546",
+        "demand": "希望游戏长期运营",
+        "evidence_quote": "我要玩恋与深空一百年",
+        "issue_categories": [
+          "正向口碑/泛好评"
+        ],
+        "issue_category": "正向口碑/泛好评",
+        "needs_review": false,
+        "reason": "玩家表达长期游玩意愿，并祝愿游戏继续运营。",
+        "review_id": 4023,
+        "sentiment_label": "好评",
+        "target": "《恋与深空》整体及其长期运营"
+      },
+      "app_id": "1618911882",
+      "content": "我要玩恋与深空一百年",
+      "content_hash": "6da6e73fc0bc9016c7a0507044fe37a2fcad74f61d9a8b23f03efcb427ca0546",
+      "country": "cn",
+      "date": "2026-09-22T05:02:40Z",
+      "platform": "App Store",
+      "rating": 5.0,
+      "review_id": 4023,
+      "title": "恋与深空活下去",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "d1f25be60fc7937979d5c2fa7df531544ffff4dcbb50d3f74db5ab03c8d11a96",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "一星还是多了",
+        "issue_categories": [
+          "评分抗议/集中差评",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "评分抗议/集中差评",
+        "needs_review": false,
+        "reason": "标题明确表示一星仍嫌过高，正文则是针对叠纸的简短负面网络用语。",
+        "review_id": 4028,
+        "sentiment_label": "差评",
+        "target": "叠纸及游戏整体"
+      },
+      "app_id": "1618911882",
+      "content": "叠太99",
+      "content_hash": "d1f25be60fc7937979d5c2fa7df531544ffff4dcbb50d3f74db5ab03c8d11a96",
+      "country": "cn",
+      "date": "2026-09-22T04:41:33Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 4028,
+      "title": "一星还是多了",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "c6a6b2ced9e0e82cbd762026dca0c5bc9cf0d76b14a80eeb2ff902c02097c729",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "我和我老公很幸福呀",
+        "issue_categories": [
+          "未归类/待复核"
+        ],
+        "issue_category": "未归类/待复核",
+        "needs_review": true,
+        "reason": "正文表达幸福且为五星，但标题要求“退游退干净”，语义对象和真实态度存在冲突，无法可靠判断。",
+        "review_id": 3827,
+        "sentiment_label": "待复核",
+        "target": "疑似游戏角色关系或玩家自身状态，具体对象不明"
+      },
+      "app_id": "1618911882",
+      "content": "我和我老公很幸福呀",
+      "content_hash": "c6a6b2ced9e0e82cbd762026dca0c5bc9cf0d76b14a80eeb2ff902c02097c729",
+      "country": "cn",
+      "date": "2026-09-22T03:15:12Z",
+      "platform": "App Store",
+      "rating": 5.0,
+      "review_id": 3827,
+      "title": "退游退干净",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "c654acd13a4d550d2496f9e74dee1f6826d257418ce061c6b3bd18735aac106f",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "柜子游戏",
+        "issue_categories": [
+          "未归类/待复核"
+        ],
+        "issue_category": "未归类/待复核",
+        "needs_review": true,
+        "reason": "仅有含义不明确的简短标签，结合一星可知倾向负面，但无法可靠确定所指问题。",
+        "review_id": 3828,
+        "sentiment_label": "待复核",
+        "target": "游戏整体，具体指向不明"
+      },
+      "app_id": "1618911882",
+      "content": "柜子游戏",
+      "content_hash": "c654acd13a4d550d2496f9e74dee1f6826d257418ce061c6b3bd18735aac106f",
+      "country": "cn",
+      "date": "2026-09-22T03:06:10Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3828,
+      "title": "柜子游戏",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "c70f47c31e4e79bd182892e2fda9e950e7a5c003e7ee78d38c6db01f3982de3a",
+        "demand": "要求停止操纵或干预商店评分",
+        "evidence_quote": "狗叠你又在偷偷买水军呢",
+        "issue_categories": [
+          "评分抗议/集中差评",
+          "厂商信任/经营争议"
+        ],
+        "issue_category": "评分抗议/集中差评",
+        "needs_review": true,
+        "reason": "玩家讽刺性指控厂商购买水军抬高评分，并提及1.5分；该指控仅为玩家说法，缺乏佐证。",
+        "review_id": 3830,
+        "sentiment_label": "差评",
+        "target": "厂商的商店评分运营行为"
+      },
+      "app_id": "1618911882",
+      "content": "一段时间没见，狗叠你又在偷偷买水军呢，买到1.5评分要花多少啊",
+      "content_hash": "c70f47c31e4e79bd182892e2fda9e950e7a5c003e7ee78d38c6db01f3982de3a",
+      "country": "cn",
+      "date": "2026-09-22T02:51:43Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3830,
+      "title": "倒油",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "14a8089522b7c5fe0b7ec435db71e607d1d59818f02a60459787c8f7c0163bd8",
+        "demand": "保留或恢复与“Valko”相关的内容或立场",
+        "evidence_quote": "无数真心被你践踏",
+        "issue_categories": [
+          "厂商信任/经营争议",
+          "未归类/待复核"
+        ],
+        "issue_category": "未归类/待复核",
+        "needs_review": true,
+        "reason": "标题表达被厂商辜负的负面情绪，但“Valko”所指对象及具体诉求缺乏上下文，无法可靠归类。",
+        "review_id": 3847,
+        "sentiment_label": "差评",
+        "target": "游戏厂商及不明确的“Valko”相关事项"
+      },
+      "app_id": "1618911882",
+      "content": "no Valko no infold",
+      "content_hash": "14a8089522b7c5fe0b7ec435db71e607d1d59818f02a60459787c8f7c0163bd8",
+      "country": "cn",
+      "date": "2026-09-22T00:38:49Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3847,
+      "title": "无数真心被你践踏",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "20f8b8b4cceb7059241985e72c8b20cfe6d17fc956c81b690572922c2d7aadee",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "诈骗游戏",
+        "issue_categories": [
+          "未归类/待复核"
+        ],
+        "issue_category": "未归类/待复核",
+        "needs_review": true,
+        "reason": "仅有“诈骗游戏”定性，未说明具体事件或问题，无法准确归类。",
+        "review_id": 3859,
+        "sentiment_label": "待复核",
+        "target": "游戏整体"
+      },
+      "app_id": "1618911882",
+      "content": "诈骗游戏",
+      "content_hash": "20f8b8b4cceb7059241985e72c8b20cfe6d17fc956c81b690572922c2d7aadee",
+      "country": "cn",
+      "date": "2026-09-21T16:03:45Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3859,
+      "title": "诈骗游戏",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "2fee6a320ccb1003cf20cac01903da24f4d1deeaaa0e0cfee0cddd1cfa863ee0",
+        "demand": "未提出具体诉求",
+        "evidence_quote": "朕和叠妃何曾有过嫌隙",
+        "issue_categories": [
+          "社区二创/热梗"
+        ],
+        "issue_category": "社区二创/热梗",
+        "needs_review": true,
+        "reason": "标题使用玩家与厂商关系的戏谑梗，正文只有笑声；五星可能表示调侃或支持，真实态度无法确定。",
+        "review_id": 3915,
+        "sentiment_label": "待复核",
+        "target": "玩家与游戏厂商的关系"
+      },
+      "app_id": "1618911882",
+      "content": "哈哈哈",
+      "content_hash": "2fee6a320ccb1003cf20cac01903da24f4d1deeaaa0e0cfee0cddd1cfa863ee0",
+      "country": "cn",
+      "date": "2026-09-21T04:13:36Z",
+      "platform": "App Store",
+      "rating": 5.0,
+      "review_id": 3915,
+      "title": "朕和叠妃何曾有过嫌隙",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "f8d138872d9cf9385bb9bf3b7803a50bb6943d2dd72a0c0c5b9dd7141da1451e",
+        "demand": "希望解决回游后无法下载游戏的问题",
+        "evidence_quote": "我退游了 重新回游不让我下载是何意为？",
+        "issue_categories": [
+          "Bug/闪退问题"
+        ],
+        "issue_category": "Bug/闪退问题",
+        "needs_review": true,
+        "reason": "评论者反馈回游时无法下载，但未提供报错、设备或地区信息，无法判断是技术故障、兼容性还是商店限制。",
+        "review_id": 3934,
+        "sentiment_label": "差评",
+        "target": "游戏下载功能"
+      },
+      "app_id": "1618911882",
+      "content": "我不知道什么意思 我退游了 重新回游不让我下载是何意为？",
+      "content_hash": "f8d138872d9cf9385bb9bf3b7803a50bb6943d2dd72a0c0c5b9dd7141da1451e",
+      "country": "cn",
+      "date": "2026-09-20T23:02:30Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3934,
+      "title": "？",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "cbd7472d0a8a90565cbe681fc0922b578b7f51c8d1e9c53d6bfe64d4ade15b9c",
+        "demand": "尽快修复更新后在家园制作娃娃导致手机频繁卡死的问题",
+        "evidence_quote": "进入家园制作娃娃频繁手机卡死",
+        "issue_categories": [
+          "Bug/闪退问题",
+          "移动端体验问题"
+        ],
+        "issue_category": "Bug/闪退问题",
+        "needs_review": false,
+        "reason": "玩家明确反馈分线更新后，家园制作娃娃场景会频繁导致手机卡死，并要求尽快修复。",
+        "review_id": 3412,
+        "sentiment_label": "差评",
+        "target": "更新后的家园娃娃制作功能"
+      },
+      "app_id": "1618911882",
+      "content": "哥分线更新后进入家园制作娃娃频繁手机卡死。原来可不这样，尽快解决啊！不是我手机的问题",
+      "content_hash": "cbd7472d0a8a90565cbe681fc0922b578b7f51c8d1e9c53d6bfe64d4ade15b9c",
+      "country": "cn",
+      "date": "2026-09-20T08:12:34-07:00",
+      "platform": "App Store",
+      "rating": 4.0,
+      "review_id": 3412,
+      "title": "手机卡死",
+      "topic": "version:6.0.0",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "569650b14e32a78c1399c774a12d510d84116773a4eb954b5b1977bba5498907",
+        "demand": "加快剧情更新和资源产出，降低付费压力",
+        "evidence_quote": "剧情慢的要死，资源难攒，产出拖沓，逼氪",
+        "issue_categories": [
+          "养成/进度反馈",
+          "付费/商业化问题",
+          "内容/玩法反馈",
+          "强负面口碑/情绪宣泄"
+        ],
+        "issue_category": "养成/进度反馈",
+        "needs_review": false,
+        "reason": "批评剧情推进慢、资源积累困难和产出拖沓，同时认为游戏存在逼氪倾向。",
+        "review_id": 3435,
+        "sentiment_label": "差评",
+        "target": "游戏剧情更新、资源产出与付费设计"
+      },
+      "app_id": "1618911882",
+      "content": "炒鸡无敌天坑游戏，剧情慢的要死，资源难攒，产出拖沓，逼氪",
+      "content_hash": "569650b14e32a78c1399c774a12d510d84116773a4eb954b5b1977bba5498907",
+      "country": "cn",
+      "date": "2026-09-20T02:36:45-07:00",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3435,
+      "title": "垃圾游戏别下载！",
+      "topic": "version:6.0.0",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "0dc1116c144878d68274e5554af40ab2be3cc82ca0950e4e11ebac3a6d057936",
+        "demand": "要求尽快更新主线，而不是只更新分线",
+        "evidence_quote": "主线是不是还得等600天？？？",
+        "issue_categories": [
+          "可玩性/内容单薄",
+          "角色/剧情争议"
+        ],
+        "issue_category": "可玩性/内容单薄",
+        "needs_review": false,
+        "reason": "通过夸张反问抱怨主线等待时间过长，标题进一步指出当前只更新分线。",
+        "review_id": 3757,
+        "sentiment_label": "差评",
+        "target": "主线剧情更新频率"
+      },
+      "app_id": "1618911882",
+      "content": "主线是不是还得等600天？？？",
+      "content_hash": "0dc1116c144878d68274e5554af40ab2be3cc82ca0950e4e11ebac3a6d057936",
+      "country": "cn",
+      "date": "2026-09-19T06:31:40Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3757,
+      "title": "只更分线",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "639c34029e9198e8480829251e07e643641444e29e3e345b8620b46fb70b7e21",
+        "demand": "修复启动卡死和黑屏问题，使游戏能够正常进入",
+        "evidence_quote": "点开就一直在叠纸界面上卡着，后面直接黑屏了",
+        "issue_categories": [
+          "Bug/闪退问题",
+          "移动端体验问题"
+        ],
+        "issue_category": "Bug/闪退问题",
+        "needs_review": false,
+        "reason": "描述启动界面卡死后黑屏，导致游戏完全无法进入，同时提到需额外下载54GB内容。",
+        "review_id": 3787,
+        "sentiment_label": "差评",
+        "target": "游戏客户端启动与移动端安装体验"
+      },
+      "app_id": "1618911882",
+      "content": "点开就一直在叠纸界面上卡着，后面直接黑屏了更别说游戏内还要还要下载54gb的内容。我不管网上传的各种黑料，你现在游戏是完全进不去的状态。",
+      "content_hash": "639c34029e9198e8480829251e07e643641444e29e3e345b8620b46fb70b7e21",
+      "country": "cn",
+      "date": "2026-09-18T08:38:18Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3787,
+      "title": "进不去",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "a07493f088d900c4b77e2533b334654dbdfa25a27ea771a2e0a92f8259f9bc48",
+        "demand": "停止向未预约或已卸载游戏的玩家拨打新卡广告电话。",
+        "evidence_quote": "我已经卸载几个月了，却依然再三接到关于恋与深空新卡内容的广告骚扰电话",
+        "issue_categories": [
+          "账号/隐私安全",
+          "广告/宣传问题"
+        ],
+        "issue_category": "账号/隐私安全",
+        "needs_review": false,
+        "reason": "玩家称卸载数月后仍连续收到新卡推广电话，明确将其视为广告骚扰。",
+        "review_id": 3939,
+        "sentiment_label": "差评",
+        "target": "游戏方对卸载玩家的广告电话触达"
+      },
+      "app_id": "1618911882",
+      "content": "今天接连接到了两个恋与深空的骚扰电话（有截图为证），据仍在玩此游戏的网友称，该电话是在游戏里预约过才会打给用户的。我已经卸载几个月了，却依然再三接到关于恋与深空新卡内容的广告骚扰电话。很烦。",
+      "content_hash": "a07493f088d900c4b77e2533b334654dbdfa25a27ea771a2e0a92f8259f9bc48",
+      "country": "cn",
+      "date": "2026-09-22T16:51:00Z",
+      "platform": "App Store",
+      "rating": 1.0,
+      "review_id": 3939,
+      "title": "持续用低质低俗内容骚扰退游玩家",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    },
+    {
+      "analysis": {
+        "content_hash": "5b07dfda83989ef806e187541d177591913f563f51bf0a9962c7569f1a7bb1e8",
+        "demand": "希望招聘可靠的公关团队、吸取教训并打磨内容，同时增加老玩家的粉钻获取途径",
+        "evidence_quote": "我觉得整体来说还是不错的",
+        "issue_categories": [
+          "正向口碑/泛好评",
+          "养成/进度反馈",
+          "官方回应/公关信任",
+          "Bug/闪退问题"
+        ],
+        "issue_category": "正向口碑/泛好评",
+        "needs_review": false,
+        "reason": "玩家总体肯定游戏的3D乙女创新、早期版本和音乐，并在支持长期运营的同时提出公关、打磨及老玩家资源获取建议。",
+        "review_id": 4031,
+        "sentiment_label": "好评",
+        "target": "《恋与深空》整体、官方公关及老玩家资源供给"
+      },
+      "app_id": "1618911882",
+      "content": "突破了乙游里2D的锚点，也是国内首个3D乙女游戏，敢在女性向方面创新，叠纸还是很用心的，就像换装bug，玩家都说好玩，深空就真的做出来了。6.0之前每一个版本我都很满意。有错误改正别糟蹋了初创心血。真的招点靠谱的公关部门吧，吸取教训好好打磨吧。不管是1.0还是2.0版本的主题曲 深空都是在用心的创作 我觉得还是很好听的哈\n还有那个粉钻获取，一直跟着你的开服玩家，轨道打完了基本没有钻的获取途径了，希望关照一下老玩家吧。\n深空是国内第一款3D乙游，想对初创团队说的，很高兴创造出他们陪我走了很漫长的低谷期）虽然失去了很多玩家，但是经历了这么大事情还能陪着你的玩家别辜负了她们对你们的期望信任。错了能改正。还是希望深空长命百岁，越来越好。",
+      "content_hash": "5b07dfda83989ef806e187541d177591913f563f51bf0a9962c7569f1a7bb1e8",
+      "country": "cn",
+      "date": "2026-09-22T03:54:26Z",
+      "platform": "App Store",
+      "rating": 5.0,
+      "review_id": 4031,
+      "title": "我觉得整体来说还是不错的",
+      "topic": "",
+      "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+    }
+  ],
+  "findings": [
+    {
+      "actions": [
+        "立即暂停对退游、已卸载及未明确预约用户的电话召回批次，并保留暂停范围与执行时间记录。",
+        "由隐私合规团队核验电话与短信名单的授权来源、预约状态、退订状态、数据保留期限及第三方外呼记录。",
+        "在电话、短信及游戏内提供可即时生效的拒绝营销入口，并建立跨渠道统一抑制名单。"
+      ],
+      "category": "账号/隐私安全",
+      "evidence_ids": [
+        4054,
+        4055,
+        4057,
+        3939
+      ],
+      "hypothesis": "可能存在召回名单与预约、退游或退订状态未及时同步，或触达前缺少有效授权校验；现有评论不能确认具体数据链路或责任方，需查日志核实。",
+      "observation": "本期多名玩家反馈退游或卸载数月后仍收到召回电话，另有玩家称未预约也被联系；其中还出现短时间连续来电的反馈。这些均为玩家陈述，尚不能直接认定存在违法收集或使用个人信息。",
+      "owner": "隐私合规负责人、用户运营负责人、CRM/数据平台负责人",
+      "title": "退游及未预约用户召回触达引发隐私与骚扰质疑",
+      "validation": "抽查本期相关外呼号码对应的授权、预约和退订日志，确保每次触达均可追溯；以测试账号验证拒绝营销后电话、短信均不再进入任务；上线后连续两个监测周期不再出现“未预约仍接到电话”或“退游后持续来电”的新增可核实反馈。"
+    },
+    {
+      "actions": [
+        "对删除男主、新混池造型、第三视角比例及角色设定偏移分别建立决策与内容复盘，不将不同诉求合并处理。",
+        "在后续角色内容上线前增加角色设定一致性、目标用户审美和第一视角沉浸体验评审，并记录修改结论。",
+        "对角色去留等重大调整发布明确的适用范围、后续安排和反馈入口，避免使用模糊表述替代事实说明。"
+      ],
+      "category": "角色/剧情争议",
+      "evidence_ids": [
+        4037,
+        4049,
+        3943
+      ],
+      "hypothesis": "争议可能由重大角色处置缺乏充分解释，与近期卡面风格、视角设计及角色设定一致性不符合部分核心玩家预期共同放大；具体制作决策及玩家总体偏好尚无内部资料佐证。",
+      "observation": "玩家反馈同时指向删除男主、卡面大量第三视角、动作素材复用、角色辨识度下降、OOC以及剧情由温馨伏笔转向擦边表达。本期调查显示相关讨论贯穿多个日期，但因上期未完成分类，不能据此断言较上期显著增长。",
+      "owner": "叙事负责人、角色内容负责人、美术与演出负责人、产品负责人",
+      "title": "角色处置与近期内容呈现共同损伤角色信任",
+      "validation": "完成逐项复盘并形成可追踪整改清单；后续内容在上线前通过角色设定一致性和视角占比验收；上线后定向收集角色还原度、第一视角沉浸感反馈，并确认相同问题不再连续两个版本重复出现。"
+    },
+    {
+      "actions": [
+        "汇总已承诺自查事项，逐项标注已完成、处理中、无法披露及预计更新时间。",
+        "对删评、操纵舆论等指控先核验平台记录，不在事实未明时反向指责玩家；公布评论管理规则及申诉渠道。",
+        "围绕角色处置、历史文化内容和社区治理分别回应，避免用单一公告笼统覆盖多个争议。"
+      ],
+      "category": "官方回应/公关信任",
+      "evidence_ids": [
+        4041,
+        4050,
+        3983,
+        3997
+      ],
+      "hypothesis": "持续追问可能与既有公告缺少后续进度、问题边界和可验证结果有关；“删评”及干预舆论仍仅为玩家指控，现有材料无法确认。",
+      "observation": "多条评论要求公布“自查自纠”结果，认为官方未持续治理或安抚玩家，并出现删评指控。调查结果显示该类反馈分布于本期多个日期，但上期没有有效分类数据，无法进行趋势增幅判断。",
+      "owner": "公关负责人、社区运营负责人、法务与合规负责人",
+      "title": "自查结果与后续治理信息缺口持续消耗公关信任",
+      "validation": "发布可逐项核对的进度说明并保留版本记录；对删评申诉给出受理编号和处理时限；发布后一周汇总高频追问，确认主要问题均能对应到明确结论、责任部门或下一更新时间。"
+    },
+    {
+      "actions": [
+        "立即对涉及民族历史伤痛、刑事案件、非法行为及急救科普的现有内容进行专项审校。",
+        "邀请历史、法律和医疗领域具备相应资质的外部专家复核，并保存审校意见、修改记录和版本差异。",
+        "对确认有误或表达不当的内容明确说明修订范围；未核实事项不作事实性承认。"
+      ],
+      "category": "政治/历史争议",
+      "evidence_ids": [
+        4050,
+        3981,
+        3945
+      ],
+      "hypothesis": "部分文本或传播语境可能被玩家理解为娱乐化历史伤痛、刑事案件或不严谨科普，但当前只有评论指控，尚缺少对应游戏文本、版本位置和专家结论。",
+      "observation": "玩家集中提出“731”等历史议题、刑事案件娱乐化及急救科普准确性问题，并要求公开自查结果。相关指控敏感度高，但不能依据评论直接认定游戏内容确有上述问题。",
+      "owner": "内容合规负责人、叙事负责人、法务负责人",
+      "title": "历史文化与专业科普指控需要高优先级专项核验",
+      "validation": "形成包含具体内容位置、审校依据、专家意见和处理结果的台账；所有确认问题在指定版本完成修订并通过复审；对外说明中的每项结论均能对应内部证据。"
+    },
+    {
+      "actions": [
+        "分别核对当前卡面与宣传中第一视角占比、镜头语言、动作素材复用及角色差异化表现。",
+        "针对自动战斗建立可复现测试集，检查目标选择、技能释放、走位和失败场景。",
+        "将主线更新节奏、恋爱内容投入和战斗内容安排纳入版本验收，避免只以素材数量作为完成标准。"
+      ],
+      "category": "内容/玩法反馈",
+      "evidence_ids": [
+        4049,
+        3979,
+        3985,
+        4000
+      ],
+      "hypothesis": "内容体验下降可能同时来自演出方向改变、通用素材复用、第一视角减少及自动战斗策略不足；实际占比和技术表现需通过资产与测试数据确认。",
+      "observation": "玩家具体反馈卡面第三视角较多、动作与神态复用、快速晃动镜头削弱代入感，并直接批评自动战斗表现。这些反馈包含可检查的体验点，不应仅按审美偏好处理。",
+      "owner": "内容制作负责人、战斗策划负责人、QA负责人",
+      "title": "沉浸式演出与自动战斗存在可核验的体验缺口",
+      "validation": "输出视角、镜头和动作复用审计结果；自动战斗测试集达到预设通关与行为正确率标准；下一版本用户验收中分别记录沉浸感和自动战斗反馈，确认无高频同类复现。"
+    },
+    {
+      "actions": [
+        "优先复现版本6.0.0家园制作娃娃时的卡死，并收集设备型号、系统版本、剩余存储和操作路径。",
+        "排查启动停留在品牌界面后黑屏的日志，并区分资源下载、存储不足、兼容性和客户端故障。",
+        "为回游用户无法下载建立客服采集模板，补齐商店报错、账号地区、设备与网络信息。"
+      ],
+      "category": "Bug/闪退问题",
+      "evidence_ids": [
+        3412,
+        3787,
+        3934
+      ],
+      "hypothesis": "家园卡死和启动黑屏可能涉及版本资源、内存或设备兼容问题；无法下载还可能来自商店或地区限制。现有证据不足以将三种症状归为同一根因。",
+      "observation": "已出现家园制作娃娃频繁卡死、启动卡住后黑屏且无法进入，以及回游后无法下载三类反馈。前两类描述较具体，无法下载反馈缺少报错和设备信息。调查结果未显示大量同类评论，也无法因样本少而排除故障。",
+      "owner": "客户端技术负责人、QA负责人、客服负责人",
+      "title": "卡死、黑屏与下载失败需按独立故障链路排查",
+      "validation": "在问题设备矩阵复现并生成缺陷编号；修复后完成启动、资源下载和家园连续操作压力测试；客服回访确认原反馈场景恢复，且后续版本监控无同堆栈异常回升。"
+    },
+    {
+      "actions": [
+        "审计基础包、必需资源与可选资源体积，公布清晰的安装及更新空间要求。",
+        "提供按剧情、语音或高清资源拆分下载与清理能力，并验证清理后资源可按需恢复。",
+        "在低剩余空间场景下增加下载前检查和明确提示，避免安装后才暴露空间不足。"
+      ],
+      "category": "移动端体验问题",
+      "evidence_ids": [
+        3966,
+        3975,
+        3787
+      ],
+      "hypothesis": "资源持续累积且缺少可选下载或清理机制，可能造成玩家感知中的空间压力；评论提及的具体下载体积仍需以当前客户端实测确认。",
+      "observation": "玩家反馈更新后占用持续增大、手机和平板空间压力明显；另有玩家在无法启动的同时提到游戏内还需大量资源下载。该问题属于可测量的移动端体验，不等同于设备故障结论。",
+      "owner": "客户端技术负责人、资源管理负责人、发行运营负责人",
+      "title": "资源体积与存储管理影响移动端可用性",
+      "validation": "在支持设备上记录全新安装、增量更新和完整资源包的实际占用；验证可选下载与清理功能不会破坏账号内容；商店说明、下载前提示与实测空间需求保持一致。"
+    },
+    {
+      "actions": [
+        "复核混池、大保底及限时累计充值规则的展示是否清晰，并检查实际概率与公示一致性。",
+        "分析充值玩家连续触发大保底的匿名化抽取日志，区分随机体验与实现异常。",
+        "评估卡池排期和资源供给，增加可预期的获取路径，但不在核验前承诺退款或补偿。"
+      ],
+      "category": "付费/商业化问题",
+      "evidence_ids": [
+        3935,
+        3938,
+        3956
+      ],
+      "hypothesis": "不满可能来自高随机体验、限时累充压力及付费预期管理不足；目前没有证据证明概率实现异常或存在系统性区别对待充值玩家。",
+      "observation": "玩家反馈充值后频繁触发大保底、认为卡池体验差，并反感限时累计充值与角色性化营销绑定。评论能证明体验和认知问题，但不能证明抽取概率违规。",
+      "owner": "商业化产品负责人、数据分析负责人、法务合规负责人",
+      "title": "高随机卡池与限时累充加剧付费压力感知",
+      "validation": "完成公示概率与服务端实现核对并留档；用匿名化日志检验抽取分布及异常账户；调整后的卡池规则通过可理解性测试，客服对保底规则的重复咨询在后续周期下降。"
+    }
+  ],
+  "generated_at": "2026-09-24T08:01:54.353102+00:00",
+  "investigations": [
+    {
+      "current": {
+        "classified": 495,
+        "daily": {
+          "2026-09-22": 13,
+          "2026-09-23": 7
+        },
+        "evidence": [
+          {
+            "analysis": {
+              "content_hash": "75551c923820ba73028d00e140e40d74db4455582b1a508d8ab8f2f11541043a",
+              "demand": "停止向退游玩家拨打劝归电话，并以明确内容调整回应争议",
+              "evidence_quote": "退游居然能收到预约电话劝归",
+              "issue_categories": [
+                "账号/隐私安全",
+                "官方回应/公关信任",
+                "政治/历史争议"
+              ],
+              "issue_category": "账号/隐私安全",
+              "needs_review": false,
+              "reason": "玩家反感退游后仍收到劝归电话，并以反讽方式质疑官方承诺和涉及历史题材的内容安排。",
+              "review_id": 4042,
+              "sentiment_label": "差评",
+              "target": "退游召回电话及官方运营"
+            },
+            "app_id": "1618911882",
+            "content": "退游居然能收到预约电话劝归，lysk你能在表演一次无论什么情况都不会改变吗？什么时候出抗日池什么时候再说吧脸都不要了",
+            "content_hash": "75551c923820ba73028d00e140e40d74db4455582b1a508d8ab8f2f11541043a",
+            "country": "cn",
+            "date": "2026-09-23T02:08:36Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 4042,
+            "title": "退游居然能收到预约电话",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "b90b7bd5f69c43195c676ff4001e87cd9f550cbd684048f42a752104f3e3f242",
+              "demand": "立即停止向其拨打电话。",
+              "evidence_quote": "我已经退游了，不要再给我打电话了，一口气打了3个电话",
+              "issue_categories": [
+                "账号/隐私安全",
+                "广告/宣传问题",
+                "强负面口碑/情绪宣泄"
+              ],
+              "issue_category": "账号/隐私安全",
+              "needs_review": false,
+              "reason": "已退游玩家称连续收到三次电话，明确要求停止联系，情绪强烈愤怒。",
+              "review_id": 4054,
+              "sentiment_label": "差评",
+              "target": "游戏方对退游玩家的电话联系行为"
+            },
+            "app_id": "1618911882",
+            "content": "我已经退游了，不要再给我打电话了，一口气打了3个电话，你给我滚啊",
+            "content_hash": "b90b7bd5f69c43195c676ff4001e87cd9f550cbd684048f42a752104f3e3f242",
+            "country": "cn",
+            "date": "2026-09-22T23:18:10Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 4054,
+            "title": "不要再骚扰我了",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "117cf44c1af6db5dfbae54744075673caa43ce273d0e6cf24770c9562db62ae1",
+              "demand": "停止向已退游玩家拨打电话。",
+              "evidence_quote": "退游几个月了还来打电话，喜不喜欢我的大一星",
+              "issue_categories": [
+                "账号/隐私安全",
+                "广告/宣传问题"
+              ],
+              "issue_category": "账号/隐私安全",
+              "needs_review": false,
+              "reason": "标题“五佳好评”与正文“大一星”构成反讽，负面情绪指向退游数月后仍被电话联系。",
+              "review_id": 4055,
+              "sentiment_label": "差评",
+              "target": "游戏方对退游玩家的电话联系行为"
+            },
+            "app_id": "1618911882",
+            "content": "退游几个月了还来打电话，喜不喜欢我的大一星",
+            "content_hash": "117cf44c1af6db5dfbae54744075673caa43ce273d0e6cf24770c9562db62ae1",
+            "country": "cn",
+            "date": "2026-09-22T22:40:06Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 4055,
+            "title": "5星好评",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "ad0df0b5a740d8c6a01b922e3cf96104a61fe239cbf4d61956a227b0b1618de6",
+              "demand": "说明未预约仍接到电话的原因，并停止未经预约的电话联系。",
+              "evidence_quote": "不是说要预约才有电话吗，没预约你怎么也给我打了",
+              "issue_categories": [
+                "账号/隐私安全",
+                "广告/宣传问题"
+              ],
+              "issue_category": "账号/隐私安全",
+              "needs_review": false,
+              "reason": "玩家质疑自己未预约却收到电话，对联系方式的使用和触达规则表示不满。",
+              "review_id": 4057,
+              "sentiment_label": "差评",
+              "target": "游戏方的预约电话触达机制"
+            },
+            "app_id": "1618911882",
+            "content": "不是说要预约才有电话吗，没预约你怎么也给我打了",
+            "content_hash": "ad0df0b5a740d8c6a01b922e3cf96104a61fe239cbf4d61956a227b0b1618de6",
+            "country": "cn",
+            "date": "2026-09-22T22:26:03Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 4057,
+            "title": "要脸吗我请问呢",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "ca0e4b3d52449cf0b90c4ff3adfd2413da1c32a877cbb143f21291c74ee781a9",
+              "demand": "停止在未预约的情况下电话联系退游用户进行召回",
+              "evidence_quote": "退游了都删了没有预约也是给我打上电话叫回游了",
+              "issue_categories": [
+                "广告/宣传问题",
+                "账号/隐私安全",
+                "厂商信任/经营争议"
+              ],
+              "issue_category": "广告/宣传问题",
+              "needs_review": false,
+              "reason": "玩家称退游删游且未预约仍收到回游电话，明确不满未经期待的电话营销。",
+              "review_id": 3947,
+              "sentiment_label": "差评",
+              "target": "面向退游玩家的电话召回营销"
+            },
+            "app_id": "1618911882",
+            "content": "退游了都删了没有预约也是给我打上电话叫回游了，没人给你充钱了是吧",
+            "content_hash": "ca0e4b3d52449cf0b90c4ff3adfd2413da1c32a877cbb143f21291c74ee781a9",
+            "country": "cn",
+            "date": "2026-09-22T15:50:44Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 3947,
+            "title": "接lysk完蛋！",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "84b2ed7b6719e2a28c262049ffebe5ecb492d72f491ba484cf7030af71fc89ba",
+              "demand": "停止联系和打扰退游玩家",
+              "evidence_quote": "骚扰退游玩家何意味，挑衅？",
+              "issue_categories": [
+                "账号/隐私安全",
+                "厂商信任/经营争议"
+              ],
+              "issue_category": "账号/隐私安全",
+              "needs_review": false,
+              "reason": "玩家认为运营方对退游玩家的联系构成骚扰，并质疑其动机。",
+              "review_id": 4048,
+              "sentiment_label": "差评",
+              "target": "针对退游玩家的召回联系"
+            },
+            "app_id": "1618911882",
+            "content": "骚扰退游玩家何意味，挑衅？",
+            "content_hash": "84b2ed7b6719e2a28c262049ffebe5ecb492d72f491ba484cf7030af71fc89ba",
+            "country": "cn",
+            "date": "2026-09-23T01:09:26Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 4048,
+            "title": "别来沾边",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "42f7c8168b7dc9c39ce72129295b4a05e06cd1aec8245973c6fd91f819b50a16",
+              "demand": "要求改善背头卡面设计、正面处理现有问题，并审慎联系已流失玩家。",
+              "evidence_quote": "你们的背头真的很丑，这次是真的从2.0玩到现在第一次完全没有抽卡欲望了",
+              "issue_categories": [
+                "内容/玩法反馈",
+                "官方回应/公关信任",
+                "账号/隐私安全"
+              ],
+              "issue_category": "内容/玩法反馈",
+              "needs_review": false,
+              "reason": "玩家明确批评新卡面审美，并认为官方用卡面掩盖问题，同时不满退游玩家收到电话。",
+              "review_id": 4053,
+              "sentiment_label": "差评",
+              "target": "新卡池卡面设计及官方运营处理方式"
+            },
+            "app_id": "1618911882",
+            "content": "无语到了真的，你们的背头真的很丑，这次是真的从2.0玩到现在第一次完全没有抽卡欲望了。而且遇到问题只会出这种黄色卡面来掩盖问题的手段真的很令人发笑，也很想知道你们到底觉得自己“亏（少赚）”了多少钱，我在3.0只玩过两天的同事都接到她当时有好感男主的“道歉”电话了hhh",
+            "content_hash": "42f7c8168b7dc9c39ce72129295b4a05e06cd1aec8245973c6fd91f819b50a16",
+            "country": "cn",
+            "date": "2026-09-23T00:14:44Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 4053,
+            "title": "跑",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "a07493f088d900c4b77e2533b334654dbdfa25a27ea771a2e0a92f8259f9bc48",
+              "demand": "停止向未预约或已卸载游戏的玩家拨打新卡广告电话。",
+              "evidence_quote": "我已经卸载几个月了，却依然再三接到关于恋与深空新卡内容的广告骚扰电话",
+              "issue_categories": [
+                "账号/隐私安全",
+                "广告/宣传问题"
+              ],
+              "issue_category": "账号/隐私安全",
+              "needs_review": false,
+              "reason": "玩家称卸载数月后仍连续收到新卡推广电话，明确将其视为广告骚扰。",
+              "review_id": 3939,
+              "sentiment_label": "差评",
+              "target": "游戏方对卸载玩家的广告电话触达"
+            },
+            "app_id": "1618911882",
+            "content": "今天接连接到了两个恋与深空的骚扰电话（有截图为证），据仍在玩此游戏的网友称，该电话是在游戏里预约过才会打给用户的。我已经卸载几个月了，却依然再三接到关于恋与深空新卡内容的广告骚扰电话。很烦。",
+            "content_hash": "a07493f088d900c4b77e2533b334654dbdfa25a27ea771a2e0a92f8259f9bc48",
+            "country": "cn",
+            "date": "2026-09-22T16:51:00Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 3939,
+            "title": "持续用低质低俗内容骚扰退游玩家",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          }
+        ],
+        "matching": 20,
+        "pending": 0,
+        "total": 495
+      },
+      "limitation": "分类数量仅来自有效 Agent 分析；未分析样本不能当作没有该问题。",
+      "previous": {
+        "classified": 0,
+        "daily": {},
+        "evidence": [],
+        "matching": 0,
+        "pending": 187,
+        "total": 187
+      },
+      "previous_end": "2026-09-17T16:00:00+00:00",
+      "previous_start": "2026-09-11T00:40:14.799458+00:00",
+      "query": {
+        "category": "账号/隐私安全",
+        "question": "核查退游或未预约玩家收到召回电话、短信的反馈是否在本期集中新增，相较等长上期的数量、每日分布和触达情形有何变化。",
+        "review_ids": [
+          4042,
+          4054,
+          4055,
+          4057,
+          3947
+        ]
+      }
+    },
+    {
+      "current": {
+        "classified": 495,
+        "daily": {
+          "2026-09-18": 7,
+          "2026-09-19": 35,
+          "2026-09-20": 34,
+          "2026-09-21": 27,
+          "2026-09-22": 37,
+          "2026-09-23": 9
+        },
+        "evidence": [
+          {
+            "analysis": {
+              "content_hash": "32d73e74de22aa06b479dc6bae40614f94f7f44995b259cf3c50ad5605bfaa33",
+              "demand": "撤回删除男主的决定，并正面承认和纠正相关决策",
+              "evidence_quote": "惊天一跪删除男主都能做得出来，还想美美收割新韭菜",
+              "issue_categories": [
+                "角色/剧情争议",
+                "厂商信任/经营争议",
+                "官方回应/公关信任",
+                "强负面口碑/情绪宣泄"
+              ],
+              "issue_category": "角色/剧情争议",
+              "needs_review": false,
+              "reason": "玩家强烈反对删除男主，认为决策草率且官方拒不认错，并劝新人不要入坑。",
+              "review_id": 4037,
+              "sentiment_label": "差评",
+              "target": "男主删除决策及游戏运营方"
+            },
+            "app_id": "1618911882",
+            "content": "上下几辈子造的孽在玩这个游戏的时候都清了，惊天一跪删除男主都能做得出来，还想美美收割新韭菜，想入坑的新人赶紧跑！完全一拍脑袋做的决定，然后死不认错，我这辈子做过最后悔的事就是帮你游说话",
+            "content_hash": "32d73e74de22aa06b479dc6bae40614f94f7f44995b259cf3c50ad5605bfaa33",
+            "country": "cn",
+            "date": "2026-09-23T02:52:19Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 4037,
+            "title": "玩恋与深空倒大霉！！",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "e36ed4d5468fc0f903d9b7345af01d70108501c33f966d79278c61d64eb0792d",
+              "demand": "调整男主造型和混池审美，停止以相关造型进行召回宣传",
+              "evidence_quote": "还拿背头当宣传呢，新混池这不🦆店风吗",
+              "issue_categories": [
+                "角色/剧情争议",
+                "价值观/性别争议",
+                "广告/宣传问题",
+                "社区环境/玩家冲突"
+              ],
+              "issue_category": "角色/剧情争议",
+              "needs_review": false,
+              "reason": "玩家强烈不满男主背头造型和新混池审美，也质疑宣传策略，并使用侮辱性措辞攻击仍在游玩的玩家。",
+              "review_id": 4047,
+              "sentiment_label": "差评",
+              "target": "男主造型、新混池宣传及玩家群体"
+            },
+            "app_id": "1618911882",
+            "content": "还拿背头当宣传呢，新混池这不🦆店风吗，早说你是皇游啊。这公司还有女性吗？有审美吗？还是就是想拿男主当皮套恶心人呢？拿背头想哄人回游，又闹笑话了吧？跑的人更多了🥳至于还在玩的真是苍蝇吧，真是对上你们胃口了，就好这口是吧",
+            "content_hash": "e36ed4d5468fc0f903d9b7345af01d70108501c33f966d79278c61d64eb0792d",
+            "country": "cn",
+            "date": "2026-09-23T01:20:44Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 4047,
+            "title": "全男班做乙游",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "66f95889acdc3f89be34280c300a3d55022fd579433391b6d5525c5bd2e36364",
+              "demand": "增加第一视角内容，减少素材复用，并按男主特征制作不偏离人设的女性向卡面",
+              "evidence_quote": "实际卡面为降本增笑大部分为第三视角以及不断重复利用",
+              "issue_categories": [
+                "广告/宣传问题",
+                "内容/玩法反馈",
+                "角色/剧情争议",
+                "价值观/性别争议"
+              ],
+              "issue_category": "广告/宣传问题",
+              "needs_review": false,
+              "reason": "玩家认为实机卡面与第一视角恋爱宣传不符，并批评动作素材复用、角色辨识度不足、人物失真及内容取向偏离女性向定位。",
+              "review_id": 4049,
+              "sentiment_label": "差评",
+              "target": "卡面制作、男主人设及第一视角宣传"
+            },
+            "app_id": "1618911882",
+            "content": "打着第一视角恋爱的幌子，实际卡面为降本增笑大部分为第三视角以及不断重复利用、几个男主同一套动捕/同一套动作素材的动作和神态。未考虑男主本身特征采用通用模版导致男主没有辨识度，并且ooc情况严重，前期白月光，后期给你打成商k失足少男，非常割裂，完全为了流水卖🥩而卖，照着一般片的流程做女性向卡面，这不是给女生看的。挂狗头卖羊肉游戏",
+            "content_hash": "66f95889acdc3f89be34280c300a3d55022fd579433391b6d5525c5bd2e36364",
+            "country": "cn",
+            "date": "2026-09-23T01:03:27Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 4049,
+            "title": "现阶段为粗糙滥制的制作水平，并且偏离女性向乙女初衷，实机与宣传不符",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "0862b8849e82b95b1e2c42ffb8c6d8df56a4b7de92c70eeff400182bb9ef010c",
+              "demand": "改善剧情质量，停止擦边、物化及违背角色设定的内容创作",
+              "evidence_quote": "剧情越来越烂，一开始还有各种伏笔和温馨剧情，后来只剩擦边",
+              "issue_categories": [
+                "角色/剧情争议",
+                "价值观/性别争议",
+                "厂商信任/经营争议"
+              ],
+              "issue_category": "角色/剧情争议",
+              "needs_review": false,
+              "reason": "玩家认为2.0后剧情质量下降、内容趋向擦边和物化，并批评下药、私闯民宅及角色OOC，已明确退游且拒绝厂商其他游戏。",
+              "review_id": 3943,
+              "sentiment_label": "差评",
+              "target": "2.0版本后的剧情、男主塑造及叠纸"
+            },
+            "app_id": "1618911882",
+            "content": "剧情党来了，从2.0的剧情开始就一直在侮辱挑衅我的底线，剧情越来越烂，一开始还有各种伏笔和温馨剧情，后来只剩擦边，每个男主都如同鸭子一般谄媚，不是所有人都喜欢物化那一套的好吗……甚至有男主给女主下药，私闯民宅的剧情，ooc卡面层出不穷。本来作为一个低氪党，卡池排期紧也不甚在意的人，逼到连游戏都不玩了，叠纸也是NB， 再见，再也不会玩叠纸的任何游戏",
+            "content_hash": "0862b8849e82b95b1e2c42ffb8c6d8df56a4b7de92c70eeff400182bb9ef010c",
+            "country": "cn",
+            "date": "2026-09-22T16:13:18Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 3943,
+            "title": "几乎没有给哪个软件打过一分",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "ba58a4efe7b081ba11fba369d3af1ec5b7ff310ad64263adcb91eabac3e9abc7",
+              "demand": "恢复慢、静、稳且注重细节和乙女沉浸感的演出，改善镜头、动作、服饰与审美设计",
+              "evidence_quote": "快速晃动的镜头搭配窜来窜去的人物肢体动作，让人产生强烈的“观看”感而非沉浸式代入感。",
+              "issue_categories": [
+                "内容/玩法反馈",
+                "角色/剧情争议",
+                "广告/宣传问题"
+              ],
+              "issue_category": "内容/玩法反馈",
+              "needs_review": false,
+              "reason": "玩家详细批评PV及近期内容的快速镜头、肢体动作和服饰风格，认为乙女沉浸感与审美质量下降。",
+              "review_id": 3979,
+              "sentiment_label": "差评",
+              "target": "PV演出、角色动作、服饰及整体美术风格"
+            },
+            "app_id": "1618911882",
+            "content": "回忆夏以昼的出场pv，那个时候画面还慢、静、稳，每一帧都是充满细节的。皮鞋一步一步的啪嗒声、缓缓扣上帽子等等。\n\t\n去年黎深秦彻的新主线“动作戏”明显增加，但并不至于油腻，还处在炫技范围内。\n\t\n此后祁煜跑车卡的下车动作、秦彻生日卡下还是上摩托的动作，和今天pv里的“打戏”属于一个风格。快速晃动的镜头搭配窜来窜去的人物肢体动作，让人产生强烈的“观看”感而非沉浸式代入感。\n\t\n动画服饰的整体风格，是夏以昼新日卡的极端去乙女化版。\n\t\n无论是创新的能力、还是对审美风格的把控，都已经到了尽头。\n\t\n就结束在这里吧。",
+            "content_hash": "ba58a4efe7b081ba11fba369d3af1ec5b7ff310ad64263adcb91eabac3e9abc7",
+            "country": "cn",
+            "date": "2026-09-22T11:44:13Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 3979,
+            "title": "审美越来越low，商k池都能出了哈哈哈哈，丑到爆炸",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "a3ea1e70645cebd2c66f6156f23e59de62ad959802c0499334c40731af95954d",
+              "demand": "后续混池不要加入其不喜欢的第六名男主",
+              "evidence_quote": "没有第六丑男出现狗感觉混池也是高级了起来",
+              "issue_categories": [
+                "角色/剧情争议",
+                "活动/奖励问题"
+              ],
+              "issue_category": "角色/剧情争议",
+              "needs_review": true,
+              "reason": "玩家肯定本次混池未出现第六名男主，同时贬低该角色；“紫钻档清空”等用语含义存在语境依赖。",
+              "review_id": 4039,
+              "sentiment_label": "中评",
+              "target": "新混池及第六名男主"
+            },
+            "app_id": "1618911882",
+            "content": "没有第六丑男出现狗感觉混池也是高级了起来！赏你个紫钻档清空！下次不许上丑男吓人了嗷",
+            "content_hash": "a3ea1e70645cebd2c66f6156f23e59de62ad959802c0499334c40731af95954d",
+            "country": "cn",
+            "date": "2026-09-23T02:38:24Z",
+            "platform": "App Store",
+            "rating": 5.0,
+            "review_id": 4039,
+            "title": "美美的很安心",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "ea53c7107f5d1fd2ccfe50efc257f04254c316655b96c444591123f82d5e2df0",
+              "demand": "重新审视角色相关内容与售卖方式，不要损害角色呈现。",
+              "evidence_quote": "越做越离谱了，把好好的角色拿来卖吗",
+              "issue_categories": [
+                "角色/剧情争议",
+                "付费/商业化问题",
+                "强负面口碑/情绪宣泄"
+              ],
+              "issue_category": "角色/剧情争议",
+              "needs_review": true,
+              "reason": "玩家强烈不满角色被用于售卖，但未说明具体角色、卡面或事件，细节需复核。",
+              "review_id": 4058,
+              "sentiment_label": "差评",
+              "target": "角色内容及其商业化呈现"
+            },
+            "app_id": "1618911882",
+            "content": "好好的游戏做成这个样子？越做越离谱了，把好好的角色拿来卖吗？你有眼睛吗好好看看行吗？",
+            "content_hash": "ea53c7107f5d1fd2ccfe50efc257f04254c316655b96c444591123f82d5e2df0",
+            "country": "cn",
+            "date": "2026-09-22T21:33:33Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 4058,
+            "title": "有病吧？",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "89914f7c0f19a63ae7f0af5df2c9ee1fa388719425d03ca2f8002e419a139d7f",
+              "demand": "推出“小狼”相关内容，并减少充值玩家频繁触发大保底的情况。",
+              "evidence_quote": "上小狼，还有能不能不要让充值玩家老吃大保底",
+              "issue_categories": [
+                "付费/商业化问题",
+                "角色/剧情争议"
+              ],
+              "issue_category": "付费/商业化问题",
+              "needs_review": true,
+              "reason": "玩家提出角色内容和抽卡保底体验诉求，语气偏克制；“小狼”的具体所指需结合游戏语境复核。",
+              "review_id": 3935,
+              "sentiment_label": "中评",
+              "target": "角色内容安排及充值抽卡保底机制"
+            },
+            "app_id": "1618911882",
+            "content": "上小狼，还有能不能不要让充值玩家老吃大保底",
+            "content_hash": "89914f7c0f19a63ae7f0af5df2c9ee1fa388719425d03ca2f8002e419a139d7f",
+            "country": "cn",
+            "date": "2026-09-22T20:32:39Z",
+            "platform": "App Store",
+            "rating": 5.0,
+            "review_id": 3935,
+            "title": "……",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          }
+        ],
+        "matching": 149,
+        "pending": 0,
+        "total": 495
+      },
+      "limitation": "分类数量仅来自有效 Agent 分析；未分析样本不能当作没有该问题。",
+      "previous": {
+        "classified": 0,
+        "daily": {},
+        "evidence": [],
+        "matching": 0,
+        "pending": 187,
+        "total": 187
+      },
+      "previous_end": "2026-09-17T16:00:00+00:00",
+      "previous_start": "2026-09-11T00:40:14.799458+00:00",
+      "query": {
+        "category": "角色/剧情争议",
+        "question": "核查本期围绕删除男主、新混池造型、第三视角及角色色情化/OOC的争议是否显著增多，主要诉求是否由长期剧情不满转向新卡池与角色处置。",
+        "review_ids": [
+          4037,
+          4047,
+          4049,
+          3943,
+          3979
+        ]
+      }
+    },
+    {
+      "current": {
+        "classified": 495,
+        "daily": {
+          "2026-09-18": 4,
+          "2026-09-19": 15,
+          "2026-09-20": 18,
+          "2026-09-21": 15,
+          "2026-09-22": 25,
+          "2026-09-23": 6
+        },
+        "evidence": [
+          {
+            "analysis": {
+              "content_hash": "86a1cf4f70eef15113ab184505bf37937dd43f97b199b80c9f8f6dfeab968bf6",
+              "demand": "重视玩家反馈、停止删评，并改善产能、资源分配和第一视角内容",
+              "evidence_quote": "从来不在乎玩家的发声，产能严重不足，资源分配不均，逼氪严重",
+              "issue_categories": [
+                "官方回应/公关信任",
+                "付费/商业化问题",
+                "内容/玩法反馈",
+                "移动端体验问题"
+              ],
+              "issue_category": "官方回应/公关信任",
+              "needs_review": false,
+              "reason": "玩家认为官方忽视意见并删除评论，同时批评产能、资源分配、逼氪、设备要求和第一视角内容减少。",
+              "review_id": 4041,
+              "sentiment_label": "差评",
+              "target": "官方运营及游戏内容体验"
+            },
+            "app_id": "1618911882",
+            "content": "无数次的试探玩家底线，从来不在乎玩家的发声，产能严重不足，资源分配不均，逼氪严重。对设备要求也越来越高。宣传的沉浸式、第一视角越来越少。还喜欢删评论",
+            "content_hash": "86a1cf4f70eef15113ab184505bf37937dd43f97b199b80c9f8f6dfeab968bf6",
+            "country": "cn",
+            "date": "2026-09-23T02:20:07Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 4041,
+            "title": "大爆雷后又删评论",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "c25012e7d6afa2d2a74ed4ff786ca5fdc9a77cd82cccb87de78089a2deb3b4d0",
+              "demand": "公布自查自纠结果，并正面回应历史文化、非法行为美化和急救科普等问题",
+              "evidence_quote": "自查自纠结果呢？贵司对于触碰民族历史伤痛、摸糊本土文化符号",
+              "issue_categories": [
+                "政治/历史争议",
+                "官方回应/公关信任",
+                "社区环境/玩家冲突",
+                "厂商信任/经营争议"
+              ],
+              "issue_category": "政治/历史争议",
+              "needs_review": false,
+              "reason": "玩家追问自查结果，指责内容对民族历史和本土文化不够敏感，并认为官方回避主要问题、干预社区舆论。",
+              "review_id": 4050,
+              "sentiment_label": "差评",
+              "target": "游戏中的历史文化表达及官方危机处理"
+            },
+            "app_id": "1618911882",
+            "content": "自查自纠结果呢？贵司对于触碰民族历史伤痛、摸糊本土文化符号、美化非法行为、急救科普存在专业操作漏洞等方面缺乏足够的敏感度和敬畏之心，且在面临关键问题引发大范围公共舆情时，断尾求生回避主要矛盾，却密切关注社区局势，频繁运用某些手段激化群体矛盾，干预社区舆论走向，试图淹没、混淆真实玩家的呼声，将消费者的愤怒视作养料，多次变相否定公众行使监督、合理表达意见与提出质疑的正当权利，苍生无言问题依然存在，讳疾忌医总有积重难返的那一天。自查自纠结果呢？贵司对于触碰民族历史伤痛、摸糊本土文化符号、美化非法行为、急救科普存在专业操作漏洞等方面缺乏足够的敏感度和敬畏之心，且在面临关键问题引发大范围公共舆情时，断尾求生回避主要矛盾，却密切关注社区局势，频繁运用某些手段激化群体矛盾，干预社区舆论走向，试图淹没、混淆真实玩家的呼声，将消费者的愤怒视作养料，多次变相否定公众行使监督、合理表达意见与提出质疑的正当权利，苍生无言问题依然存在，讳疾忌医总有积重难返的那一天",
+            "content_hash": "c25012e7d6afa2d2a74ed4ff786ca5fdc9a77cd82cccb87de78089a2deb3b4d0",
+            "country": "cn",
+            "date": "2026-09-23T00:57:58Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 4050,
+            "title": "别玩，不尊重玩家，不尊重男主",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "9dd3e1c3be8c8394adfff3b8111196ac69330234dcd345dafac41e94614ec816",
+              "demand": "停止删除玩家评论并对相关问题负责",
+              "evidence_quote": "我去还删评",
+              "issue_categories": [
+                "官方回应/公关信任",
+                "评分抗议/集中差评"
+              ],
+              "issue_category": "官方回应/公关信任",
+              "needs_review": true,
+              "reason": "标题指控删评，正文批评官方不敢承担责任；缺少删评对象和经过，需复核。",
+              "review_id": 3960,
+              "sentiment_label": "差评",
+              "target": "官方评论管理及责任担当"
+            },
+            "app_id": "1618911882",
+            "content": "敢做不敢当",
+            "content_hash": "9dd3e1c3be8c8394adfff3b8111196ac69330234dcd345dafac41e94614ec816",
+            "country": "cn",
+            "date": "2026-09-22T14:18:19Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 3960,
+            "title": "我去还删评",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "d5d28fb2e41aa4f940985ca17f4bca443679f4e44fbd8ad5d3d2bfa1c5d10502",
+              "demand": "持续治理社区、安抚受影响玩家，并调整以高随机混池和收益为先的运营安排",
+              "evidence_quote": "他们只交出一纸公告，后续没有持续的治理，没有对老玩家情绪的安抚。",
+              "issue_categories": [
+                "官方回应/公关信任",
+                "社区环境/玩家冲突",
+                "付费/商业化问题",
+                "广告/宣传问题"
+              ],
+              "issue_category": "官方回应/公关信任",
+              "needs_review": false,
+              "reason": "玩家认可角色和原有美术，但批评运营方在风波后仅发布公告，缺少持续社区治理和玩家安抚，并迅速回归混池商业节奏。",
+              "review_id": 3983,
+              "sentiment_label": "差评",
+              "target": "官方危机处理、社区治理及商业化运营"
+            },
+            "app_id": "1618911882",
+            "content": "需要付费抽卡的时候：这是你的恋人；轮到版本宣发、做PV的时候，又变成战斗向游戏，像上新英雄一样，砸一个新角色出来。 情感陪伴类游戏，官方其实背负着一份特殊的责任：大家把柔软、无处安放的情绪交付进来，把心动、期待、两年的时间投入进去，就是“揽起这份情感”。这份托付不是单纯的买卖，不只是玩家花钱换一段虚拟剧情。承接了玩家的真心，就理应守护好承载这份情感的环境。 可整件事看下来，他们只接住了情感带来的收益，却没有承担对应的责任。 玩家交付真心，让角色、故事拥有意义；但风波爆发之后，面对被污染的社区、被贴上负面标签的普通玩家、大量同好失望离开，他们只交出一纸公告，后续没有持续的治理，没有对老玩家情绪的安抚。 风波热度一过，立刻回归原本的商业节奏：重心准备高随机性的混池卡池。把玩家投入的情感，当成了可以持续变现的基础，却不愿意用心守护这份情感赖以生存的空间。 这就是一种情感上的浪费。 大家捧出来的温柔和热爱，原本可以长久滋养这个故事，最后却在混乱的舆论、缺位的处理、商业化优先的排期里慢慢消耗掉。 所以，他们不配揽下大家这么厚重的情感寄托。 不是否定角色本身，角色依旧是当年打动你的样子。是运营方，辜负了这群愿意交付真心的人。",
+            "content_hash": "d5d28fb2e41aa4f940985ca17f4bca443679f4e44fbd8ad5d3d2bfa1c5d10502",
+            "country": "cn",
+            "date": "2026-09-22T11:14:32Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 3983,
+            "title": "你依旧是3D首部很精美很喜欢可是我不想获取了",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "3b93ee18d11fcdc27cebe5079c40983e8c3479318f379f4c9817fa34ffe2a5d3",
+              "demand": "要求官方公布自查自纠结果，并改善男主背头造型",
+              "evidence_quote": "自查自纠什么时候出来？",
+              "issue_categories": [
+                "官方回应/公关信任",
+                "角色/剧情争议"
+              ],
+              "issue_category": "官方回应/公关信任",
+              "needs_review": false,
+              "reason": "正文追问自查自纠结果的公布时间，标题同时表达对角色背头造型的不满。",
+              "review_id": 3997,
+              "sentiment_label": "差评",
+              "target": "官方自查信息披露及角色造型"
+            },
+            "app_id": "1618911882",
+            "content": "自查自纠什么时候出来？",
+            "content_hash": "3b93ee18d11fcdc27cebe5079c40983e8c3479318f379f4c9817fa34ffe2a5d3",
+            "country": "cn",
+            "date": "2026-09-22T08:18:57Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 3997,
+            "title": "背头都做不明白",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "32d73e74de22aa06b479dc6bae40614f94f7f44995b259cf3c50ad5605bfaa33",
+              "demand": "撤回删除男主的决定，并正面承认和纠正相关决策",
+              "evidence_quote": "惊天一跪删除男主都能做得出来，还想美美收割新韭菜",
+              "issue_categories": [
+                "角色/剧情争议",
+                "厂商信任/经营争议",
+                "官方回应/公关信任",
+                "强负面口碑/情绪宣泄"
+              ],
+              "issue_category": "角色/剧情争议",
+              "needs_review": false,
+              "reason": "玩家强烈反对删除男主，认为决策草率且官方拒不认错，并劝新人不要入坑。",
+              "review_id": 4037,
+              "sentiment_label": "差评",
+              "target": "男主删除决策及游戏运营方"
+            },
+            "app_id": "1618911882",
+            "content": "上下几辈子造的孽在玩这个游戏的时候都清了，惊天一跪删除男主都能做得出来，还想美美收割新韭菜，想入坑的新人赶紧跑！完全一拍脑袋做的决定，然后死不认错，我这辈子做过最后悔的事就是帮你游说话",
+            "content_hash": "32d73e74de22aa06b479dc6bae40614f94f7f44995b259cf3c50ad5605bfaa33",
+            "country": "cn",
+            "date": "2026-09-23T02:52:19Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 4037,
+            "title": "玩恋与深空倒大霉！！",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "75551c923820ba73028d00e140e40d74db4455582b1a508d8ab8f2f11541043a",
+              "demand": "停止向退游玩家拨打劝归电话，并以明确内容调整回应争议",
+              "evidence_quote": "退游居然能收到预约电话劝归",
+              "issue_categories": [
+                "账号/隐私安全",
+                "官方回应/公关信任",
+                "政治/历史争议"
+              ],
+              "issue_category": "账号/隐私安全",
+              "needs_review": false,
+              "reason": "玩家反感退游后仍收到劝归电话，并以反讽方式质疑官方承诺和涉及历史题材的内容安排。",
+              "review_id": 4042,
+              "sentiment_label": "差评",
+              "target": "退游召回电话及官方运营"
+            },
+            "app_id": "1618911882",
+            "content": "退游居然能收到预约电话劝归，lysk你能在表演一次无论什么情况都不会改变吗？什么时候出抗日池什么时候再说吧脸都不要了",
+            "content_hash": "75551c923820ba73028d00e140e40d74db4455582b1a508d8ab8f2f11541043a",
+            "country": "cn",
+            "date": "2026-09-23T02:08:36Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 4042,
+            "title": "退游居然能收到预约电话",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "c09c232278da1a759c5bb2098c7f0a85b1850f8b927b7fde080be93c2c6f292c",
+              "demand": "要求宣传与实机一致、降低逼氪诱氪，并正面回应相关争议、改善卡面设计及停止电话营销。",
+              "evidence_quote": "宣传与实机不符 逼氪诱氪 排期不合理 未正面回应立场问题",
+              "issue_categories": [
+                "厂商信任/经营争议",
+                "广告/宣传问题",
+                "付费/商业化问题",
+                "官方回应/公关信任"
+              ],
+              "issue_category": "厂商信任/经营争议",
+              "needs_review": false,
+              "reason": "评论集中指控宣传不符、诱导付费、争议回应缺失及卡面粗制滥造，整体为强烈负面评价。",
+              "review_id": 4052,
+              "sentiment_label": "差评",
+              "target": "游戏厂商的运营、公关、商业化及卡面设计"
+            },
+            "app_id": "1618911882",
+            "content": "宣传与实机不符 逼氪诱氪 排期不合理 未正面回应立场问题 未回应娱乐化刑事案件问题 未回应引狼入室相关问题 一个乙女游戏反耳为了太子自己偷偷买乙女腐热搜 饭圈化管理社区 买水军 罄竹难书\n最新卡池完全黄油来的，做的完全就是屎啊丑的要死，感觉策划换全男了，真以为抬个粗制滥造的背头黄卡就能吸引玩家，做啥白日梦了老天奶，还给退游玩家打电话，咋恁不要脸    以为你们男的乐意看擦边的就觉得女的喜欢这种商k风卡，小头控制大头 呸",
+            "content_hash": "c09c232278da1a759c5bb2098c7f0a85b1850f8b927b7fde080be93c2c6f292c",
+            "country": "cn",
+            "date": "2026-09-23T00:26:57Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 4052,
+            "title": "欺骗消费者",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          }
+        ],
+        "matching": 83,
+        "pending": 0,
+        "total": 495
+      },
+      "limitation": "分类数量仅来自有效 Agent 分析；未分析样本不能当作没有该问题。",
+      "previous": {
+        "classified": 0,
+        "daily": {},
+        "evidence": [],
+        "matching": 0,
+        "pending": 187,
+        "total": 187
+      },
+      "previous_end": "2026-09-17T16:00:00+00:00",
+      "previous_start": "2026-09-11T00:40:14.799458+00:00",
+      "query": {
+        "category": "官方回应/公关信任",
+        "question": "核查要求公布“自查自纠”结果、指控删评或认为官方未正面回应的评论是否形成集中增长，并确认本期主要关联的具体争议。",
+        "review_ids": [
+          4041,
+          4050,
+          3960,
+          3983,
+          3997
+        ]
+      }
+    },
+    {
+      "current": {
+        "classified": 495,
+        "daily": {
+          "2026-09-18": 1,
+          "2026-09-20": 1,
+          "2026-09-21": 1,
+          "2026-09-22": 1
+        },
+        "evidence": [
+          {
+            "analysis": {
+              "content_hash": "f8d138872d9cf9385bb9bf3b7803a50bb6943d2dd72a0c0c5b9dd7141da1451e",
+              "demand": "希望解决回游后无法下载游戏的问题",
+              "evidence_quote": "我退游了 重新回游不让我下载是何意为？",
+              "issue_categories": [
+                "Bug/闪退问题"
+              ],
+              "issue_category": "Bug/闪退问题",
+              "needs_review": true,
+              "reason": "评论者反馈回游时无法下载，但未提供报错、设备或地区信息，无法判断是技术故障、兼容性还是商店限制。",
+              "review_id": 3934,
+              "sentiment_label": "差评",
+              "target": "游戏下载功能"
+            },
+            "app_id": "1618911882",
+            "content": "我不知道什么意思 我退游了 重新回游不让我下载是何意为？",
+            "content_hash": "f8d138872d9cf9385bb9bf3b7803a50bb6943d2dd72a0c0c5b9dd7141da1451e",
+            "country": "cn",
+            "date": "2026-09-20T23:02:30Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 3934,
+            "title": "？",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "cbd7472d0a8a90565cbe681fc0922b578b7f51c8d1e9c53d6bfe64d4ade15b9c",
+              "demand": "尽快修复更新后在家园制作娃娃导致手机频繁卡死的问题",
+              "evidence_quote": "进入家园制作娃娃频繁手机卡死",
+              "issue_categories": [
+                "Bug/闪退问题",
+                "移动端体验问题"
+              ],
+              "issue_category": "Bug/闪退问题",
+              "needs_review": false,
+              "reason": "玩家明确反馈分线更新后，家园制作娃娃场景会频繁导致手机卡死，并要求尽快修复。",
+              "review_id": 3412,
+              "sentiment_label": "差评",
+              "target": "更新后的家园娃娃制作功能"
+            },
+            "app_id": "1618911882",
+            "content": "哥分线更新后进入家园制作娃娃频繁手机卡死。原来可不这样，尽快解决啊！不是我手机的问题",
+            "content_hash": "cbd7472d0a8a90565cbe681fc0922b578b7f51c8d1e9c53d6bfe64d4ade15b9c",
+            "country": "cn",
+            "date": "2026-09-20T08:12:34-07:00",
+            "platform": "App Store",
+            "rating": 4.0,
+            "review_id": 3412,
+            "title": "手机卡死",
+            "topic": "version:6.0.0",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "639c34029e9198e8480829251e07e643641444e29e3e345b8620b46fb70b7e21",
+              "demand": "修复启动卡死和黑屏问题，使游戏能够正常进入",
+              "evidence_quote": "点开就一直在叠纸界面上卡着，后面直接黑屏了",
+              "issue_categories": [
+                "Bug/闪退问题",
+                "移动端体验问题"
+              ],
+              "issue_category": "Bug/闪退问题",
+              "needs_review": false,
+              "reason": "描述启动界面卡死后黑屏，导致游戏完全无法进入，同时提到需额外下载54GB内容。",
+              "review_id": 3787,
+              "sentiment_label": "差评",
+              "target": "游戏客户端启动与移动端安装体验"
+            },
+            "app_id": "1618911882",
+            "content": "点开就一直在叠纸界面上卡着，后面直接黑屏了更别说游戏内还要还要下载54gb的内容。我不管网上传的各种黑料，你现在游戏是完全进不去的状态。",
+            "content_hash": "639c34029e9198e8480829251e07e643641444e29e3e345b8620b46fb70b7e21",
+            "country": "cn",
+            "date": "2026-09-18T08:38:18Z",
+            "platform": "App Store",
+            "rating": 1.0,
+            "review_id": 3787,
+            "title": "进不去",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          },
+          {
+            "analysis": {
+              "content_hash": "5b07dfda83989ef806e187541d177591913f563f51bf0a9962c7569f1a7bb1e8",
+              "demand": "希望招聘可靠的公关团队、吸取教训并打磨内容，同时增加老玩家的粉钻获取途径",
+              "evidence_quote": "我觉得整体来说还是不错的",
+              "issue_categories": [
+                "正向口碑/泛好评",
+                "养成/进度反馈",
+                "官方回应/公关信任",
+                "Bug/闪退问题"
+              ],
+              "issue_category": "正向口碑/泛好评",
+              "needs_review": false,
+              "reason": "玩家总体肯定游戏的3D乙女创新、早期版本和音乐，并在支持长期运营的同时提出公关、打磨及老玩家资源获取建议。",
+              "review_id": 4031,
+              "sentiment_label": "好评",
+              "target": "《恋与深空》整体、官方公关及老玩家资源供给"
+            },
+            "app_id": "1618911882",
+            "content": "突破了乙游里2D的锚点，也是国内首个3D乙女游戏，敢在女性向方面创新，叠纸还是很用心的，就像换装bug，玩家都说好玩，深空就真的做出来了。6.0之前每一个版本我都很满意。有错误改正别糟蹋了初创心血。真的招点靠谱的公关部门吧，吸取教训好好打磨吧。不管是1.0还是2.0版本的主题曲 深空都是在用心的创作 我觉得还是很好听的哈\n还有那个粉钻获取，一直跟着你的开服玩家，轨道打完了基本没有钻的获取途径了，希望关照一下老玩家吧。\n深空是国内第一款3D乙游，想对初创团队说的，很高兴创造出他们陪我走了很漫长的低谷期）虽然失去了很多玩家，但是经历了这么大事情还能陪着你的玩家别辜负了她们对你们的期望信任。错了能改正。还是希望深空长命百岁，越来越好。",
+            "content_hash": "5b07dfda83989ef806e187541d177591913f563f51bf0a9962c7569f1a7bb1e8",
+            "country": "cn",
+            "date": "2026-09-22T03:54:26Z",
+            "platform": "App Store",
+            "rating": 5.0,
+            "review_id": 4031,
+            "title": "我觉得整体来说还是不错的",
+            "topic": "",
+            "url": "https://apps.apple.com/cn/app/id1618911882?see-all=reviews"
+          }
+        ],
+        "matching": 4,
+        "pending": 0,
+        "total": 495
+      },
+      "limitation": "分类数量仅来自有效 Agent 分析；未分析样本不能当作没有该问题。",
+      "previous": {
+        "classified": 0,
+        "daily": {},
+        "evidence": [],
+        "matching": 0,
+        "pending": 187,
+        "total": 187
+      },
+      "previous_end": "2026-09-17T16:00:00+00:00",
+      "previous_start": "2026-09-11T00:40:14.799458+00:00",
+      "query": {
+        "category": "Bug/闪退问题",
+        "question": "核查无法下载、启动卡死黑屏及家园制作娃娃卡死是否为本期新增或持续性技术问题，并比较等长上期的数量和原文症状。",
+        "review_ids": [
+          3934,
+          3412,
+          3787
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "本轮覆盖范围内495条评论已全部完成程序分析，pending为0，但人工复核数为0，且仍有需复核或不确定分类，涉及严重指控时不能直接作为事实结论。",
+    "evidence仅为展示样本，不代表各问题的完整分布，也不能据此推算整体玩家占比或事故发生率。",
+    "上期187条评论的classified为0、pending为187，不具备按分类数量或日分布直接比较增幅的条件；因此本轮调查只能确认本期分布，不能认定相较上期显著增长或集中新增。",
+    "评论未提供完整客户端日志、外呼授权链路、官方内容版本及内部决策材料，故障原因、电话触达机制、删评和舆论干预等说法均待内部核验。",
+    "仅代表当前已采集且完成分析的评论；玩家描述及原因假设仍需业务核实。"
+  ],
+  "model": "gpt-5.6-sol",
+  "positive": [
+    "有玩家明确肯定新混合卡池，并希望游戏持续运营（3949）。",
+    "有玩家表达对秦彻角色及长期游玩的喜爱（3980）。",
+    "玩家认可3D乙女创新、早期版本与音乐创作，同时仍期待团队纠错和继续打磨（4031）。",
+    "有玩家希望团队保持创作勇气，并对游戏长期发展表达支持（3999、4023）。",
+    "建设性好评希望继续加强剧情打磨和体验创新（3952）。"
+  ],
+  "prompt_version": "appstore-agent-v1",
+  "reasoning_effort": "medium",
+  "run_id": 6,
+  "stats": {
+    "analyzed_average_rating": 1.38,
+    "average_rating": 1.38,
+    "categories": {
+      "Bug/闪退问题": 4,
+      "付费/商业化问题": 71,
+      "价值观/性别争议": 95,
+      "养成/进度反馈": 9,
+      "内容/玩法反馈": 53,
+      "厂商信任/经营争议": 161,
+      "可玩性/内容单薄": 14,
+      "官方回应/公关信任": 83,
+      "广告/宣传问题": 50,
+      "强负面口碑/情绪宣泄": 206,
+      "政治/历史争议": 40,
+      "未归类/待复核": 23,
+      "本地化/地区差异": 5,
+      "正向口碑/泛好评": 28,
+      "活动/奖励问题": 6,
+      "社区二创/热梗": 2,
+      "社区环境/玩家冲突": 90,
+      "移动端体验问题": 6,
+      "角色/剧情争议": 149,
+      "评分抗议/集中差评": 27,
+      "账号/隐私安全": 20,
+      "退款/下架诉求": 76
+    },
+    "daily": {
+      "2026-09-18": {
+        "categories": {
+          "Bug/闪退问题": 1,
+          "付费/商业化问题": 3,
+          "价值观/性别争议": 3,
+          "养成/进度反馈": 1,
+          "厂商信任/经营争议": 9,
+          "可玩性/内容单薄": 1,
+          "官方回应/公关信任": 4,
+          "广告/宣传问题": 1,
+          "强负面口碑/情绪宣泄": 19,
+          "政治/历史争议": 4,
+          "未归类/待复核": 1,
+          "正向口碑/泛好评": 2,
+          "社区环境/玩家冲突": 3,
+          "移动端体验问题": 1,
+          "角色/剧情争议": 7,
+          "评分抗议/集中差评": 3,
+          "退款/下架诉求": 5
+        },
+        "sentiments": {
+          "中评": 1,
+          "好评": 1,
+          "差评": 26,
+          "待复核": 1
+        },
+        "total": 29
+      },
+      "2026-09-19": {
+        "categories": {
+          "付费/商业化问题": 9,
+          "价值观/性别争议": 16,
+          "养成/进度反馈": 1,
+          "内容/玩法反馈": 11,
+          "厂商信任/经营争议": 40,
+          "可玩性/内容单薄": 7,
+          "官方回应/公关信任": 15,
+          "广告/宣传问题": 6,
+          "强负面口碑/情绪宣泄": 44,
+          "政治/历史争议": 3,
+          "未归类/待复核": 8,
+          "正向口碑/泛好评": 6,
+          "活动/奖励问题": 2,
+          "社区环境/玩家冲突": 25,
+          "角色/剧情争议": 35,
+          "评分抗议/集中差评": 7,
+          "退款/下架诉求": 19
+        },
+        "sentiments": {
+          "好评": 6,
+          "差评": 96,
+          "待复核": 6
+        },
+        "total": 108
+      },
+      "2026-09-20": {
+        "categories": {
+          "Bug/闪退问题": 1,
+          "付费/商业化问题": 19,
+          "价值观/性别争议": 27,
+          "养成/进度反馈": 2,
+          "内容/玩法反馈": 11,
+          "厂商信任/经营争议": 39,
+          "可玩性/内容单薄": 1,
+          "官方回应/公关信任": 18,
+          "广告/宣传问题": 10,
+          "强负面口碑/情绪宣泄": 54,
+          "政治/历史争议": 10,
+          "未归类/待复核": 4,
+          "本地化/地区差异": 4,
+          "正向口碑/泛好评": 4,
+          "社区二创/热梗": 1,
+          "社区环境/玩家冲突": 21,
+          "移动端体验问题": 1,
+          "角色/剧情争议": 34,
+          "评分抗议/集中差评": 3,
+          "退款/下架诉求": 18
+        },
+        "sentiments": {
+          "中评": 1,
+          "好评": 4,
+          "差评": 102,
+          "待复核": 5
+        },
+        "total": 112
+      },
+      "2026-09-21": {
+        "categories": {
+          "Bug/闪退问题": 1,
+          "付费/商业化问题": 9,
+          "价值观/性别争议": 22,
+          "养成/进度反馈": 2,
+          "内容/玩法反馈": 10,
+          "厂商信任/经营争议": 27,
+          "可玩性/内容单薄": 1,
+          "官方回应/公关信任": 15,
+          "广告/宣传问题": 7,
+          "强负面口碑/情绪宣泄": 36,
+          "政治/历史争议": 8,
+          "未归类/待复核": 3,
+          "正向口碑/泛好评": 6,
+          "社区二创/热梗": 1,
+          "社区环境/玩家冲突": 17,
+          "角色/剧情争议": 27,
+          "评分抗议/集中差评": 4,
+          "退款/下架诉求": 13
+        },
+        "sentiments": {
+          "中评": 3,
+          "好评": 6,
+          "差评": 73,
+          "待复核": 6
+        },
+        "total": 88
+      },
+      "2026-09-22": {
+        "categories": {
+          "Bug/闪退问题": 1,
+          "付费/商业化问题": 23,
+          "价值观/性别争议": 20,
+          "养成/进度反馈": 3,
+          "内容/玩法反馈": 16,
+          "厂商信任/经营争议": 39,
+          "可玩性/内容单薄": 4,
+          "官方回应/公关信任": 25,
+          "广告/宣传问题": 19,
+          "强负面口碑/情绪宣泄": 41,
+          "政治/历史争议": 12,
+          "未归类/待复核": 5,
+          "本地化/地区差异": 1,
+          "正向口碑/泛好评": 8,
+          "活动/奖励问题": 3,
+          "社区环境/玩家冲突": 19,
+          "移动端体验问题": 3,
+          "角色/剧情争议": 37,
+          "评分抗议/集中差评": 9,
+          "账号/隐私安全": 13,
+          "退款/下架诉求": 17
+        },
+        "sentiments": {
+          "好评": 8,
+          "差评": 112,
+          "待复核": 4
+        },
+        "total": 124
+      },
+      "2026-09-23": {
+        "categories": {
+          "付费/商业化问题": 8,
+          "价值观/性别争议": 7,
+          "内容/玩法反馈": 5,
+          "厂商信任/经营争议": 7,
+          "官方回应/公关信任": 6,
+          "广告/宣传问题": 7,
+          "强负面口碑/情绪宣泄": 12,
+          "政治/历史争议": 3,
+          "未归类/待复核": 2,
+          "正向口碑/泛好评": 2,
+          "活动/奖励问题": 1,
+          "社区环境/玩家冲突": 5,
+          "移动端体验问题": 1,
+          "角色/剧情争议": 9,
+          "评分抗议/集中差评": 1,
+          "账号/隐私安全": 7,
+          "退款/下架诉求": 4
+        },
+        "sentiments": {
+          "中评": 2,
+          "好评": 2,
+          "差评": 29,
+          "待复核": 1
+        },
+        "total": 34
+      }
+    },
+    "low_ratings": 448,
+    "manual_reviewed": 0,
+    "rated_total": 495,
+    "rating_population": "当前范围全部已采集评论",
+    "sentiments": {
+      "中评": 7,
+      "好评": 27,
+      "差评": 438,
+      "待复核": 23
+    },
+    "uncertain": 111
+  },
+  "summary": "本轮已分析覆盖完整，无待分析样本。核心风险不是单一故障，而是角色内容争议、官方回应缺口与退游用户召回触达相互叠加：前两者持续消耗内容和经营信任，电话触达则带来可立即核验的隐私合规风险。历史文化与专业科普指控敏感度高，应先专项审校再对外定性；技术侧则需将家园卡死、启动黑屏、下载失败和资源体积分别排查。由于上期未完成分类，本轮不具备趋势增幅比较条件。"
+}

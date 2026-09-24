@@ -38,6 +38,7 @@ DB=DATA/'reviews.sqlite3'
 OUTPUT=DATA.parent/'outputs'
 MARKETS={'中国大陆':'cn','美国':'us','中国香港':'hk','中国台湾':'tw','日本':'jp','韩国':'kr',
          '英国':'gb','德国':'de','法国':'fr','加拿大':'ca','澳大利亚':'au','新加坡':'sg','其他地区代码':'other'}
+BUNDLED_REPORT_WINDOW='已完成 Agent 报告时段'
 
 
 def local_time(value):
@@ -83,6 +84,15 @@ def _bundled_report(info,profile):
         return None
 
 
+def open_bundled_report(app_id,country):
+    """Select the saved report without scheduling analysis or changing model settings."""
+    prefix=f'agent_{app_id}_{country}'
+    st.session_state[prefix+'_mode']='Agent分析'
+    st.session_state[prefix+'_preference']='Agent分析'
+    st.session_state.statistics_window=BUNDLED_REPORT_WINDOW
+    st.session_state.workspace_page='舆情概览'
+
+
 def snapshot_caption(info,profile):
     if not info: return
     count=int(info.get('review_count') or 0)
@@ -92,6 +102,12 @@ def snapshot_caption(info,profile):
     saved=_bundled_report(info,profile)
     if saved:
         report,body=saved
+        st.button(f"查看完整 Agent 分析 · {int(report['analyzed']):,} 条",type='primary',
+            key='bundled_agent_report_open',on_click=open_bundled_report,
+            args=(profile['app_id'],profile['country']),
+            help='打开已完成报告对应的统计时段，在同一看板查看深度分析、图表及处理方案，不启动新分析。')
+        st.caption('已完成历史报告 · '+local_time(report['start_at'])+' — '+local_time(report['end_at'])+
+            f"（北京时间）· 模型 {report.get('model') or '报告内注明'}。点击后显示该时段的完整分析看板。")
         with st.expander(f"查看随附 Agent 历史报告 · {int(report['analyzed']):,} 条",expanded=False):
             st.caption('独立历史报告 · '+local_time(report['start_at'])+' — '+local_time(report['end_at'])+
                 f"（北京时间，结束时间不含）· 已分析 {int(report['analyzed']):,}/{int(report['total']):,} 条。"
@@ -628,7 +644,13 @@ def main():
             st.session_state.workspace_page='评论浏览'
         choice=st.selectbox('当前游戏与地区',list(labels)+['＋ 添加游戏'],key='current_game')
         page=st.radio('工作区',['舆情概览','监控总览','评论浏览','采集与设置','数据与导出'],key='workspace_page')
-        window=st.selectbox('统计时间',['今天','近 7 天','近 30 天','全部已采集历史','自定义历史区间'],
+        saved_report=_bundled_report(bundled,labels[choice]) if choice in labels else None
+        windows=['今天','近 7 天','近 30 天','全部已采集历史','自定义历史区间']
+        if saved_report:
+            windows.append(BUNDLED_REPORT_WINDOW)
+        elif st.session_state.get('statistics_window')==BUNDLED_REPORT_WINDOW:
+            st.session_state.statistics_window='全部已采集历史'
+        window=st.selectbox('统计时间',windows,
             key='statistics_window',**({'index':1} if 'statistics_window' not in st.session_state else {}))
         historical=None
         if window=='自定义历史区间':
@@ -661,11 +683,13 @@ def main():
         render_review_browser(profile,browser_request)
         return
     # Freeze the report cutoff until the next refresh, so generated downloads stay consistent.
+    fixed_report=saved_report[0] if saved_report and window==BUNDLED_REPORT_WINDOW else None
     scope=f"{profile['app_id']}:{profile['country']}:{window}:{historical}:{page}"
     if st.session_state.get('scope')!=scope:
         st.session_state.scope=scope
-        st.session_state.cutoff=datetime.now(LOCAL_TZ).isoformat()
-    if st.sidebar.button('更新统计至当前时间'):
+        st.session_state.cutoff=fixed_report['end_at'] if fixed_report else datetime.now(LOCAL_TZ).isoformat()
+    if st.sidebar.button('更新统计至当前时间',disabled=bool(fixed_report),
+            help='历史报告使用其已完成的固定时段；切换其他统计时间后可以更新。' if fixed_report else None):
         st.session_state.cutoff=datetime.now(LOCAL_TZ).isoformat()
         st.rerun()
     def render():
@@ -675,15 +699,19 @@ def main():
         chosen_mode=st.session_state.get(mode_prefix+'_mode',
             st.session_state.get(mode_prefix+'_preference','规则初筛'))
         icon=get_app_icon(profile['app_id'],profile['country'],DATA/'app_icons',
-            allow_fetch=chosen_mode=='Agent分析' and os.environ.get('APPSTORE_DISABLE_ICON_FETCH')!='1')
+            allow_fetch=not fixed_report and chosen_mode=='Agent分析' and os.environ.get('APPSTORE_DISABLE_ICON_FETCH')!='1')
         st.markdown(game_hero_html(profile,icon),unsafe_allow_html=True)
         source_banner(profile,None,state,runs)
         if page=='采集与设置':
             collection_settings(profile,state,runs)
             return
-        cutoff=pd.Timestamp(st.session_state.cutoff if page=='数据与导出' else datetime.now(LOCAL_TZ))
+        cutoff=pd.Timestamp(fixed_report['end_at'] if fixed_report else
+            st.session_state.cutoff if page=='数据与导出' else datetime.now(LOCAL_TZ)).tz_convert(LOCAL_TZ)
         kwargs={}
-        if historical:
+        if fixed_report:
+            kwargs={'start':pd.Timestamp(fixed_report['start_at']).tz_convert(LOCAL_TZ),
+                'end':pd.Timestamp(fixed_report['end_at']).tz_convert(LOCAL_TZ)}
+        elif historical:
             kwargs={'start':pd.Timestamp(historical[0],tz=LOCAL_TZ),'end':min(pd.Timestamp(historical[1]+timedelta(days=1),tz=LOCAL_TZ),cutoff)}
         elif window=='全部已采集历史':
             with database(DB) as connection:

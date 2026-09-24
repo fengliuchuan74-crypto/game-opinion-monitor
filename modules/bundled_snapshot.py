@@ -141,12 +141,14 @@ def ensure_bundled_snapshot(db_path: Path, folder: Path | None = None) -> dict:
         return {}
     path = Path(db_path)
     init_db(path)
+    from .bundled_reports import restore_completed_report
     with database(path) as connection:
         marker = connection.execute("SELECT value FROM store_meta WHERE key='bundled_snapshot'").fetchone()
-        if marker:
-            return json.loads(marker[0])
-        if _has_local_data(connection):
+        existing = json.loads(marker[0]) if marker else None
+        if not existing and _has_local_data(connection):
             return {}
+    if existing:
+        return restore_completed_report(path, folder, existing)
     metadata, payload = _read_snapshot(folder)
     with database(path) as connection:
         connection.execute('BEGIN IMMEDIATE')
@@ -168,4 +170,4 @@ def ensure_bundled_snapshot(db_path: Path, folder: Path | None = None) -> dict:
                 _write_cache_if_missing(destination / name, value)
         connection.execute("INSERT INTO store_meta(key,value) VALUES('bundled_snapshot',?)",
                            (json.dumps(metadata, ensure_ascii=False),))
-    return metadata
+    return restore_completed_report(path, folder, metadata)

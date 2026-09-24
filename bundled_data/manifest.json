@@ -2,7 +2,7 @@
   "format_version": 1,
   "sha256": "fa32c9df9b1e3a1c4b11d1bd3f70d8113694b6a7eef27b0706968d2f975301af",
   "snapshot_id": "appstore-public-fa32c9df9b1e3a1c",
-  "created_at": "2026-09-24T08:58:10.898882+00:00",
+  "created_at": "2026-09-24T09:15:35.599553+00:00",
   "review_count": 4076,
   "game_count": 5,
   "source_verification": {
@@ -65,6 +65,8 @@
     "model": "gpt-5.6-sol",
     "filename": "agent-report.md",
     "sha256": "f4141998503e680796d95ddc18521eaed419ec1f2ac3ffc338f573421e18d503",
+    "json_filename": "agent-report.json",
+    "json_sha256": "0206d868cf45f4b12324f773df8dfa6121f7556e73a8b34f1dc327150a7283f5",
     "total": 495,
     "analyzed": 495
   }
